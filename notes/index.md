@@ -9,3 +9,5 @@ But here we are, at the garden gate. It is not particularly ornate. Pretty [[phi
 Peeking ahead, you can see someone selling, or at least displaying, a bunch of [[best albums in the universe|records]]. You also hear [[danger third rail|a band]] playing somewhere in the garden. It's impossible to miss the huge amount of power extension cords and other wires darting through the gate, laying on the ground, and even going up over the walls of the garden. Whatever is going on here requires plenty of electricity it would seem.
 
 There are signs here, one of an elephant/mammoth type creature that reads: [@audiodude@layer8.space](https://layer8.space/@audiodude). Another has a picture of what you instantly recognize as an octocat, and it says [@audiodude](https://github.com/audiodude).
+
+You also see what looks like a disheveled madman rambling to himself about [[blog|blogging]].
