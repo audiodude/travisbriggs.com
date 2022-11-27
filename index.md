@@ -4,7 +4,7 @@ layout: default
 # My digital garden!
 
 Hi, I'm [Travis Briggs](https://travisbriggs.com) and you've stumbled upon my [digital garden](https://maggieappleton.com/garden-history). Or maybe you were forced to come here by the various military robots I have deployed across the web, who knows.
-Either way, welcome! If you're interested in what I'm thinking or working on, feel free to browse through the knowledge graph of pages. I'm trying to [learn in public](https://www.swyx.io/learn-in-public/) here, so join me if you'd like.
+Either way, welcome! If you're interested in what I'm thinking or working on, feel free to browse through the [knowledge graph of pages](notes). I'm trying to [learn in public](https://www.swyx.io/learn-in-public/) here, so join me if you'd like.
 
 The idea is to take my daily [morning pages](https://littlecoffeefox.com/morning-pages-changed-life/) and/or daily journaling, and extract bits that are interesting to discuss publicly. Then I will hopefully link some of these concepts together and grow the garden over time.
 
