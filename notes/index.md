@@ -10,4 +10,4 @@ Peeking ahead, you can see someone selling, or at least displaying, a bunch of [
 
 There are signs here, one of an elephant/mammoth type creature that reads: [@audiodude@layer8.space](https://layer8.space/@audiodude). Another has a picture of what you instantly recognize as an octocat, and it says [@audiodude](https://github.com/audiodude).
 
-You also see what looks like a disheveled madman rambling to himself about [[blog|blogging]].
+You also see what looks like a disheveled madman rambling to himself about [[blog/index|blogging]].
