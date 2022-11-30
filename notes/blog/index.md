@@ -11,5 +11,4 @@ I guess if this is my "digital garden" then these posts are like potted plants t
 {%- for post in collections.blog reversed -%}
   <li><a href="{{post.url}}">{{ post.data.title }}</a></li>
 {%- endfor -%}
-  <li>...More to be ported over soon!</li>
 </ul>
