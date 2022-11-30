@@ -31,6 +31,8 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
+  eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
+
   eleventyConfig.setLibrary('md', md);
 
   eleventyConfig.addCollection('garden', function (collection) {
