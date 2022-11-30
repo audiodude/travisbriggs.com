@@ -149,3 +149,7 @@ small {font-size: 0.8em;}
 .backlink:hover .backlink__preview {
     display: block;
 }
+
+.copyright {
+    margin: 0 auto;
+}
