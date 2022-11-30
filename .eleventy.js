@@ -18,7 +18,7 @@ module.exports = function (eleventyConfig) {
           const parts = match.raw.slice(2, -2).split('|');
           parts[0] = parts[0].replace(/.(md|markdown)\s?$/i, '');
           match.text = (parts[1] || parts[0]).trim();
-          match.url = `/notes/${parts[0].trim()}/`;
+          match.url = `/garden/${parts[0].trim()}/`;
         },
       });
     });
@@ -33,8 +33,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary('md', md);
 
-  eleventyConfig.addCollection('notes', function (collection) {
-    return collection.getFilteredByGlob(['notes/**/*.md', 'index.md']);
+  eleventyConfig.addCollection('garden', function (collection) {
+    return collection.getFilteredByGlob(['garden/**/*.md', 'index.md']);
   });
 
   eleventyConfig.addPassthroughCopy('assets');
