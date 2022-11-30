@@ -3,7 +3,6 @@ title: The Chain
 tags: blog
 date: 2020-08-28
 ---
-# The Chain
 
 You might have heard of [the](https://jamesclear.com/stop-procrastinating-seinfeld-strategy) [so-called](https://medium.com/@MrBuzzFactor/jerry-seinfelds-productivity-hack-don-t-break-the-chain-8d1944b8323d) [Seinfeld](https://www.writersstore.com/dont-break-the-chain-jerry-seinfeld/) [Strategy](https://nickwignall.com/seinfeld-strategy/) for sticking to something and building a habit.
 
@@ -17,9 +16,8 @@ I'd love to commit to The Chain, and I'm not sure what's stopping me. I think it
 
 Actually if I could commit to only writing 1/4 of my blog posts about blogging itself, that would be an improvement. Maybe when I feel like The Chain is being strained (Don't Strain The Chain, Gang), I could just cop out and blog about blogging.
 
-I have to also take this opportunity to point out that the name of this blog is YABIWU -- *Yet Another Blog I Won't Update*. Am I proving myself wrong? Probably only temporarily.
+I have to also take this opportunity to point out that the name of this blog is YABIWU -- _Yet Another Blog I Won't Update_. Am I proving myself wrong? Probably only temporarily.
 
 ---
 
 So has anyone successfully used The Chain? As always I'm Travis Briggs, of [travisbriggs.com](https://travisbriggs.com) fame. If you'd like to comment on this post you can do so on Mastodon (@audiodude@toot.cafe) or Twitter (@audiodude) or send me an email at audiodude@gmail.com.
-

@@ -3,7 +3,6 @@ title: NIKE the shit out of it
 tags: blog
 date: 2019-11-17
 ---
-# NIKE the shit out of it
 
 According to [songs.travisbriggs.com](https://songs.travisbriggs.com), I haven't published a song since July. That's a drought. I actually have written a few songs since then, ones that were mostly finished. That includes the sweet, completely finished song I wrote for Abby for our anniversary, which might never get a proper recording (though I probably owe her one).
 

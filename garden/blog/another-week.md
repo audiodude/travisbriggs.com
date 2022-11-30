@@ -3,7 +3,6 @@ title: Another Week
 tags: blog
 date: 2018-07-30
 ---
-# Another Week
 
 Here starts another week, and it's going pretty well. I'm awake, I'm at work, I'm caffeinated. Listening to some [Weezer](https://weezer.com/).
 

@@ -3,7 +3,6 @@ title: Getting Nothing Done
 tags: blog
 date: 2020-05-20
 ---
-# Getting Nothing Done
 
 There have been some posts on [Hacker News](https://news.ycombinator.com/) lately about various systems for GTD (getting things done), both endorsing and adjacent to the official GTD method. There have been productivity apps, note taking and bookmarking browser extensions, and more. All of it promises a way forward for organizing all of the tasks in your life and making sure they get completed effectively and in a timely fashion.
 

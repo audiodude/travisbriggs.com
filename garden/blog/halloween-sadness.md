@@ -3,7 +3,6 @@ title: Halloween Sadness
 tags: blog
 date: 2019-10-21
 ---
-# Halloween Sadness
 
 Halloween is a time for the spooky, the scary, sometimes the terrifying and maybe a bit of the downright goofy. Is there room in there for a bit of Halloween sadness?
 

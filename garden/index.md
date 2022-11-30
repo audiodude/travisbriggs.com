@@ -2,8 +2,6 @@
 title: The garden gate
 ---
 
-# The garden gate
-
 _I'm trying desperately to resist the urge to write this entire website as a choose-your-own adventure game. Must, resist._
 
 But here we are, at the garden gate. It is not particularly ornate. Pretty [[philosophy|utilitarian]] in fact, made of simple iron and a bit under six feet tall.

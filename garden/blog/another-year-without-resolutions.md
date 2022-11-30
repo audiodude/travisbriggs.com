@@ -3,7 +3,6 @@ title: Another Year Without Resolutions
 tags: blog
 date: 2021-01-01
 ---
-# Another Year Without Resolutions
 
 I wrote [[blog/giving-up-on-resolutions|last year]] about how I was planning on giving up on New Year's resolutions. Well I did. And nothing really changed one way or another. In that post I wrote, "Today is New Year's Day", which is one way of looking at it. The apparent corollary of that is that "New Year's Day doesn't exist", which is the essential position I took last year.
 

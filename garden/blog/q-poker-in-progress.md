@@ -3,18 +3,17 @@ title: 'Q Poker: in progress'
 tags: blog
 date: 2020-08-02
 ---
-# Q Poker: in progress
 
 When I wrote [blog/making-a-computer-game|that post]] about making a computer game, I seem to have left out one of the major projects I've been working on for the past year or so, which is Q Poker.
 
-Q Poker is envisioned as an online poker site, with play money (coins), that hosts games other than Texas Hold'em. The first game I've been implementing is [Razz](https://en.wikipedia.org/wiki/Razz_(poker)) (7 card stud lowball) and you can see some of the in progress results in this screenshot:
+Q Poker is envisioned as an online poker site, with play money (coins), that hosts games other than Texas Hold'em. The first game I've been implementing is [Razz](<https://en.wikipedia.org/wiki/Razz_(poker)>) (7 card stud lowball) and you can see some of the in progress results in this screenshot:
 
 ![Screenshot of online poker game](https://i.imgur.com/DYO6M0ol.png)
 
 So far, the things I've got working are:
 
 - Backend game logic, in Python, where you can start and finish Hands (of Razz).
--- Includes check/bet/raise/fold logic for all players.
+  -- Includes check/bet/raise/fold logic for all players.
 - Logic in Python for a "Table" which is where the hands get played out.
 - Asynchronous logic in Python for sending game updates to the client, when things of interest happen. For example, the web client doesn't have to "poll" the game state, it receives `socketio` events when someone performs an action.
 - ReactJS frontend app which responds to and displays the Table state changes from the backend.

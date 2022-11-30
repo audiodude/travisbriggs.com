@@ -3,7 +3,6 @@ title: Songwriting Reflections
 tags: blog
 date: 2018-08-20
 ---
-# Songwriting Reflections
 
 Melancholy feelings and minor keys are both more appealing to me than their respective alternatives, at least when put into the employ of art and music. For some reason, a "happy" song with "happy" lyrics seems vapid and dull to me. I want to get at the deep stuff underneath. Major keys seems to scream of a kind of [phatic expression](https://en.wikipedia.org/wiki/Phatic_expression), a platitude of nothingness. "Fine, thank you". "Good afternoon, sir" they exclaim.
 

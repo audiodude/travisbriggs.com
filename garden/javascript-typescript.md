@@ -2,8 +2,6 @@
 title: Javascript/Typescript
 ---
 
-# Javascript/Typescript
-
 Javascript is the most popular programming language in the world. It is the language used to write logic for web pages. Also, due to the V8 engine and Nodejs, Javascript can be used on the so-called "backend" as a server technology without a browser.
 
 Typescript is a superset of Javascript that adds support for the computer science concept of "types". This means that instead of having a variable, and it being all loosey-goosey about what kind of data is in it:

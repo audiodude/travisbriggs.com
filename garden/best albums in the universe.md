@@ -1,7 +1,7 @@
 ---
-title: best albums in the universe
+title: The Best Albums in the Universe
 ---
-# The Best Albums in the Universe
+
 I think I started this project in 2011 or 2012. It lives on the web at [bestalbumsintheuniverse.com](https://bestalbumsintheuniverse.com) and on Gemini at [gem.bestalbumsintheuniverse.com](gemini://gem.bestalbumsintheuniverse.com).
 
 When I was coming up with the name, I knew I wanted to keep track of a curated collection of my favorite albums, mostly for my own reference. But I thought it would be lame to be like my-favorite-albums.com or something like that. Why not go big and call it Best Albums in the Universe?
@@ -9,6 +9,7 @@ When I was coming up with the name, I knew I wanted to keep track of a curated c
 The best albums list is meant to be a living document, just like this garden. It is intended to grow as I discover, or sometimes more accurately remember, more albums. So far the only criteria I've set for myself is that I don't want to list multiple albums by the same artist, or else there would be many more Beatles, Radiohead and Weezer albums on there.
 
 ## History
+
 The site was originally on Tumblr. Hold on, let me check if the original Tumblr site is still up or if I can find it....
 
 ...nope, can't find it. I think I might have deleted it at some point. My [personal tumblr](https://travisbriggs.tumblr.com/), which just has a couple of links, refers to the new website.

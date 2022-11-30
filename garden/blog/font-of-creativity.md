@@ -3,7 +3,6 @@ title: Font of creativity
 tags: blog
 date: 2018-07-20
 ---
-# Font of creativity
 
 I once read that creative people don't create for any other purpose than the fact that there are ideas bursting out of them, viciously, and if they don't put pen to paper or hand to instrument the ideas will cause them to explode.
 
