@@ -4,10 +4,26 @@ layout: default
 
 <article>
   <h1>{{title}}</h1>
-  <div class="meta">
-    {% if date %} Created on {{ date | simpleDate }} {% if updated %} {{ updated
-    | outputIfNotEqualTo: date }} {% endif %} {% endif %}
-  </div>
+  {% if date || quality || importance %}
+    <div class="meta">
+      {% if date %}
+        <span class="created">Created: {{ date | simpleDate }}</span>
+        {% if updated %}
+          |
+          <span class="updated">{{ updated | outputIfNotEqualTo: date }}</span>
+        {% endif %}
+      {% endif %}
+      {% if quality %}
+        {% if date %}|{% endif %}
+        <span class="quality {{quality}}">
+          {{quality}} quality</span>
+      {% endif %}
+      {% if importance %}
+        {% if date || quality %}|{% endif %}
+        <span class="importance {{importance}}">{{importance}} importance</span>
+      {% endif %}
+    </div>
+  {% endif %}
   {{content}}
 </article>
 

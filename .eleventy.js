@@ -38,7 +38,7 @@ module.exports = function (eleventyConfig) {
     ) {
       return;
     }
-    return `| Updated on ${DateTime.fromJSDate(dateObj).toLocaleString(
+    return `Updated: ${DateTime.fromJSDate(dateObj).toLocaleString(
       DateTime.DATE_MED
     )}`;
   });
