@@ -2,6 +2,7 @@
 title: Latest and Not-so-greatest
 tags: blog
 date: 2020-08-13
+quality: GA
 ---
 
 Today I sent a cold email to someone who has 90k subscribers on YouTube, asking if they could maybe give me music production lessons. On the one hand, I don't expect a response, even at all. On the other hand, this person did put their (an?) email address in the description of a YouTube video so maybe they're open to being contacted. Maybe?

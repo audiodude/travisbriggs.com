@@ -2,6 +2,7 @@
 title: Side quests of life
 tags: blog
 date: 2018-07-20
+quality: GA
 ---
 
 I feel like I could get addicted to writing the way that some people get addicted to video games. Like, "You just wrote for over an hour, why do you still feel the desire to keep writing?". Of course at this point I'm kind of like a character in an RPG who is max level and doesn't feel like doing the [side quests](https://tvtropes.org/pmwiki/pmwiki.php/Main/Sidequest). Not that I've really earned anything close to max level in writing/blogging, besides having done it especially sporadically since 2003. Maybe it's like [EVE Online](https://www.eveonline.com/) where you earn experience constantly, even when offline, just by checking in on it every once in a while.

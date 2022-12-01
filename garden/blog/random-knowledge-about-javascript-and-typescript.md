@@ -2,6 +2,7 @@
 title: Random knowledge about Javascipt and Typescript
 tags: blog
 date: 2018-09-17
+quality: GA
 ---
 
 Javascript is a programming language that is used primarily on the web. It is interpreted by web browsers in order to process and display data on web pages. Javascript is also known as ECMAScript, after the standard that encompasses a formal definition of the language.

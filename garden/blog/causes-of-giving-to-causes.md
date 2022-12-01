@@ -2,6 +2,7 @@
 title: Causes of Giving to Causes
 tags: blog
 date: 2018-11-27
+quality: GA
 ---
 
 On the topic of philanthropy, there are a few approaches that I see taken by those around me. One is to simply give to whatever cause makes you feel good. Sometimes it's just a matter of some cause that strikes a chord, and just like that you open your wallet. Other times, people try to give to causes that benefit those in the most extreme life circumstances. They donate in order to provide clean water to people in remote villages, or to provide food and medicine to those affected by the horrors of war.

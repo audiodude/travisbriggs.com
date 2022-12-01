@@ -31,6 +31,18 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
+  eleventyConfig.addFilter('outputIfNotEqualTo', (dateObj, othDateObj) => {
+    if (
+      DateTime.fromJSDate(dateObj).toMillis() ===
+      DateTime.fromJSDate(othDateObj).toMillis()
+    ) {
+      return;
+    }
+    return `| Updated on ${DateTime.fromJSDate(dateObj).toLocaleString(
+      DateTime.DATE_MED
+    )}`;
+  });
+
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
   eleventyConfig.setLibrary('md', md);

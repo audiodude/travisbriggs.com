@@ -1,7 +1,8 @@
 ---
-title: What programming language should I learn
+title: What programming language should I learn?
 tags: blog
 date: 2018-11-14
+quality: GA
 ---
 
 A lot of people who want to get into programming ask this question, and it's not a bad one at all! In this post, I'll try to examine the question and give a thoughtful answer.

@@ -2,6 +2,7 @@
 title: 'Q Poker: in progress'
 tags: blog
 date: 2020-08-02
+quality: GA
 ---
 
 When I wrote [blog/making-a-computer-game|that post]] about making a computer game, I seem to have left out one of the major projects I've been working on for the past year or so, which is Q Poker.

@@ -1,14 +1,16 @@
 ---
 title: Music Projects as Ephemera
 tags: blog
-date: 2021-03-01
+date: 2018-03-01
+quality: GA
+importance: Top
 ---
 
 At some point in the past year, I upgraded my version of [Reason](https://www.reasonstudios.com/shop/product/reason-11/) from version 10 to version 11.
 
 At some point in the past two months, I tried to open an old music project that I had written two or more years ago.
 
-## It was a catastrophe.
+### It was a catastrophe.
 
 Without getting too technical, I had structured _all_ of my projects, going back maybe 10 years, as an [Ableton Live](https://www.ableton.com/en/live/) main project (for recording audio and using audio plugins) that potentially depended on a Reason sub project for using drums and synthesizers from that program. Through a technology known as [ReWire](<https://en.wikipedia.org/wiki/ReWire_(software_protocol)>), the two programs stayed perfectly in sync and I could easily share audio and [MIDI](https://blog.landr.com/what-is-midi/) between them.
 
@@ -30,7 +32,9 @@ The problem isn't that I can't open the Ableton file.
 
 The problem is that they no longer communicate. The Reason file, with my drums and synthesizers. The Ableton file with my voice takes and guitar tracks. They just sit there, dumb, each ready to play half my song out of sync with each other. As my friend Sagar would say, "Why don't you just hit play at the same time?" Facepalm.
 
-## Reason Studios, for their part, doesn't offer downloads of old versions of their software. Maybe they would throw a DMG my way if I explained my issues, maybe not, I haven't tried contacting them.
+Reason Studios, for their part, doesn't offer downloads of old versions of their software. Maybe they would throw a DMG my way if I explained my issues, maybe not, I haven't tried contacting them.
+
+---
 
 Okay, I've got files on my computer, backed up to Dropbox, of songs I wrote and played around with 24 odd years ago, when I was in middle school. I know the programs that wrote these files don't exist anymore (they were on the pre-OS X, MacOS 8 operating system, not even MacOS 9!). I guess I keep them around for sentimental reasons.
 

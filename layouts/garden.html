@@ -4,6 +4,10 @@ layout: default
 
 <article>
   <h1>{{title}}</h1>
+  <div class="meta">
+    {% if date %} Created on {{ date | simpleDate }} {% if updated %} {{ updated
+    | outputIfNotEqualTo: date }} {% endif %} {% endif %}
+  </div>
   {{content}}
 </article>
 

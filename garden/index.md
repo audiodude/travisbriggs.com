@@ -10,6 +10,6 @@ Peeking ahead, you can see a bunch of [[best albums in the universe|records]] fo
 
 There are signs here, one of an elephant/mammoth type creature that reads: [@audiodude@layer8.space](https://layer8.space/@audiodude). Another has a picture of what you instantly recognize as an octocat, and it says [@audiodude](https://github.com/audiodude).
 
-You also see what looks like a disheveled madman rambling to himself about [[blog/index|blogging]].
+You also see what looks like a disheveled madman rambling to himself about [[blog|blogging]].
 
 There is a bulletin board here, with a bunch of post it notes that all start with [[TIL|Today I Learned...]].

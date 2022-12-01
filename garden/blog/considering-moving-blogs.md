@@ -2,6 +2,7 @@
 title: Considering moving blogs
 tags: blog
 date: 2018-11-13
+quality: GA
 ---
 
 What's the best thing to do once you've started to blog and written a few posts? Change platforms, of course! It seems like every blogger is always looking for a new platform, with the hope that it will somehow make them a better, more prolific writer. No doubt it rarely turns out that way.

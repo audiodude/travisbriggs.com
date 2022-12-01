@@ -2,6 +2,7 @@
 title: Making a computer game
 tags: blog
 date: 2020-07-20
+quality: GA
 ---
 
 I've always wanted to program a computer game. I can program pretty well, so it can't be all that hard right? I know that many people pursue gamedev the way I pursue music production: in fits and starts, as a hobby, never particularly successfully. Since I already have a pursuit like that, why would I want to add gamedev to the list? Am I a masochist?

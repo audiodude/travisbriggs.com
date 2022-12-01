@@ -2,6 +2,7 @@
 title: Something Terrible
 tags: blog
 date: 2020-08-06
+quality: GA
 ---
 
 I'm tutoring two separate students in Ableton Live and Digital Music Production now. It's very rewarding to talk through all the things I've learned in my two decades (!) of making music digitally, and especially to see their eyes light up (over video chat) when something that I'm explaining finally clicks.

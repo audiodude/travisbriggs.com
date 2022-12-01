@@ -2,6 +2,7 @@
 title: Read before you write
 tags: blog
 date: 2021-01-23
+quality: GA
 ---
 
 I've read Stephen King's book _On Writing_, and it's pretty interesting. I think you could almost boil King's advice down to a Nike-esque "just do it", but there's one nuance to what he suggests that definitely sticks with me. That to be a writer, you have to be a reader.

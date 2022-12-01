@@ -2,6 +2,7 @@
 title: The Unattainable and the Attainable
 tags: blog
 date: 2020-09-08
+quality: GA
 ---
 
 Some bands/songs/albums seem unattainable. Like, I could never make something that good no matter what. Weezer's _Blue Album_ comes immediately to mind. Not to mention the elite pantheon of something like _The Dark Side Of The Moon_.

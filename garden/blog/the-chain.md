@@ -2,6 +2,7 @@
 title: The Chain
 tags: blog
 date: 2020-08-28
+quality: GA
 ---
 
 You might have heard of [the](https://jamesclear.com/stop-procrastinating-seinfeld-strategy) [so-called](https://medium.com/@MrBuzzFactor/jerry-seinfelds-productivity-hack-don-t-break-the-chain-8d1944b8323d) [Seinfeld](https://www.writersstore.com/dont-break-the-chain-jerry-seinfeld/) [Strategy](https://nickwignall.com/seinfeld-strategy/) for sticking to something and building a habit.

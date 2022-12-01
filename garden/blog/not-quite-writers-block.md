@@ -2,6 +2,7 @@
 title: Not Quite Writer's Block
 tags: blog
 date: 2020-08-21
+quality: GA
 ---
 
 I fully believe I will need to write hundreds of songs in order to come up with my next great release. I mentioned as much at the end of my [[blog/latest-and-not-so-greatest|last post]]. I also believe that there are no "shortcuts" to this process, that I can't write ten songs and get lucky and two of them are great. I guess that's possible, but that's not really what the process represents.

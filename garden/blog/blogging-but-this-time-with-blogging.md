@@ -2,6 +2,7 @@
 title: Blogging, but this time with blogging
 tags: blog
 date: 2018-07-17
+quality: GA
 ---
 
 Every time I get the feeling like I should blog something, I usually realize that it would do just as well to shout into [Mastodon](https://joinmastodon.org/) ([my masto instance](https://layer8.space)). Like that sentence for example. Not so much that last one.

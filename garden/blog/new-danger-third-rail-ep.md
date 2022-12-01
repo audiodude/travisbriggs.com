@@ -2,6 +2,7 @@
 title: New Danger Third Rail EP
 tags: blog
 date: 2018-08-10
+quality: GA
 ---
 
 I suppose if I announce a new [[Danger Third Rail]] project on a blog site, and then post that to Mastodon, it's not going to make a very big splash. I'm okay with that, I expect as much. I don't expect anyone to know what Danger Third Rail is, nevermind that I'm the "mastermind" behind it.

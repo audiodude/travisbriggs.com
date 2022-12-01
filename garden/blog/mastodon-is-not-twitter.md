@@ -1,6 +1,8 @@
 ---
 title: Mastodon is not Twitter
 tags: blog
+quality: GA
+date: 2022-11-17
 ---
 
 Mastodon is not Twitter. It doesn't seem like it will ever be, it's fundamentally different. Although the size of the user base of Mastodon instances has grown 3x as part of the greatest Twitter exodus to date, Mastodon will never be Twitter.
