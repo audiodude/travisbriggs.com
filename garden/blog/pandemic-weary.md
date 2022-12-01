@@ -2,8 +2,8 @@
 title: Pandemic Weary
 tags: blog
 date: 2021-11-29
+quality: GA
 ---
-# Pandemic Weary
 
 I'm not sure if I'm actually depressed. I've been clinically depressed in the past and this doesn't feel quite exactly like that. I may just be "pandemic weary".
 

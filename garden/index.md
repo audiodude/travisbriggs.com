@@ -2,8 +2,6 @@
 title: The garden gate
 ---
 
-# The garden gate
-
 _I'm trying desperately to resist the urge to write this entire website as a choose-your-own adventure game. Must, resist._
 
 But here we are, at the garden gate. It is not particularly ornate. Pretty [[philosophy|utilitarian]] in fact, made of simple iron and a bit under six feet tall.
@@ -12,6 +10,6 @@ Peeking ahead, you can see a bunch of [[best albums in the universe|records]] fo
 
 There are signs here, one of an elephant/mammoth type creature that reads: [@audiodude@layer8.space](https://layer8.space/@audiodude). Another has a picture of what you instantly recognize as an octocat, and it says [@audiodude](https://github.com/audiodude).
 
-You also see what looks like a disheveled madman rambling to himself about [[blog/index|blogging]].
+You also see what looks like a disheveled madman rambling to himself about [[blog|blogging]].
 
 There is a bulletin board here, with a bunch of post it notes that all start with [[TIL|Today I Learned...]].

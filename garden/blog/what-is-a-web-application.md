@@ -2,8 +2,8 @@
 title: What is a web application?
 tags: blog
 date: 2018-11-13
+quality: GA
 ---
-# What is a web application?
 
 This post attempts to answer the question posed in the title. It is aimed at beginning or aspiring web developers, or even those who aren't developers but wish to gain a deeper understanding of the terminology. Web applications versus static websites versus dynamic websites will be discussed.
 

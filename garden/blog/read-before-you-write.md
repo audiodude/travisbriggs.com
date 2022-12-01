@@ -2,12 +2,13 @@
 title: Read before you write
 tags: blog
 date: 2021-01-23
+quality: GA
 ---
-# Read Before You Write
 
 I've read Stephen King's book _On Writing_, and it's pretty interesting. I think you could almost boil King's advice down to a Nike-esque "just do it", but there's one nuance to what he suggests that definitely sticks with me. That to be a writer, you have to be a reader.
 
 > If you don’t have time to read, you don’t have the time (or the tools) to write. Simple as that.
+>
 > - Stephen King
 
 I certainly "have time" to read. But I also don't invest much time at all in it. I don't choose reading as a preferred activity. In fact, it took me almost two years to finish James S. A. Corey's _Leviathan Wakes_ (book one of _The Expanse_ novels). Most of that time was spent, of course, not reading. So according to King's logic, I can't be a writer.

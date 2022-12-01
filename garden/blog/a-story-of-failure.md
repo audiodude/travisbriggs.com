@@ -2,8 +2,8 @@
 title: A Story Of Failure
 tags: blog
 date: 2019-01-02
+quality: GA
 ---
-# A Story Of Failure
 
 Last year I made a rather audacious New Year's Resolution: [to write a song a day in 2018](https://blog.travisbriggs.com/writing-a-song-a-day-in-2018-d4f2be32c40f). I will now always remember 2018 as the year I failed to write a song a day. Or maybe I should remember it as the year that I bravely aspired to write a song a day?
 

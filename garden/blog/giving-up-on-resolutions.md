@@ -2,8 +2,8 @@
 title: Giving Up On Resolutions
 tags: blog
 date: 2020-01-02
+quality: GA
 ---
-# Giving Up On Resolutions
 
 As I've [[blog/a-story-of-failure|written]] [before](https://blog.travisbriggs.com/writing-a-song-a-day-in-2018-d4f2be32c40f), I'm a sucker for New Year's Resolutions. And yet as the first link from this time last year states, I've also kind of given up on them. They're simply ineffective at creating any kind of real or lasting change. I've come around to the "today is New Year's Day, it is a Wednesday" kind of thinking.
 

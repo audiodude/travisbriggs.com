@@ -11,7 +11,7 @@ module.exports = {
   layout: 'garden.html',
   type: 'garden',
   eleventyComputed: {
-    title: (data) => titleCase(data.title || data.page.fileSlug),
+    title: (data) => data.title || titleCase(data.page.fileSlug),
     backlinks: (data) => {
       const notes = data.collections.garden;
       const currentFileSlug = data.page.filePathStem.replace('/garden/', '');

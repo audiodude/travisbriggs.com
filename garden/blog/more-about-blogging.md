@@ -2,8 +2,8 @@
 title: More about blogging
 tags: blog
 date: 2020-07-04
+quality: GA
 ---
-# More about blogging
 
 I never really blogged much when it was popular, in the 2000s. And I continue to not really blog much to this day, so not much has changed in that regard. But I've always had this desire to blog. It's like my vague desire to use a [Zettelkasten](https://zettelkasten.de/posts/overview/), even though I don't have much of anything to take notes about.
 

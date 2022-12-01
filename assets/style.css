@@ -153,3 +153,51 @@ small {font-size: 0.8em;}
 .copyright {
     margin: 0 auto;
 }
+
+.meta {
+    padding: .4em;
+    background-color: lightyellow;
+    border: 1px dotted #333;
+    font-size: .75em;
+}
+
+.quality, .importance {
+    display: inline-block;
+    padding: 0 .4em;
+}
+
+.quality.FA, .quality.fa {
+    background-color: #9cbdff;
+}
+
+.quality.GA, .quality.ga {
+    background-color: #66ff66;
+}
+
+.quality.B, .quality.b {
+    background-color: #b2ff66;
+}
+
+.quality.Start, .quality.start {
+    background-color: #ffaa66;
+}
+
+.quality.Stub, .quality.stub {
+    background-color: #ffa4a4;
+}
+
+.importance.Top, .importance.top {
+    background-color: #ff97ff;
+}
+
+.importance.High, .importance.high {
+    background-color: #ffacff;
+}
+
+.importance.Top, .importance.top {
+    background-color: #ffc1ff;
+}
+
+.importance.Top, .importance.top {
+    background-color: #ffd6ff;
+}

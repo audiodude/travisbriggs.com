@@ -1,9 +1,7 @@
 ---
-title: Today I Learned
+title: TIL (Today I Learned)
 #tags: foo
 ---
-
-# TIL (Today I Learned...)
 
 I haven't actually done many posts in the TIL format, but I'm happy to give it a go and see what comes of it!
 

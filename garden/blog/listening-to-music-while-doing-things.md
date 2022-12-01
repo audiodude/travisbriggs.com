@@ -2,8 +2,8 @@
 title: Listening to music while doing things
 tags: blog
 date: 2018-07-17
+quality: GA
 ---
-# Listening to music while doing things
 
 How about this for an app idea: you listen to music and just type the lyrics into a chat room in real time. Or maybe you type the lyrics to the song and it stops when it gets to the words you haven't typed yet. Like some kind of inverted karaoke.
 

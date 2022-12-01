@@ -4,10 +4,6 @@ tags: til
 date: 2022-11-29
 ---
 
-# How to squash warnings in Python
-
-## (by elevating them to errors)
-
 [[Python]] has a great Exception handling system. It also has a lesser used but still important system of "warnings", which are like Exceptions except they are intended when a "condition (normally) doesn’t warrant raising an exception and terminating the program". They are used probably most familiarly as deprecation warnings, when you're using an import or module or method that has been replaced and shouldn't be used anymore.
 
 For the [[wp-1.0|WP 1.0 project]], I have been increasingly annoyed that one or more of my tests in my test suite are emitting warnings from `pymysql` about MySQL data truncation. Data truncation is when you try to store, say, a 10 character string in a column that can only hold 9 characters. MySQL will generally "lop off" the last character (truncate) and store the remaining nine. When it does this, it issues a warning (depending on how your MySQL/MariaDB server is set up), and pymysql echoes these warnings. Presumably this is helpful if you have a bug, you can go to your logs and see "Well we have 1000 instances of telephone numbers being 'truncated', maybe that's the problem!". It doesn't stop the flow of the program or throw an exception, like stated before, it's just a warning.

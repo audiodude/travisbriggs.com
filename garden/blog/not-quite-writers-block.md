@@ -2,8 +2,8 @@
 title: Not Quite Writer's Block
 tags: blog
 date: 2020-08-21
+quality: GA
 ---
-# Not Quite Writer's Block
 
 I fully believe I will need to write hundreds of songs in order to come up with my next great release. I mentioned as much at the end of my [[blog/latest-and-not-so-greatest|last post]]. I also believe that there are no "shortcuts" to this process, that I can't write ten songs and get lucky and two of them are great. I guess that's possible, but that's not really what the process represents.
 
@@ -11,7 +11,7 @@ It wouldn't be entirely fair to say I have writer's block. Like I [[blog/somethi
 
 I can play a few instruments and sing well enough, I know how to use my DAW pretty well, certainly well enough that it doesn't actively impede my progress.
 
-I'm not married to any specific genre, though I feel more at ease creating guitar-driven rock songs than any EDM pieces. But it's not a matter of getting sick of the genre I'm writing in, or feeling like I have no new ideas in that space. The alternate is also true: I don't feel necessarily compelled to create some breakthrough new sound that no one's ever heard before. 
+I'm not married to any specific genre, though I feel more at ease creating guitar-driven rock songs than any EDM pieces. But it's not a matter of getting sick of the genre I'm writing in, or feeling like I have no new ideas in that space. The alternate is also true: I don't feel necessarily compelled to create some breakthrough new sound that no one's ever heard before.
 
 I feel like what I'm lacking is focus. I don't have anything to focus my songwriting/music production ability. No prism to shine the light through. Sure, I'd love to write a 10-12 track album that's coherent and well laid out. My favorite thing to listen to is [[best albums in the universe|albums]]. But something like that seems so distant and difficult that it's hard to motivate myself to pursue it.
 

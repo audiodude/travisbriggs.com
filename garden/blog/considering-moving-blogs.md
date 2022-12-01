@@ -2,8 +2,8 @@
 title: Considering moving blogs
 tags: blog
 date: 2018-11-13
+quality: GA
 ---
-# Considering moving blogs
 
 What's the best thing to do once you've started to blog and written a few posts? Change platforms, of course! It seems like every blogger is always looking for a new platform, with the hope that it will somehow make them a better, more prolific writer. No doubt it rarely turns out that way.
 
@@ -11,7 +11,7 @@ But here I am, in the same boat, trying to evaluate new blogging platforms and p
 
 As a background, back when I was using Soundcloud extensively I "realized" that Medium does the same for blog posts that Soundcloud does for songs: it provides a centralized repository across multiple different authors. This potentially allows for "cross-pollination" as readers of a certain blogger find related articles from, gee golly, maybe me!
 
-Of course, this never happened on Soundcloud, in the 8+ years I've been on it. And it hasn't happened on Medium either. My most popular medium post is [this tutorial](https://blog.travisbriggs.com/setting-up-your-own-mastodon-with-digital-ocean-and-docker-29e633d354f2) on how to set up your own [Mastodon](https://joinmastodon.org/) instance. It still gets 20-40 views a week, 18 months later. I'm proud I produced a piece of writing that has helped many people. But honestly, the views on that article haven't even led to views on my own other articles. Never mind "cross-pollination". 
+Of course, this never happened on Soundcloud, in the 8+ years I've been on it. And it hasn't happened on Medium either. My most popular medium post is [this tutorial](https://blog.travisbriggs.com/setting-up-your-own-mastodon-with-digital-ocean-and-docker-29e633d354f2) on how to set up your own [Mastodon](https://joinmastodon.org/) instance. It still gets 20-40 views a week, 18 months later. I'm proud I produced a piece of writing that has helped many people. But honestly, the views on that article haven't even led to views on my own other articles. Never mind "cross-pollination".
 
 That, and considering the recent article on ["Medium is a poor choice for blogging"](https://medium.com/@nikitonsky/medium-is-a-poor-choice-for-blogging-bb0048d19133) which was posted to [Hacker News](https://news.ycombinator.com/), makes me rethink my platform of choice.
 
@@ -30,10 +30,10 @@ This entire discussion is also predicated on the idea that I actually should con
 So my options, as I see them are:
 
 0. Continue writing on Medium (probably not going to happen).
-0. Continue writing on write.as
-0. Start a brand new blog with static site generator
-0. Quit blogging altogether
+1. Continue writing on write.as
+2. Start a brand new blog with static site generator
+3. Quit blogging altogether
 
 Of these options, 2 and 4 look the best to me.
 
-*Update (2018-11-13): I stated in this post that write.as is free, but apparently at some point I signed up for the $10/year plan. I can't remember why I did.* 
+_Update (2018-11-13): I stated in this post that write.as is free, but apparently at some point I signed up for the $10/year plan. I can't remember why I did._

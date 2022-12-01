@@ -1,7 +1,30 @@
 ---
 layout: default
 ---
+
 <article>
-    {{content}}
+  <h1>{{title}}</h1>
+  {% if date || quality || importance %}
+    <div class="meta">
+      {% if date %}
+        <span class="created">Created: {{ date | simpleDate }}</span>
+        {% if updated %}
+          |
+          <span class="updated">{{ updated | outputIfNotEqualTo: date }}</span>
+        {% endif %}
+      {% endif %}
+      {% if quality %}
+        {% if date %}|{% endif %}
+        <span class="quality {{quality}}">
+          {{quality}} quality</span>
+      {% endif %}
+      {% if importance %}
+        {% if date || quality %}|{% endif %}
+        <span class="importance {{importance}}">{{importance}} importance</span>
+      {% endif %}
+    </div>
+  {% endif %}
+  {{content}}
 </article>
+
 {% include 'backlinks.html' %}
