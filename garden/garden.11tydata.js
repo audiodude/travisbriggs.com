@@ -34,9 +34,15 @@ module.exports = {
         );
 
         // If the other note links here, return related info
-        if (
-          outboundLinks.some((link) => caselessCompare(link, currentFileSlug))
-        ) {
+        const hasLink = outboundLinks.some((link) =>
+          caselessCompare(link, currentFileSlug)
+        );
+        // If the other note is the index page of a collection the note
+        // is in, add it.
+        const inCollection =
+          data.tags &&
+          data.tags.some((tag) => `/garden/${tag}/` === otherNote.url);
+        if (hasLink || inCollection) {
           // Construct preview for hovercards
           let preview = noteContent.slice(0, 240);
 

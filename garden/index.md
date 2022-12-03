@@ -14,4 +14,4 @@ There are signs here, one of an elephant/mammoth type creature that reads: [@aud
 
 You also see what looks like a disheveled madman rambling to himself about [[blog|blogging]].
 
-There is a bulletin board here, with a bunch of post it notes that all start with [[TIL|Today I Learned...]].
+There is a bulletin board here, with a bunch of post it notes that all start with [[til|Today I Learned...]].
