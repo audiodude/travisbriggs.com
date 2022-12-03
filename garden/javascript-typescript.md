@@ -1,5 +1,8 @@
 ---
 title: Javascript/Typescript
+date: 2022-12-01
+quality: Start
+importance: Mid
 ---
 
 Javascript is the most popular programming language in the world. It is the language used to write logic for web pages. Also, due to the V8 engine and Nodejs, Javascript can be used on the so-called "backend" as a server technology without a browser.

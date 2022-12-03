@@ -1,5 +1,8 @@
 ---
 title: Python
+date: 2022-12-01
+quality: Start
+importance: Mid
 ---
 
 I first started writing python in 2009, in my first Github repo: [sudoku-solver](https://github.com/audiodude/sudoku-solver), an open source library for solving Sudoku puzzles that I did in my free time (I had a lot of free time back then because I was unemployed and living in my parents' basement).

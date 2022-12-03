@@ -2,6 +2,8 @@
 title: How to squash warnings in Python by elevating them to errors
 tags: til
 date: 2022-11-29
+quality: GA
+importance: Mid
 ---
 
 [[Python]] has a great Exception handling system. It also has a lesser used but still important system of "warnings", which are like Exceptions except they are intended when a "condition (normally) doesn’t warrant raising an exception and terminating the program". They are used probably most familiarly as deprecation warnings, when you're using an import or module or method that has been replaced and shouldn't be used anymore.

@@ -1,5 +1,7 @@
 ---
 title: The garden gate
+date: 2022-11-26
+updated: 2022-11-30
 ---
 
 _I'm trying desperately to resist the urge to write this entire website as a choose-your-own adventure game. Must, resist._

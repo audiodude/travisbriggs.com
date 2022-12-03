@@ -1,5 +1,8 @@
 ---
 title: The Best Albums in the Universe
+date: 2022-11-26
+quality: B
+importance: Top
 ---
 
 I think I started this project in 2011 or 2012. It lives on the web at [bestalbumsintheuniverse.com](https://bestalbumsintheuniverse.com) and on Gemini at [gem.bestalbumsintheuniverse.com](gemini://gem.bestalbumsintheuniverse.com).

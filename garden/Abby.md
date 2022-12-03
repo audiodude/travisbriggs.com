@@ -1,5 +1,8 @@
 ---
 title: Abby
+date: 2022-11-26
+quality: Start
+importance: Top
 ---
 
 Abby is my lovely wife. We got married on November 9th, 2014. We met in Boston in 2011 and started dating in April of that year. If you'll believe it, we were engaged by July of that year. I love her to pieces, and in fact I write her a "daily love letter" every night.

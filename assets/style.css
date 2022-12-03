@@ -194,10 +194,10 @@ small {font-size: 0.8em;}
     background-color: #ffacff;
 }
 
-.importance.Top, .importance.top {
+.importance.Mid, .importance.mid {
     background-color: #ffc1ff;
 }
 
-.importance.Top, .importance.top {
+.importance.Low, .importance.low {
     background-color: #ffd6ff;
 }
