@@ -16,4 +16,4 @@ You also see what looks like a disheveled madman rambling to himself about [[blo
 
 There is a bulletin board here, with a bunch of post it notes that all start with [[til|Today I Learned...]].
 
-If you pick up the entire garden and flip it around, you can read some of the [[plans]] for the thing (not sure how you did that, but congrats!).
+If you pick up the entire garden and flip it around (how did you do *that*?!?), you can read some of the [[plans]] for the thing.
