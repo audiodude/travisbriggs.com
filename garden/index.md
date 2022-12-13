@@ -1,7 +1,7 @@
 ---
 title: The garden gate
 date: 2022-11-26
-updated: 2022-11-30
+updated: 2022-12-12
 ---
 
 _I'm trying desperately to resist the urge to write this entire website as a choose-your-own adventure game. Must, resist._
@@ -15,3 +15,5 @@ There are signs here, one of an elephant/mammoth type creature that reads: [@aud
 You also see what looks like a disheveled madman rambling to himself about [[blog|blogging]].
 
 There is a bulletin board here, with a bunch of post it notes that all start with [[til|Today I Learned...]].
+
+If you pick up the entire garden and flip it around, you can read some of the [[plans]] for the thing (not sure how you did that, but congrats!).
