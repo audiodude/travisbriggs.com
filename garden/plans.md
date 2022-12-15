@@ -17,4 +17,4 @@ I definitely already have a bunch of "Stub" and "Start" quality articles that I 
 
 Also Andy says that [Evergreen notes should be densely linked](https://notes.andymatuschak.org/About_these_notes?stackedNotes=z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C&stackedNotes=z6bci25mVUBNFdVWSrQNKr6u7AZ1jFzfTVbMF&stackedNotes=z2HUE4ABbQjUNjrNemvkTCsLa1LPDRuwh1tXC) which I knew intuitively, but I hadn't really been following. I think I need to actively seek out and link together my nodes (and no, I'm not going to belabor the analogy and start calling them "plants" or "seeds").
 
-I've actually just implemented Atom feeds, and by editing this page, it should get bumped to the top! Whee!
+I've actually just implemented Atom feeds, and by editing this page, it should get bumped to the top! Whee! I also immediately noticed the pages that didn't have creation or updated dates, because they bubbled to the top. This was because when Netlify checked out the git repo of this site in order to build and deploy it, all the files on disk happen to be created "now", so anything that didn't have a date specified to override that bubbled to the top.

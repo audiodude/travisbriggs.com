@@ -1,5 +1,6 @@
 ---
 layout: default
+date: 2022-11-26
 ---
 
 # A digital garden...

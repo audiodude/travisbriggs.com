@@ -1,5 +1,6 @@
 ---
 title: TIL (Today I Learned)
+date: 2022-11-29
 ---
 
 I haven't actually done many posts in the TIL format, but I'm happy to give it a go and see what comes of it!
