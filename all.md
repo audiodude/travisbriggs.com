@@ -1,3 +1,6 @@
+---
+eleventyExcludeFromCollections: true,
+---
 <ul>
 {%- for post in collections.all reversed -%}
 {% if post.url != "/all/" %}

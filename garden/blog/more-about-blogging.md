@@ -2,7 +2,7 @@
 title: More about blogging
 tags: blog
 date: 2020-07-04
-updated: 2012-12-12
+updated: 2022-12-12
 quality: GA
 Importance: Mid
 ---
