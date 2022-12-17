@@ -1,11 +1,15 @@
 ---
 title: Plans for the digital garden
 date: 2022-12-12
-updated: 2022-12-14
+updated: 2022-12-16
 quality: B
 importance: Mid
 ---
-Here I'd like to discuss some of my plans, hopes, aspirations and whatnot for this digital garden. I've documented some of the more [technical issues](https://github.com/audiodude/garden.travisbriggs.com/issues) on the garden's [Github repo](https://github.com/audiodude/garden.travisbriggs.com). But I guess what I want to do here is talk more about what I plan to write about, how I plan to organize things. Yes, I know I should have comments ([#13!](https://github.com/audiodude/garden.travisbriggs.com/issues/13)). Actually what I'm more excited about is figuring out [a way](https://github.com/audiodude/garden.travisbriggs.com/issues/3) to make internal and external links styled differently. I'm sure there's a dead simple way to do it, where I just figure out if the link starts with `http://` or not, or is in wiki-markup type links (which is how the Eleventy Garden makes backlinks).
+Here I'd like to discuss some of my plans, hopes, aspirations and whatnot for this digital garden. I've documented some of the more [technical issues](https://github.com/audiodude/garden.travisbriggs.com/issues) on the garden's [Github repo](https://github.com/audiodude/garden.travisbriggs.com). But I guess what I want to do here is talk more about what I plan to write about, how I plan to organize things.
+
+I'm trying to do all this in accordance with my interpretation of the [[digital-gardening-principles|Digital gardening principles]].
+
+Yes, I know I should have comments ([#13!](https://github.com/audiodude/garden.travisbriggs.com/issues/13)). Actually what I'm more excited about is figuring out [a way](https://github.com/audiodude/garden.travisbriggs.com/issues/3) to make internal and external links styled differently. I'm sure there's a dead simple way to do it, where I just figure out if the link starts with `http://` or not, or is in wiki-markup type links (which is how the Eleventy Garden makes backlinks).
 
 I did recently start a [[til|TIL (Today I Learned)]] section of the garden, and I'm interested in keeping that up to date. But it's maybe just another random assortment of reverse-chronological links (boo!). Also, one of the first things I did when I started the garden was to import all of my recent [[blog|blog posts]] from write.as. Oh no, more reverse-chronological links!
 
