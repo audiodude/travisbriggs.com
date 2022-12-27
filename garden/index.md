@@ -1,19 +1,17 @@
 ---
-title: The garden gate
+title: Outside a Digital Garden
 date: 2022-11-26
-updated: 2022-12-12
+updated: 2022-12-26
+quality: FA
+importance: Top
 ---
+Hi, I'm [Travis Briggs](https://travisbriggs.com) and you've stumbled upon my digital garden. Or maybe you were forced to come here by the various military robots I have deployed across the web, who knows.
+Either way, welcome! If you're interested in what I'm thinking or working on, feel free to walk through the [[gate|garden gate]], which is arranged kind of like a knowledge graph of pages or nodes. You should be able to use the backlinks to find other nodes that linked to the one you're reading.
 
-_I'm trying desperately to resist the urge to write this entire website as a choose-your-own adventure game. Must, resist._
+I'm trying to follow the [[digital-gardening-principles|principles of digital gardening]] here. I intend to cast a wide net of potential topics, then I will hopefully link some of these concepts together and grow the garden over time.
 
-But here we are, at the garden gate. It is not particularly ornate. Pretty [[philosophy|utilitarian]] in fact, made of simple iron and a bit under six feet tall.
+I'd also eventually like to host a version of this page on [Gemini](https://gemini.circumlunar.space/). (coming soon!)
 
-Peeking ahead, you can see a bunch of [[best albums in the universe|records]] for sale, or at least on display. You also hear [[danger third rail|a band]] playing somewhere in the garden. It's impossible to miss the huge amount of power extension cords and other wires darting through the gate, laying on the ground, and even going up over the walls of the garden. Whatever is going on here requires plenty of electricity it would seem.
+The source code for this garden is [available](https://github.com/audiodude/garden.travisbriggs.com), and I'm tracking [issues to improve it](https://github.com/audiodude/garden.travisbriggs.com/issues). It is based on [Eleventy Garden](https://github.com/binyamin/eleventy-garden) which is based on [Eleventy](https://www.11ty.dev/).
 
-There are signs here, one of an elephant/mammoth type creature that reads: [@audiodude@layer8.space](https://layer8.space/@audiodude). Another has a picture of what you instantly recognize as an octocat, and it says [@audiodude](https://github.com/audiodude).
-
-You also see what looks like a disheveled madman rambling to himself about [[blog|blogging]].
-
-There is a bulletin board here, with a bunch of post it notes that all start with [[til|Today I Learned...]].
-
-If you pick up the entire garden and flip it around (how did you do *that*?!?), you can read some of the [[plans]] for the thing.
+Welcome!

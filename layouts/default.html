@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include 'head.html' %}
-  </head>
-  <body>
-    <header class="page-header">
-      <a href="/" class="page-header__logo" title="Go home">
-        <img src="/assets/avatar.png" alt="" width="48" />
-      </a>
 
-      <nav>
-        <a href="/">Home</a>
-        <a href="/about">About Me</a>
-        <a href="/garden">Garden</a>
-      </nav>
-    </header>
-    <main>{{content}}</main>
+<head>
+  {% include 'head.html' %}
+</head>
 
-    <footer class="page-footer">
-      <div style="font-size: 0.75rem">
-        <p class="copyright">Copyright © {% year %} {{site.author}}</p>
-        <p class="copyright">
-          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
-            ><img
-              alt="Creative Commons License"
-              style="border-width: 0"
-              src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a
-          ><br />This work and all contents of this website are licensed under
-          a<br />
-          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
-            >Creative Commons Attribution-ShareAlike 4.0 International
-            License</a
-          >.
-        </p>
-      </div>
-    </footer>
-  </body>
+<body>
+  <header class="page-header">
+    <a href="/" class="page-header__logo" title="Go home">
+      <img src="/assets/avatar.png" alt="" width="48" />
+    </a>
+
+    <nav>
+      <a href="/">Garden</a>
+      <a href="/garden/about">About Me</a>
+    </nav>
+  </header>
+  <main>{{content}}</main>
+
+  <footer class="page-footer">
+    <div style="font-size: 0.75rem">
+      <p class="copyright">Copyright © {% year %} {{site.author}}</p>
+      <p class="copyright">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License"
+            style="border-width: 0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work and
+        all contents of this website are licensed under
+        a<br />
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike
+          4.0 International
+          License</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>

@@ -1,11 +1,11 @@
 ---
-layout: default
 title: About Me
 date: 2022-11-26
+updated: 2022-12-26
+quality: GA
+importance: Top
 ---
-# About Me
-
-I'm going to copy my biography from my main "business card" [website](https://travisbriggs.com) here, so that you don't have to click through to read it:
+I'm going to copy my biography from my main "business card" [website](https://travisbriggs.com) here, so that you don't have to click through to read it. You can also visit that site for some more random "digial creations" that I've worked on that haven't found a permanent home in the garden yet.
 
 > Travis Briggs is a software developer, amateur musician, and
 > blogger. All of these skills come together on his personal website,
@@ -30,4 +30,10 @@ I'm going to copy my biography from my main "business card" [website](https://tr
 > Travis currently lives with his amazing wife Abby and cuddly cat
 > Shekel in San Francisco CA USA.
 
-You can always email me at [audiodude@gmail.com](mailto:audiodude@gmail.com)
+You can always email me at [audiodude@gmail.com](mailto:audiodude@gmail.com).
+
+My current Mastodon link is [@audiodude@layer8.space](https://layer8.space/@audiodude).
+
+My current Twitter handle is [@audiodude](https://twitter.com/audiodude), but Twitter is dying.
+
+Here is my [Github profile](https://github.com/audiodude).
