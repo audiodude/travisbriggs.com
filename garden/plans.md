@@ -1,7 +1,7 @@
 ---
 title: Plans for the digital garden
 date: 2022-12-12
-updated: 2022-12-16
+updated: 2022-12-26
 quality: B
 importance: Mid
 ---
@@ -16,6 +16,8 @@ I did recently start a [[til|TIL (Today I Learned)]] section of the garden, and 
 I'm thinking that the real goal should be to somehow "absorb" the content in those blog posts into more organic topic pages. Some of them, like [[blog/what-programming-language-should-i-learn|"What programming language should I learn?"]] lend themselves nicely to that. But others, where I'm just [[blog/latest-and-not-so-greatest|randomly complaining about music production]] or something, I'm not sure how to work them in. Maybe that's the fun!
 
 The real problem with "Today I Learned" is that I'm not sure I learn something every day. Or at least not something worth writing about. I don't think I need to force myself to "crank out" content to keep my garden full. I think the spirit of the thing is that it grows organically, like a real garden.
+
+Another problem with the current garden layout is that I have [Home](/) and [About Me](/about) pages that sort of exist outside of the garden proper. So when the "Home" page links to something, there's no backlink back to home. This has something to do with the Elventy Garden implementation that I understood at one point but have since forgotten. I think the best course of action is to once again "absorb" all pages, including the initial index/home into the garden proper (possibly as a node titled "Outside the Garden"), while still retaining links to them in the navigational header.
 
 I definitely already have a bunch of "Stub" and "Start" quality articles that I could expand upon. Not sure what exactly to do there other than simply write a Wikipedia article on the topic (like [[DistroKid]]). I read in Andy Matuschak's "Evergreen Notes" that [Evergreen notes should be concept-oriented](https://notes.andymatuschak.org/About_these_notes?stackedNotes=z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C&stackedNotes=z6bci25mVUBNFdVWSrQNKr6u7AZ1jFzfTVbMF) which I think I'm not exactly following, because I've developed lots of garden "nodes" that are nouns.
 
