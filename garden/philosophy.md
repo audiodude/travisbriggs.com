@@ -1,6 +1,7 @@
 ---
 title: philosophy
 date: 2022-11-26
+updated: 2023-01-03
 quality: Stub
 importance: Low
 ---
