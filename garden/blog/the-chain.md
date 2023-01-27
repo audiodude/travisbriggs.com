@@ -2,7 +2,9 @@
 title: The Chain
 tags: blog
 date: 2020-08-28
+updated: 2023-01-26
 quality: GA
+importance: Low
 ---
 
 You might have heard of [the](https://jamesclear.com/stop-procrastinating-seinfeld-strategy) [so-called](https://medium.com/@MrBuzzFactor/jerry-seinfelds-productivity-hack-don-t-break-the-chain-8d1944b8323d) [Seinfeld](https://www.writersstore.com/dont-break-the-chain-jerry-seinfeld/) [Strategy](https://nickwignall.com/seinfeld-strategy/) for sticking to something and building a habit.
@@ -21,4 +23,4 @@ I have to also take this opportunity to point out that the name of this blog is 
 
 ---
 
-So has anyone successfully used The Chain? As always I'm Travis Briggs, of [travisbriggs.com](https://travisbriggs.com) fame. If you'd like to comment on this post you can do so on Mastodon (@audiodude@toot.cafe) or Twitter (@audiodude) or send me an email at audiodude@gmail.com.
+So has anyone successfully used The Chain? As always I'm Travis Briggs, of [travisbriggs.com](https://travisbriggs.com) fame. If you'd like to comment on this post you can do so on Mastodon (@audiodude@layer8.space) or Twitter (@audiodude) or send me an email at audiodude@gmail.com.
