@@ -21,4 +21,4 @@ I definitely already have a bunch of "Stub" and "Start" quality articles that I 
 
 Also Andy says that [Evergreen notes should be densely linked](https://notes.andymatuschak.org/About_these_notes?stackedNotes=z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C&stackedNotes=z6bci25mVUBNFdVWSrQNKr6u7AZ1jFzfTVbMF&stackedNotes=z2HUE4ABbQjUNjrNemvkTCsLa1LPDRuwh1tXC) which I knew intuitively, but I hadn't really been following. I think I need to actively seek out and link together my nodes (and no, I'm not going to belabor the analogy and start calling them "plants" or "seeds").
 
-Also, I'm still working on the [gemini|Gemini] port of this garden. It's much, much more complicated than I thought it would be.
+Also, I'm still working on the [[gemini|Gemini]] port of this garden. It's much, much more complicated than I thought it would be.
