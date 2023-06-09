@@ -1,11 +1,10 @@
 ---
 title: Music Making Motivation
 date: 2023-06-07
-quality: GA
+quality: A
 importance: High
 ---
 As the founding, primary, and only member of [[danger-third-rail|Danger Third Rail]], these are my opinions on motivation for writing and producing music for the project.
-
 
 Consider the following graph:
 
