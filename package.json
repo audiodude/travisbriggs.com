@@ -6,7 +6,6 @@
     "start": "eleventy --serve --quiet",
     "compile": "eleventy"
   },
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/binyamin/eleventy-garden.git"

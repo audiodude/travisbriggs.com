@@ -1,5 +1,5 @@
-import { DateTime } from 'luxon';
-import pluginRss from "@11ty/eleventy-plugin-rss";
+const { DateTime } = require('luxon');
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
   const markdownIt = require('markdown-it');
