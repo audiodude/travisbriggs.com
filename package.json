@@ -27,6 +27,6 @@
     "markdown-it-footnote": "^3.0.3",
     "npm": "^9.2.0",
     "title-case": "^3.0.3",
-    "gemdown": "^0.4.0"
+    "gemdown": "^0.6.0"
   }
 }

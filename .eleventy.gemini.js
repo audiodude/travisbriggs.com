@@ -77,7 +77,6 @@ module.exports = function (eleventyConfig) {
     return collection.getFilteredByGlob(['garden/**/*.md', 'index.md']);
   });
 
-  eleventyConfig.addPassthroughCopy('assets');
   eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.setLibrary('md', {
@@ -86,7 +85,7 @@ module.exports = function (eleventyConfig) {
     },
     render: async (data) => {
       const gemdown = await import('gemdown');
-      return gemdown.md2gemini(data);
+      return gemdown.md2gemini(data, {useWikiLinks: true, wikiLinksPrefix: '/garden/'});
     }
   });
 
@@ -109,6 +108,9 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.ignores.add('all.md');
+  eleventyConfig.ignores.add('feed.njk');
+  eleventyConfig.ignores.add('assets/*');
+  eleventyConfig.ignores.add('index.html');
   eleventyConfig.addPassthroughCopy('./index.gmi');
 
   return {

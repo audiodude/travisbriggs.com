@@ -4,3 +4,8 @@ CONTRIBUTING.md
 _drafts/
 _site/
 venv/
+
+includes/
+includes_gemini/
+layouts/
+layouts_gemini/
