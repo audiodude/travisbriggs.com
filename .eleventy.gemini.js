@@ -1,7 +1,10 @@
-import { DateTime } from 'luxon';
-import pluginRss from "@11ty/eleventy-plugin-rss";
+const { DateTime } = require('luxon');
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
+
+
+
   const markdownIt = require('markdown-it');
   const markdownItOptions = {
     html: true,
@@ -77,14 +80,44 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('assets');
   eleventyConfig.setUseGitIgnore(false);
 
+  eleventyConfig.setLibrary('md', {
+    permalink: (_, inputPath) => {
+      return inputPath.substr(0, inputPath.lastIndexOf('.')) + '.gmi';
+    },
+    render: async (data) => {
+      const gemdown = await import('gemdown');
+      return gemdown.md2gemini(data);
+    }
+  });
+
+  eleventyConfig.addGlobalData('eleventyComputed', () => {
+    return {
+      permalink(data) {
+        if (data.permalink) {
+          return data.permalink;
+        }
+        const { inputPath, filePathStem } = data.page;
+        if (inputPath.endsWith('.md')) {
+          let suffix = '.gmi';
+          if (!filePathStem.endsWith('/index')) {
+            suffix = '/index' + suffix;
+          }
+          return `${filePathStem}${suffix}`;
+        }
+      },
+    };
+  });
+
+  eleventyConfig.ignores.add('all.md');
+  eleventyConfig.addPassthroughCopy('./index.gmi');
+
   return {
     dir: {
       input: './',
-      output: '_site',
-      layouts: 'layouts',
-      includes: 'includes',
+      output: '_gemini',
+      layouts: 'layouts_gemini',
+      includes: 'includes_gemini',
       data: '_data',
     },
-    passthroughFileCopy: true,
   };
 };
