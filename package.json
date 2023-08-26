@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-garden",
+  "name": "garden.travisbriggs.com",
   "version": "1.0.0",
-  "description": "A starter site for building a mind garden in eleventy.",
+  "description": "The digital garden of Travis Briggs.",
   "scripts": {
     "start": "eleventy --serve --quiet",
     "compile": "eleventy"
@@ -12,6 +12,7 @@
   },
   "keywords": [],
   "author": "Binyamin Aron Green (https://binyam.in/)",
+  "contributors": ["Travis Briggs <audiodude@gmail.com> (https://travisbriggs.com)"],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/binyamin/eleventy-garden/issues"
@@ -25,6 +26,7 @@
     "markdown-it-attrs": "^4.1.4",
     "markdown-it-footnote": "^3.0.3",
     "npm": "^9.2.0",
-    "title-case": "^3.0.3"
+    "title-case": "^3.0.3",
+    "gemdown": "^0.6.0"
   }
 }

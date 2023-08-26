@@ -1,0 +1,19 @@
+---
+layout: default
+---
+# {{title}}
+{% if date || quality || importance -%}
+    {%- if date %}
+Created: {{ date | simpleDate }}
+      {%- if updated %}
+{{ updated | outputIfNotEqualTo: date }}
+      {%- endif -%}
+    {%- endif -%}
+  {%- if quality %}
+{{quality}} quality
+  {%- endif -%}
+  {%- if importance %}
+{{importance}} importance
+  {% endif -%}
+{%- endif %}
+{{content}}

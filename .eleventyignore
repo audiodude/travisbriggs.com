@@ -1,5 +1,11 @@
-readme.md
+README.md
 CONTRIBUTING.md
 .github/
 _drafts/
+_site/
 venv/
+
+includes/
+includes_gemini/
+layouts/
+layouts_gemini/
