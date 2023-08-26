@@ -5,4 +5,4 @@ updated: 2023-01-01
 # Digital Garden of Travis Briggs
 
 => /garden/ Approach the garden
-=> https://maggieappleton.com/garden-history" What is a digital garden?
+=> https://maggieappleton.com/garden-history What is a digital garden?
