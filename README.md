@@ -1,32 +1,24 @@
-# Eleventy-Garden
-A starter site for building a [mind garden](https://www.mentalnodes.com/a-gardening-guide-for-your-mind), using [11ty](https://github.com/11ty/eleventy) ([demo](https://eleventy-garden.netlify.app/))
+# Digital Garden of Travis Briggs
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4ce845a6-b009-4fcf-9ad4-a560d01a0073/deploy-status)](https://app.netlify.com/sites/eleventy-garden/deploys)
+This is the static site generator that creates the digital gardens at:
 
-> Note: I'm not building this project for myself, so y'all gotta tell me what you think. Issues are the way to go here.
-## :house: About
-- Double-bracket links (the ones roam uses)
-- Displays backlinks
-- hovercards for backlinks
+https://garden.travisbriggs.com
+gemini://gem.garden.travisbriggs.com
 
-### Related
-- [maximevaillancourt/digital-garden-jekyll-template](https://github.com/maximevaillancourt/digital-garden-jekyll-template)
-- [mathieudutour/gatsby-digital-garden](https://github.com/mathieudutour/gatsby-digital-garden/)
-- Find more at [maggieappleton/digital-gardeners](https://github.com/maggieappleton/digital-gardeners)
-## :rocket: Usage
-If you're new here, see the _Getting Started_ page in [the wiki](https://github.com/binyamin/eleventy-garden/wiki). Otherwise, check out the wiki guides (coming soon) or FAQ.
+## Background
 
-## :heart: Contribute
-Feel free to dive in!
+A Digital Garden is like a blog, as it's a place to share personal thoughts, projects and other things on the web (or on Gemini). However it differs in that it is setup more as a graph of nodes that are connected and evergreen instead of a dreaded reverse chronological ordering of "posts". For more information on Digital Gardens, see the [post that inspired me by Maggie Appleton](https://maggieappleton.com/garden-history).
 
-Here's what this project needs...
-- Feedback! I didn't make this repo is for myself, so y'all gotta tell me what you want.
-- Stars on GitHub
-- Contributors - check out the [contributing guide](https://github.com/binyamin/eleventy-garden/blob/main/CONTRIBUTING.md)
+This static site generator is built off the awesome template [Eleventy Garden](https://github.com/binyamin/eleventy-garden) by [Binyamin Aron Green](https://www.buymeacoffee.com/binyamin). That in turn uses the awesome [Eleventy static site generator](https://www.11ty.dev/), which is more or less a clone of [Jekyll](https://jekyllrb.com/) in Javascript that winds up being more flexibile and more easily extensible.
 
-### Maintainers
-[@binyamin](https://github.com/binyamin)
+## Deploying
 
-## :scroll: License
-This project is under the [MIT](https://github.com/binyamin/eleventy-garden/blob/main/LICENSE) license.
-Please adhere to the [code of conduct](https://github.com/binyamin/eleventy-garden/blob/main/.github/CODE_OF_CONDUCT.md).
+The www site is currently set up to automatically deploy via a Github hook, to [Netlify](https://www.netlify.com/).
+
+The Gemini capsule is hosted from a server on [Digital Ocean](https://www.digitalocean.com/) using the excellent [Twins](https://code.rocket9labs.com/tslocum/twins) server and certificates from [Let's Encrypt](https://letsencrypt.org/). To deploy the Gemini site, run:
+
+```bash
+GEM_USER=username GEM_HOST=some.site.garden.example.com npm run gemini-deploy
+```
+
+This will run Eleventy, create a tarball, upload it to the remote host, and extract it to the necessary directory.
