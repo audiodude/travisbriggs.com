@@ -1,0 +1,4 @@
+layouts/*.html
+layouts_gemini/*.html
+includes/*.html
+includes_gemini/*.html

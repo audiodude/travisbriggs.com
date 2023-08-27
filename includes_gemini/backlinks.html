@@ -1,0 +1,9 @@
+---
+### Backlinks:
+{% if backlinks.length > 0 -%}
+{%- for link in backlinks -%}
+=> {{link.url}} {{link.title}}
+{% endfor -%}
+{%- else %}
+No backlinks found.
+{% endif %}
