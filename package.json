@@ -12,7 +12,9 @@
   },
   "keywords": [],
   "author": "Binyamin Aron Green (https://binyam.in/)",
-  "contributors": ["Travis Briggs <audiodude@gmail.com> (https://travisbriggs.com)"],
+  "contributors": [
+    "Travis Briggs <audiodude@gmail.com> (https://travisbriggs.com)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/binyamin/eleventy-garden/issues"
@@ -21,12 +23,13 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "gemdown": "^0.6.0",
     "install": "^0.13.0",
     "markdown-it": "^12.3.2",
     "markdown-it-attrs": "^4.1.4",
     "markdown-it-footnote": "^3.0.3",
     "npm": "^9.2.0",
-    "title-case": "^3.0.3",
-    "gemdown": "^0.6.0"
+    "prettier": "^3.0.2",
+    "title-case": "^3.0.3"
   }
 }
