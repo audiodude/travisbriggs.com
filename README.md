@@ -18,7 +18,7 @@ The www site is currently set up to automatically deploy via a Github hook, to [
 The Gemini capsule is hosted from a server on [Digital Ocean](https://www.digitalocean.com/) using the excellent [Twins](https://code.rocket9labs.com/tslocum/twins) server and certificates from [Let's Encrypt](https://letsencrypt.org/). To deploy the Gemini site, run:
 
 ```bash
-GEM_USER=username GEM_HOST=some.site.garden.example.com npm run gemini-deploy
+GEM_USER=username GEM_HOST=some.site.garden.example.com npm run deploy-gemini
 ```
 
 This will run Eleventy, create a tarball, upload it to the remote host, and extract it to the necessary directory.
