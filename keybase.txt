@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/audiodude
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://travisbriggs.com
+  * I am audiodude (https://keybase.io/audiodude) on keybase.
+  * I have a public key with fingerprint 57A7 57AF F622 0A34 4F3E  32F9 7226 1D72 7844 947A
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01018614cb710c39353f0bb44db9a10f1ab55ddfe95bf25b0dcf15d5319ed20fe1950a",
+      "fingerprint": "57a757aff6220a344f3e32f972261d727844947a",
+      "host": "keybase.io",
+      "key_id": "72261d727844947a",
+      "kid": "01018614cb710c39353f0bb44db9a10f1ab55ddfe95bf25b0dcf15d5319ed20fe1950a",
+      "uid": "e664521031de56685252c113edab5519",
+      "username": "audiodude"
+    },
+    "merkle_root": {
+      "ctime": 1572634083,
+      "hash_meta": "4763bc75fa7a0319322ab7769bd173c3ff5e2bbaefd7945b41bdf4e3810ec50e",
+      "seqno": 8604471
+    },
+    "revoke": {
+      "sig_ids": [
+        "831319f6cc4862616357955869df32298174ce4baf1f659737a7f2fe69a40bee0f"
+      ]
+    },
+    "service": {
+      "hostname": "travisbriggs.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1572634085,
+  "expire_in": 157680000,
+  "prev": "91067d51beb1dac9c31e9bb49b79f1dc3c33bd12738c4a7e4c8928ace82cfcd0",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMK9AnicrZNbaBxVGMd3TZrWUFFajIrF6uBD2qblXOfMWcVLaEEkUmzxoaRhOdfN
+sNmdzcxs2pCuhFSCtSAhT16ga5GWWgoWraaSQJsSoaRQH7y1iEZLgmIF+yAWvJ9Z
+KoL46MAwnDP/7//95/fNWbijLdeZ39i2NJb4n0/nL10Yq+cG5horY56M9KhXGPPK
+pvUwQ9okabEcaq/gAQhg4EOiJINAYY4ptkBKQrTkAgILhaRUa2s4lRZRCbSykGqK
+ITcaAWsgp0B4PZ4NqyUT1+KwmjpbygRzt7U+QkBgQiw2GFnOEPKhZogFhHDCssLB
+KMkqXDgpErMtjNyeWxRb8f5D/z/nrrfsjO8TiiDAUBvq+wFFFCkIsdGZD+SZMDFx
+VVSMU4u6DiNd18Zr9HgVE5eHTDGOojSjq9Iw00DKkI8JCLD7QpEMFismFa6UMB9L
+xagVTLhuHCMkJGM+lxoyrLC11CAphbGacUIlgVJbYnAAgVEUGBckMcPVyCsEPiCE
+QZcgNiNR2WTNk7DkuCVeod8LMHT21leKBL6D6GPKOKWBz7V1TXkAGVGGSGGh9Sln
+2E3MImt8LgiQxgDrDTSyZvFIqFrm2aBuAUhjMRImMg5LpWSbiiouVS2O0khFQ+7t
+YJrWkkLGJh2tZfJ9RhZvGRVlWNXuV3EVIyZOwqjqWDnlv7HRHs/sr4WxKYbV1rYf
+AHdlfcyIs+QQ+ExTKI2EWiiuMDTczZ9Lxi3UyqHEDiliOFBEMENUwFEglAmQskqD
+fzhC1yoVJefp6FVFWo/dWC+c39uey3fmOlbdlp2hXOftd/19si6/vibXfHa0Nxhv
+bp//+ND9i1e+7urYuhx1XV55c3f6/boNq7ff/O1Y72G0vu8XkD95933zU33jC58d
+e2zylX3FgXt3tQ8/MtvWv+fq0KbunrXzB/o+ODUTPbdwcfbMuz8OvPp2V/GrXeHi
+maNXngRrfj4+cbo3zHd8d+B6f/fEwUtnH2o+cHr8yHul3g1bao8X9MPLE8+sr2ye
+bL/Wpjbe2Dozde7s5INo+Mul5vX3D7/41MXijg+nFxu7V83+8cNHn66bO5Fu6l4+
+slMcmrnRfXxq7qh3amJp5YtfH518Oih/U74q/1x4o8me/2l2/zub967e+dKdO57Y
+kj94z3TX2pfb6e+vXTu5p6/xyVsnXsDq5rd/AX8EgJw=
+=ckdX
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/audiodude
+
+==================================================================
