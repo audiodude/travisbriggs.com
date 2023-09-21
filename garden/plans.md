@@ -1,10 +1,11 @@
 ---
 title: Plans for the digital garden
 date: 2022-12-12
-updated: 2023-03-13
+updated: 2023-09-20
 quality: B
 importance: Mid
 ---
+
 Here I'd like to discuss some of my plans, hopes, aspirations and whatnot for this digital garden. I've documented some of the more [technical issues](https://github.com/audiodude/garden.travisbriggs.com/issues) on the garden's [Github repo](https://github.com/audiodude/garden.travisbriggs.com). But I guess what I want to do here is talk more about what I plan to write about, how I plan to organize things.
 
 I'm trying to do all this in accordance with my interpretation of the [[digital-gardening-principles|Digital gardening principles]].
@@ -22,5 +23,3 @@ Also I've been suddenly tempted to write "blog" type articles as dubious TIL, wh
 I definitely already have a bunch of "Stub" and "Start" quality articles that I could expand upon. Not sure what exactly to do there other than simply write a Wikipedia article on the topic (like [[DistroKid]]). I read in Andy Matuschak's "Evergreen Notes" that [Evergreen notes should be concept-oriented](https://notes.andymatuschak.org/About_these_notes?stackedNotes=z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C&stackedNotes=z6bci25mVUBNFdVWSrQNKr6u7AZ1jFzfTVbMF) which I think I'm not exactly following, because I've developed lots of garden "nodes" that are nouns.
 
 Also Andy says that [Evergreen notes should be densely linked](https://notes.andymatuschak.org/About_these_notes?stackedNotes=z4SDCZQeRo4xFEQ8H4qrSqd68ucpgE6LU155C&stackedNotes=z6bci25mVUBNFdVWSrQNKr6u7AZ1jFzfTVbMF&stackedNotes=z2HUE4ABbQjUNjrNemvkTCsLa1LPDRuwh1tXC) which I knew intuitively, but I hadn't really been following. I think I need to actively seek out and link together my nodes (and no, I'm not going to belabor the analogy and start calling them "plants" or "seeds").
-
-Also, I'm still working on the [[gemini|Gemini]] port of this garden. It's much, much more complicated than I thought it would be.
