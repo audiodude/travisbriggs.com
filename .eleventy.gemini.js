@@ -41,8 +41,8 @@ module.exports = function (eleventyConfig) {
     return content
       .replaceAll('&gt;', '>')
       .replaceAll('&lt;', '<')
-      .replaceAll('&amp;', '&')
-      .replaceAll('&quot;', '"');
+      .replaceAll('&quot;', '"')
+      .replaceAll('&amp;', '&');
   });
 
   eleventyConfig.ignores.add('all.md');
