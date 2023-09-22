@@ -19,11 +19,9 @@ I hope that a digital garden will provide a more well-rounded view of my digital
 
 Also, watch the fuck out because here comes some dreaded [[dg-reverse|reverse chronological order]] posts.
 
-<ul>
-{%- for post in collections.blog reversed -%}
-  <li><a href="{{post.url}}">{{ post.data.title }}</a></li>
-{%- endfor -%}
-</ul>
+{% for post in collections.blog reversed -%}
+- [{{ post.data.title }}]({{post.url}})
+{% endfor -%}
 
 ---
 
