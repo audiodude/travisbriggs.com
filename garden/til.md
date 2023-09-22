@@ -8,6 +8,10 @@ I haven't actually done many posts in the TIL format, but I'm happy to give it a
 
 Unfortunately the best way I can think of to present these is in the dreaded [[dg-reverse|reverse chronological order]], which was much maligned in [Maggie's](https://maggieappleton.com/) [post that inspired me](https://maggieappleton.com/garden-history) on digital gardening. Forgive me!
 
-{%- for post in collections.til reversed -%}
+{% for post in collections.til reversed -%}
+{%- if isGemini %}
+=> {{post.url}} On {{post.date | simpleDate}} I Learned...{{post.data.title}}
+{%- else -%}
 - On {{post.date | simpleDate}} I Learned...[{{post.data.title}}]({{post.url}})
+{% endif -%}
 {% endfor -%}

@@ -36,6 +36,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
 
+  eleventyConfig.addGlobalData('isGemini', false);
+
   eleventyConfig.addCollection('rss', function (collectionApi) {
     return collectionApi.getAll().sort((a, b) => {
       const aDate = DateTime.fromJSDate(

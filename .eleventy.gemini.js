@@ -34,6 +34,17 @@ module.exports = function (eleventyConfig) {
     };
   });
 
+  eleventyConfig.addGlobalData('isGemini', true);
+
+  eleventyConfig.addTransform('unescape-html', function (content) {
+    // HTML escapes don't make any sense in Gemini content.
+    return content
+      .replaceAll('&gt;', '>')
+      .replaceAll('&lt;', '<')
+      .replaceAll('&amp;', '&')
+      .replaceAll('&quot;', '"');
+  });
+
   eleventyConfig.ignores.add('all.md');
   eleventyConfig.ignores.add('feed.njk');
   eleventyConfig.ignores.add('assets/*');

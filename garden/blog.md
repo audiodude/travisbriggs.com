@@ -3,6 +3,7 @@ title: Blog Posts
 link: blog/index
 date: 2022-11-26
 updated: 2023-09-21
+html: {{ unless isGemini }}
 ---
 
 I guess if this is my "digital garden" then these posts are like potted plants that were already grown that have been moved to the rockier parts of the garden landscape. Or something.
@@ -20,7 +21,11 @@ I hope that a digital garden will provide a more well-rounded view of my digital
 Also, watch the fuck out because here comes some dreaded [[dg-reverse|reverse chronological order]] posts.
 
 {% for post in collections.blog reversed -%}
-- [{{ post.data.title }}]({{post.url}})
+{%- if isGemini %}
+=> {{ post.url }} {{ post.data.title }}
+{%- else -%}
+- [{{ post.data.title }}]({{ post.url }})
+{% endif -%}
 {% endfor -%}
 
 ---
