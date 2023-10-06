@@ -1,7 +1,7 @@
 ---
 title: Outside a Digital Garden
 date: 2022-11-26
-updated: 2023-09-21
+updated: 2023-10-05
 quality: FA
 importance: Top
 ---
@@ -15,3 +15,5 @@ This garden is also (finally!) available as a [[gemini|Gemini]] capsule at [gemi
 The source code for this garden is [available](https://github.com/audiodude/garden.travisbriggs.com), and I'm tracking [issues to improve it](https://github.com/audiodude/garden.travisbriggs.com/issues). It is based on [Eleventy Garden](https://github.com/binyamin/eleventy-garden) which is based on [Eleventy](https://www.11ty.dev/).
 
 Welcome!
+
+[[gate|Garden Gate]]
