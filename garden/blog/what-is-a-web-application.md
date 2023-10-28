@@ -2,6 +2,7 @@
 title: What is a web application?
 tags: blog
 date: 2018-11-13
+udpated: 2023-10-28
 quality: GA
 ---
 
@@ -19,4 +20,4 @@ So what about that Stephen Hawking site, is it dynamic or static? Well, although
 
 The fact is, almost all website are dynamic. And the most useful ones are actually web applications. Other examples of web applications are Google Calendar, Reddit, and Netflix (which doesn't allow data entry, but allows for rich searching and filtering features).
 
-Hopefully this article was useful, and feel free to send feedback to @audiodude@tiny.tilde.website on Mastodon.
+Hopefully this article was useful, and feel free to send feedback to @audiodude@sfba.social on Mastodon.

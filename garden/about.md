@@ -1,7 +1,7 @@
 ---
 title: About Me
 date: 2022-11-26
-updated: 2023-09-20
+updated: 2023-10-28
 quality: GA
 importance: Top
 ---
@@ -33,6 +33,6 @@ Francisco CA USA.
 You can always email me at [audiodude@gmail.com](mailto:audiodude@gmail.com).
 
 My current Mastodon link is
-[@audiodude@layer8.space](https://layer8.space/@audiodude).
+[@audiodude@sfba.social](https://sfba.social/@audiodude).
 
 Here is my [Github profile](https://github.com/audiodude).
