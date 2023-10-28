@@ -2,9 +2,9 @@
 
 This is the static site generator that creates the digital gardens at:
 
-https://garden.travisbriggs.com
+https://travisbriggs.com
 
-[gemini://gem.garden.travisbriggs.com](gemini://gem.garden.travisbriggs.com)
+[gemini://gem.travisbriggs.com](gemini://gem.travisbriggs.com)
 
 ## Background
 
