@@ -1,12 +1,14 @@
 ---
 title: Danger Third Rail
 date: 2022-11-26
-updated: 2023-01-26
-quality: Start
+updated: 2023-10-29
+quality: GA
 importance: Top
 ---
 
 [Danger Third Rail](https://dangerthirdrail.com) is the name of my "band". But as I always explain, "band" is in quotes because it's mostly just a recording project of myself, recording music in my [[recording-setup|home recording studio/kitchen]]. All of the tracks I've produced and [[DistroKid|published]] to [[Spotify]] feature [Emily Dolan Davies](https://emilydrums.com/), and they've all been professionally mixed and mastered by [other](https://soundbetter.com) [[Fiverr|people]]. But I've written all the songs 100% myself, sang them all, played guitar and keyboards on all of them, and bass on all but one.
+
+I've also published my Danger Third Rail projects on [[Bandcamp]], which I have to say has accounted for about 30% of the lifetime money I've made from them. This is of course due to friends and family offering generous additional financial support above and beyond the sticker price. Speaking in terms of percents again, though, my lifetime revenue from making music sits at about 3% of my immediate costs of production (not even including costs for equipment, software, plugins, etc).
 
 Currently, Danger Third Rail is on something of a hiatus. I've written about a dozen songs for my first full length album, and I've recorded demos of all the songs. But I'm not sure about how to fund the final productions or motivate myself to DIY them 100%. You can read more about [[highs-and-lows-musician|the highs and lows]] of this process.
 
