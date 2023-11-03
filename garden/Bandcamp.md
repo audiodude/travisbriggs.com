@@ -1,7 +1,7 @@
 ---
 title: Bandcamp
 date: 2023-10-29
-updated: 2023-01-26
+updated: 2023-11-02
 quality: Start
 importance: Top
 ---
@@ -55,5 +55,15 @@ What if I could take my ideas (and maybe even my codebase!) that I developed for
 5. OAuth with Netlify and publish to the web.
 
 That's it, that's the idea. 1200 words later, that's it.
+
+## Progress (technical)
+
+I've started the project, the Github repo is [here](https://github.com/audiodude/rainfall).
+
+So far I've mostly just set up a basic web app in [Python/Flask](https://flask.palletsprojects.com/en/3.0.x/), [SQLAlchemy](https://www.sqlalchemy.org/) and [Vue 3](https://vuejs.org/) for the frontend. The only functionality it currently features is logging in with a Google account (because I _really_ didn't want to deal with user registration and especially password management/reset emails/etc). I have tests for the backend in [Pytest](https://docs.pytest.org/en/7.4.x/).
+
+I've also read through the [Faircamp manual](https://simonrepp.com/faircamp/manual/) a few times and have a basic idea for my integration. Sadly, because of the dependency on Faircamp and the necessity for accessing the filesystem, there's no easy way I could host this on [Fly.io](https://fly.io/) or a similar platform. I will have to spin up a [Digital Ocean](https://www.digitalocean.com/) droplet or [AWS](https://aws.amazon.com) and manually install and deploy there. Though now that I think of it, I guess that means I can use an [SQLite](https://www.sqlite.org/index.html) database!
+
+---
 
 Any comments are welcome to my email ([audiodude@gmail.com](mailto:audiodude@gmail.com)) or on [Mastodon](https://sfba.social/@audiodude).
