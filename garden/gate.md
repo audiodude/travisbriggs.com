@@ -1,7 +1,7 @@
 ---
 title: The garden gate
 date: 2022-11-26
-updated: 2022-12-12
+updated: 2023-11-14
 quality: GA
 importance: Top
 ---
@@ -18,4 +18,6 @@ You also see what looks like a disheveled madman rambling to himself about [[blo
 
 There is a bulletin board here, with a bunch of post it notes that all start with [[til|Today I Learned...]].
 
-If you pick up the entire garden and flip it around (how did you do *that*?!?), you can read some of the [[plans]] for the thing.
+In the corner of the garden, there is a large smelly [[compost|compost pile]].
+
+If you pick up the entire garden and flip it around (how did you do _that_?!?), you can read some of the [[plans]] for the thing.
