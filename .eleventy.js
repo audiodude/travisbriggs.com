@@ -1,5 +1,6 @@
 const { DateTime } = require('luxon');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+const UpgradeHelper = require('@11ty/eleventy-upgrade-help');
 
 const { commonConfig } = require('./.eleventy.common.js');
 
@@ -35,16 +36,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary('md', md);
 
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(UpgradeHelper);
 
   eleventyConfig.addGlobalData('isGemini', false);
 
   eleventyConfig.addCollection('rss', function (collectionApi) {
     return collectionApi.getAll().sort((a, b) => {
       const aDate = DateTime.fromJSDate(
-        a.data.updated ? a.data.updated : a.data.page.date
+        a.data.updated ? a.data.updated : a.data.page.date,
       );
       const bDate = DateTime.fromJSDate(
-        b.data.updated ? b.data.updated : b.data.page.date
+        b.data.updated ? b.data.updated : b.data.page.date,
       );
       return aDate.toMillis() - bDate.toMillis();
     });

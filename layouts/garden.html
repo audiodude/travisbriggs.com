@@ -4,7 +4,7 @@ layout: default
 
 <article>
   <h1>{{title}}</h1>
-  {% if date || quality || importance %}
+  {% if date or quality or importance %}
     <div class="meta">
       {% if date %}
         <span class="created">Created: {{ date | simpleDate }}</span>
@@ -19,7 +19,7 @@ layout: default
           {{quality}} quality</span>
       {% endif %}
       {% if importance %}
-        {% if date || quality %}|{% endif %}
+        {% if date or quality %}|{% endif %}
         <span class="importance {{importance}}">{{importance}} importance</span>
       {% endif %}
     </div>

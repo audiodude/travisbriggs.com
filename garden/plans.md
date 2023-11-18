@@ -10,7 +10,7 @@ Here I'd like to discuss some of my plans, hopes, aspirations and whatnot for th
 
 I'm trying to do all this in accordance with my interpretation of the [[digital-gardening-principles|Digital gardening principles]].
 
-Yes, I know I should have comments ([#13!](https://github.com/audiodude/garden.travisbriggs.com/issues/13))
+Yes, I know I should have [[comments-research|comments]] ([#13!](https://github.com/audiodude/garden.travisbriggs.com/issues/13))
 
 I did recently start a [[til|TIL (Today I Learned)]] section of the garden, and I'm interested in keeping that up to date. But it's maybe just another random assortment of reverse-chronological links (boo!). Also, one of the first things I did when I started the garden was to import all of my recent [[blog|blog posts]] from write.as. Oh no, more reverse-chronological links!
 

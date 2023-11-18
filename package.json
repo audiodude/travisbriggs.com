@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/binyamin/eleventy-garden#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "gemdown": "^0.7.0",
     "install": "^0.13.0",
@@ -32,5 +32,8 @@
     "npm": "^9.2.0",
     "prettier": "^3.0.2",
     "title-case": "^3.0.3"
+  },
+  "dependencies": {
+    "@11ty/eleventy-upgrade-help": "^2.0.5"
   }
 }
