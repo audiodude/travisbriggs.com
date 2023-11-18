@@ -41,6 +41,7 @@ module.exports = function (eleventyConfig) {
     username: 'digital.garden',
     displayName: 'Digital Garden of Travis Briggs',
     summary: 'A Fediverse account for a digital garden',
+    avatar: 'https://travisbriggs.com/assets/avatar.jpg',
   });
 
   eleventyConfig.addGlobalData('isGemini', false);
