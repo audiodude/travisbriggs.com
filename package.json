@@ -24,6 +24,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "eleventy-plugin-activity-pub": "^0.1.1",
     "gemdown": "^0.7.0",
     "install": "^0.13.0",
     "markdown-it": "^12.3.2",
@@ -32,5 +33,6 @@
     "npm": "^9.2.0",
     "prettier": "^3.0.2",
     "title-case": "^3.0.3"
-  }
+  },
+  "dependencies": {}
 }
