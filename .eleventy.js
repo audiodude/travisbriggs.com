@@ -1,6 +1,5 @@
 const { DateTime } = require('luxon');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
-const UpgradeHelper = require('@11ty/eleventy-upgrade-help');
 
 const { commonConfig } = require('./.eleventy.common.js');
 
@@ -36,7 +35,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary('md', md);
 
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(UpgradeHelper);
 
   eleventyConfig.addGlobalData('isGemini', false);
 
