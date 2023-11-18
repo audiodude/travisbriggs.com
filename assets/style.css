@@ -140,6 +140,14 @@ small {
     margin-bottom: 0;
 }
 
+.backlinks-title, .comments-title {
+    margin-top: 1rem;
+}
+
+.title-larger {
+    font-size: 1.5rem;
+}
+
 .backlinks-container {
     margin-top: 0;
 }
@@ -254,4 +262,30 @@ small {
 .importance.Low,
 .importance.low {
     background-color: #ffd6ff;
+}
+
+#comments-wrapper .avatar {
+    max-width: 40px;
+}
+
+.comment {
+    border: 1px solid #ccc;
+    padding: .5rem;
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.comment-reply {
+    margin-left: 2rem;
+}
+
+.instance {
+    display: inline-block;
+}
+
+.avatar-link, .author, .display, #comments-wrapper time, .instance {
+    margin-right: .75rem;
 }
