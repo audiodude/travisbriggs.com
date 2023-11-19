@@ -29,3 +29,13 @@
   for = "/.well-known/webfinger"
   [headers.values]
     Content-Type = "application/jrd+json"
+
+[[headers]]
+  for = "/outbox"
+  [headers.values]
+    Content-Type = "application/json"
+
+[[headers]]
+  for = "/outbox_page"
+  [headers.values]
+    Content-Type = "application/json"
