@@ -1,6 +1,5 @@
 const { DateTime } = require('luxon');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
-const activityPubPlugin = require('eleventy-plugin-activity-pub');
 
 const { commonConfig } = require('./.eleventy.common.js');
 
@@ -36,15 +35,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary('md', md);
 
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(activityPubPlugin, {
-    domain: 'travisbriggs.com',
-    username: 'digital.garden',
-    displayName: 'Digital Garden of Travis Briggs',
-    summary: 'A Fediverse account for a digital garden',
-    avatar: 'https://travisbriggs.com/assets/avatar.jpg',
-    outbox: true,
-    outboxCollection: 'garden',
-  });
 
   eleventyConfig.addGlobalData('isGemini', false);
 
