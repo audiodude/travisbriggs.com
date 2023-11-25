@@ -1,12 +1,12 @@
-{% if host %}
+{% if fd_host %}
 <section id="comments" class="article-content">
   <h3 class="comments-title title-larger">Comments</h3>
-  <p>With an account on the Fediverse or Mastodon, you can respond to this <a href="https://{{ host }}/@{{ username }}/{{ id }}">post</a>. Simply <a href="https://{{ host }}/@{{ username }}/{{ id }}">visit the post on its original server</a> and leave your comment. It and other known non-private replies will be displayed below.</p>
+  <p>With an account on the Fediverse or Mastodon, you can respond to this <a href="https://{{ fd_host }}/@{{ fd_username }}/{{ fd_id }}">post</a>. Simply <a href="https://{{ fd_host }}/@{{ fd_username }}/{{ fd_id }}">visit the post on its original server</a> and leave your comment. It and other known non-private replies will be displayed below.</p>
   <p>Learn how this is implemented <a class="link" href="https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/">here.</a></p>
 
   <p id="mastodon-comments-list"><button id="load-comment">Load comments</button></p>
   <div id="comments-wrapper">
-    <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://{{ host }}/@{{ username }}/{{ id }}">the original post</a> on Mastodon.</p></noscript>
+    <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://{{ fd_host }}/@{{ fd_username }}/{{ fd_id }}">the original post</a> on Mastodon.</p></noscript>
   </div>
   <noscript>You need JavaScript to view the comments.</noscript>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js" integrity="sha512-H+rglffZ6f5gF7UJgvH4Naa+fGCgjrHKMgoFOGmcPTRwR6oILo5R+gtzNrpDp7iMV3udbymBVjkeZGNz1Em4rQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -49,7 +49,7 @@
     function loadComments() {
       let commentsWrapper = document.getElementById("comments-wrapper");
       document.getElementById("load-comment").innerHTML = "Loading";
-      fetch('https://{{ host }}/api/v1/statuses/{{ id }}/context')
+      fetch('https://{{ fd_host }}/api/v1/statuses/{{ fd_id }}/context')
         .then(function(response) {
           return response.json();
         })
@@ -76,13 +76,13 @@
               if( status.account.acct.includes("@") ) {
                 instance = status.account.acct.split("@")[1];
               } else {
-                instance = "{{ host }}";
+                instance = "{{ fd_host }}";
               }
 
-              const isReply = status.in_reply_to_id !== "{{ id }}";
+              const isReply = status.in_reply_to_id !== "{{ fd_id }}";
 
               let op = false;
-              if( status.account.acct == "{{ username }}" ) {
+              if( status.account.acct == "{{ fd_username }}" ) {
                 op = true;
               }
 
