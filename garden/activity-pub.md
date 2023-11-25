@@ -1,0 +1,39 @@
+---
+title: Activity Pub shenanigans
+date: 2023-11-22
+quality: B
+importance: Mid
+host: mastodon.online
+username: '@digital_garden'
+id: 111468250462921542
+---
+
+In case you didn't know [ActivityPub](https://www.theverge.com/2023/4/20/23689570/activitypub-protocol-standard-social-network) is the open protocol ([W3C recommendation](https://www.w3.org/TR/activitypub/)) that powers Mastodon. It is a way for different servers to exchange messages from users ("Actors"). It is based on [ActivityStreams](https://www.w3.org/TR/activitystreams-core/), which define the types of objects and data in the systems. One interesting thing is that although ActivityPub/ActivityStreams define [12 different types of Object](https://www.w3.org/TR/activitystreams-vocabulary/#object-types) that can be passed between ActivityPub servers, Mastodon only implements the _Note_.
+
+I found a [plugin for Eleventy](https://github.com/LewisDaleUK/eleventy-plugin-activity-pub) (the static site generator used for this garden) that offered to turn my garden into it's own ActivityPub "node" (not sure what to call it). The basic idea was to sort of hack the [WebFinger](https://en.wikipedia.org/wiki/WebFinger) protocol that ActivityPub uses to discover actors on a site, and have it return a static file in response to all queries. This gave me the following account that I could see from my Mastodon server:
+
+![Screenshot of a Mastodon account belonging to "Digital Garden of Travis Briggs"/@digital.garden@travisbriggs.com](https://pixelfed.social/storage/m/_v2/588554065884192073/bf4779419-8cf74f/8duMzD0IWbpB/bCuOgEm3kXRTU46PaN0wyCBcLNeZr6qRrs6MwuiO.png)
+
+That seemed like progress! Unfortunately, of the 74 "Posts" that it claimed this user had, all of them were hidden. And there was no "home server" where I could view these posts/statuses -- because they didn't really exist! The plugin had, however, created an [Outbox](https://www.w3.org/TR/activitypub/#outbox) on this site that contained "Create Note" actions. So I thought, why don't I just post these actions to my [Inbox](https://www.w3.org/TR/activitypub/#inbox) on sfba.social?
+
+My first naive attempt was to just POST the JSON directly. However, I got an error about needing a signature. Then some helpful folks pointed me in the direction of this [blog post](https://blog.joinmastodon.org/2018/06/how-to-implement-a-basic-activitypub-server/) by Eugen from 2018. Basically it walks you through how to have a "static" web finger file and post replies on behalf of the actor in that file. This static file is what I already had above. I generated a public/private keypair, added the public key to the digital.garden.json, and got to work.
+
+My first few attempts, I couldn't get the signing quite right, and the `/inbox` endpoint complained in various ways. But eventually I [got it to return](https://gist.github.com/audiodude/c6ad0923dbe1c9c1199e6d021b6f1ed5) a sweet 202 (accepted for processing) status code! However...nothing happened. I didn't see a status anywhere, and the profile of my digital.garden@travisbriggs.com account still showed "74 Posts" but none visible.
+
+I knew that the sfba.social server was probably "filtering out" or "dropping" the message for some reason, but it wasn't clear to me why. This is where things got a little crazy. I actually spun up a [cloud server](https://mastodon.0-z-0.com) and installed Mastodon 4.2.1 in single user mode. It was actually a lot easier nowadays than it was in the time when I tried it before, back around the same time as the Eugen blog post (2018), though I did have to open [two](https://github.com/mastodon/documentation/pull/1340) documentation [PRs](https://github.com/mastodon/documentation/pull/1341). It's probably easier now because it now includes its own systemd scripts for starting and maintaing the web server and sidekiq processes, which simplifies things. It also includes an interactive setup script that prompts you for various values so you don't have to edit a configuration file manually.
+
+So I started posting to my own server's `/inbox` and adding debug print statements to the parts of the code that I believed were being used. And sure enough, I figured it out: my create action didn't have an ActivityStream `@context` key, so it was being dropped. Once I got that sorted out, I was successfully able to post a status as a `replyTo` another existing status, and see it on my new server. But I still couldn't will the ghost statuses into existence on their own.
+
+As it turns out, Mastodon will check if an incoming create action is `related_to_local_activity?` (that's the actual method name). The basic test is if it is in reply to a status on the server, or a status posted by someone who is followed by someone on the server. Actually, from what I understand, this is how all statuses federate. When I post a status on my server, it knows who is following me and POSTs on my behalf to all of their servers. This is actually what used to be known as the "federated timeline": the sum of all statuses being posted to the server because someone follows their author.
+
+Okay, but we must go deeper. How can I get my account on sfba.social to "follow" the static account digital.garden@travisbriggs.com? Back to reading the ActivityPub spec. Apparently, when you click the "follow" button, your instance sends a Follow request to the remote account's server. Then, the user of that account can possibly inspect and approve/reject the request. In most cases, when public follows are unrestricted, the remote server will send that back almost immediately. In my case, the static server didn't send it back _at all_ (because it's a static server! It can't process and respond to requests!). Moreover, the acceptance post has to quote the original follow exactly, but as we all know Mastodon sidesteps some of the ActivityPub methodology and doesn't actually put the follow requests in my `/users/audiodude/outbox` (only created posts are there).
+
+This is where talking to [Emilia Smith](https://sfba.social/@thisismissem@hachyderm.io) was particularly helpful (though she had already helped get me on the right track earlier, and possibly pointed me to the Eugen post). I realized that, even if I could spoof the follow request, and get my statuses accepted by the "remote" server (sfba.social), there would be nowhere for anyone to post replies to those statuses. The replies would go to my static server, which would just silently drop them, and they wouldn't show up anywhere to serve as the basis for my comments system. In fact, looking at the [comments code](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/), it depends specifically on the presence of a Mastodon API server to read the replies from, which my garden would never have (even if it _did_ have some way of storing the incoming replies).
+
+This is where I gave up.
+
+I think the sane thing to do going forward is to create a new account somewhere for the digital garden. Then, when a new node is posted, I can create a Mastodon status for the post that says "This is the comment thread for _post_", that will be used to accumulate comments and replies. I can boost this status from my own Mastodon account on sfba.social and reply to it myself there.
+
+I have to say though, it was an interesting journey to track some of this down, and become more familiar with the ActivityPub spec. Especially spinning up a Mastodon server was a fun exercise, just to see what it takes in 2023.
+
+What do you think? Respond in the comments?

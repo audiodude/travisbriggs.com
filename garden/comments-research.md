@@ -3,9 +3,9 @@ title: Enabling comments
 date: 2022-12-16
 quality: B
 importance: Mid
-host: sfba.social
-username: '@audiodude'
-id: 111430566625567440
+host: mastodon.online
+username: '@digital_garden'
+id: 111468256219043450
 ---
 
 Here's my research so far on comments, and my radical idea for enabling them.
@@ -37,6 +37,6 @@ It works, but it's a lot of work. I have to manually remember to enable comments
 
 I'm looking at [eleventy-plugin-activity-pub](https://github.com/LewisDaleUK/eleventy-plugin-activity-pub/tree/main). It has a slightly different focus, which is to turn your static site itself into a "Fediverse instance" by creating files at well known endpoints that other Fediverse servers know how to consume. So, if this site is at `travisbriggs.com`, I could have an account called `@garden@travisbriggs.com` and it would contain all of the posts.
 
-So really the interesting problem is how to use both of these features at the same time. That is, my garden hosts it's own Fediverse instance, which publishes all of its posts, and also replies to each post become a reply in the web page itself. Haven't quite figured that one out yet.
+So really the interesting problem is how to use both of these features at the same time. That is, my garden hosts it's own Fediverse instance, which publishes all of its posts, and also replies to each post become a reply in the web page itself. Haven't quite figured that one out yet. I actually [[activity-pub|went down this road]] a bit and it didn't turn out very fruitful.
 
 But for now, comments are enabled on this post, so go nuts!
