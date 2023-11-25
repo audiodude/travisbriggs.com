@@ -6,4 +6,4 @@ _gemini/
 .netlify
 .vscode/
 garden.tgz
-private.pem
+.env
