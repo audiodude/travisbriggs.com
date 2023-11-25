@@ -3,9 +3,6 @@ title: Enabling comments
 date: 2022-12-16
 quality: B
 importance: Mid
-fd_host: mastodon.online
-fd_username: '@digital_garden'
-fd_id: '111468256219043450'
 ---
 
 Here's my research so far on comments, and my radical idea for enabling them.

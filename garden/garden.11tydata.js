@@ -1,4 +1,21 @@
 const { titleCase } = require('title-case');
+const sqlite3 = require('sqlite3').verbose();
+const db = new sqlite3.Database('comments.sqlite3');
+
+const pageSlugToComments = new Promise((resolve, reject) => {
+  db.all('SELECT page_slug, id, host, username FROM comments', (err, rows) => {
+    if (err) {
+      reject(err);
+    }
+    resolve(rows);
+  });
+}).then((rows) => {
+  const mapping = {};
+  for (const row of rows) {
+    mapping[row.page_slug] = row;
+  }
+  return mapping;
+});
 
 // This regex finds all wikilinks in a string
 const wikilinkRegExp = /\[\[\s?([^\[\]\|\n\r]+)(\|[^\[\]\|\n\r]+)?\s?\]\]/g;
@@ -30,12 +47,12 @@ module.exports = {
               .slice(2, -2)
               .split('|')[0]
               .replace(/.(md|markdown)\s?$/i, '')
-              .trim()
+              .trim(),
         );
 
         // If the other note links here, return related info
         const hasLink = outboundLinks.some((link) =>
-          caselessCompare(link, currentFileSlug)
+          caselessCompare(link, currentFileSlug),
         );
         // If the other note is the index page of a collection the note
         // is in, add it.
@@ -55,6 +72,13 @@ module.exports = {
       }
 
       return backlinks;
+    },
+    comments: async (data) => {
+      return pageSlugToComments.then((mapping) => {
+        if (mapping[data.page.fileSlug]) {
+          return mapping[data.page.fileSlug];
+        }
+      });
     },
   },
 };

@@ -3,9 +3,6 @@ title: Activity Pub shenanigans
 date: 2023-11-22
 quality: B
 importance: Mid
-fd_host: mastodon.online
-fd_username: '@digital_garden'
-fd_id: '111468250462921542'
 ---
 
 In case you didn't know [ActivityPub](https://www.theverge.com/2023/4/20/23689570/activitypub-protocol-standard-social-network) is the open protocol ([W3C recommendation](https://www.w3.org/TR/activitypub/)) that powers Mastodon. It is a way for different servers to exchange messages from users ("Actors"). It is based on [ActivityStreams](https://www.w3.org/TR/activitystreams-core/), which define the types of objects and data in the systems. One interesting thing is that although ActivityPub/ActivityStreams define [12 different types of Object](https://www.w3.org/TR/activitystreams-vocabulary/#object-types) that can be passed between ActivityPub servers, Mastodon only implements the _Note_.
