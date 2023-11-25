@@ -8,6 +8,11 @@
 # garden_gemini/ directory in the home directory of the GEM_USER.
 set -e
 
+if [[ -z "${GEM_USER}" || -z "${GEM_HOST}" ]]; then
+  echo 'Please set GEM_USER and GEM_HOST env variables and then run this script again'
+  exit 1
+fi
+
 rm -rf _gemini
 npx @11ty/eleventy --config=.eleventy.gemini.js
 tar -czf garden.tgz _gemini/
