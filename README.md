@@ -25,7 +25,7 @@ npm start
 First, build the site. **Warning:** this will create a Mastodon post for every new garden node, assuming you have a `MASTODON_API_KEY` entry in a top-level `.env` file.
 
 ```bash
-npm build
+npm run build
 ```
 
 Next deploy to Netlify (`--prod` to skip the preview step):
