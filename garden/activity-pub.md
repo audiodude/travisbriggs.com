@@ -1,6 +1,7 @@
 ---
 title: Activity Pub shenanigans
 date: 2023-11-22
+updated: 2023-12-16
 quality: B
 importance: Mid
 ---
@@ -29,8 +30,8 @@ This is where talking to [Emilia Smith](https://sfba.social/@thisismissem@hachyd
 
 This is where I gave up.
 
-I think the sane thing to do going forward is to create a new account somewhere for the digital garden. Then, when a new node is posted, I can create a Mastodon status for the post that says "This is the comment thread for _post_", that will be used to accumulate comments and replies. I can boost this status from my own Mastodon account on sfba.social and reply to it myself there.
+What I ended up doing was creating a [new account](https://mastodon.online/@digital_garden) for the Digital Garden itself, and automatically [[comments-research|posting there]] when I post a new garden node. I plan to simply boost these posts from my main, human account when I post new content.
 
-I have to say though, it was an interesting journey to track some of this down, and become more familiar with the ActivityPub spec. Especially spinning up a Mastodon server was a fun exercise, just to see what it takes in 2023.
+I have to say though, it was an interesting journey to track some of this down, and I became more familiar with the ActivityPub spec. Especially spinning up a Mastodon server was a fun exercise, just to see what it takes in 2023.
 
 What do you think? Respond in the comments?
