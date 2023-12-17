@@ -53,6 +53,25 @@ If not, we make a post using a secret API token that is kept outside the git rep
 
 And that's it! You can view the [main commit](https://github.com/audiodude/travisbriggs.com/commit/a4a489f79c1c6e81f017740cad4e9fc0ca4ce321) where I added this functionality if you're interested.
 
+### Bugs
+
+Of course, after I posted this, and once someone _finally_ left a comment on this post, I discovered two bugs:
+
+1. It publishes the Mastodon post while I'm in "development mode", still writing the post. Maybe not the worst thing, but a bit annoying.
+1. It doesn't properly link to the originating post, which is much more of a problem.
+
+While fixing these bugs I, of course, found another bug:
+
+1. The first time it creates a Mastodon post for a node, the data structure it returns is wrong, so the links on the comments section are broken for that post only.
+
+The fix for the first issue was to check `process.env.ELEVENTY_RUN_MODE != 'build'` and return early if that's the case. However, this and my use of `fetch` means that I can no longer build the site entirely on [Netlify](https://www.netlify.com/) with a build hook from pushing to the [[github|Github]] repo.
+
+The fix for the second issue was to ignore calls to generate the comment metadata if the page data itself is empty. For some reason, Eleventy was calling my computation function twice: once with empty data, and again with the proper data. Couldn't figure out why, so I just ignore the empty case.
+
+The fix for the third bug was to simply return the right data!
+
+Now that these bugs are fixed you can totally actually leave comments, I swear!
+
 ## Leave a comment, already!
 
 And finally, please, if you're here, if you have a Mastodon account on any server, for the love of all things sweet and pure, please leave a comment so I know there are other people out there on the internet!
