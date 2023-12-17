@@ -22,7 +22,17 @@ npm start
 ## Deploying
 
 ### www
-The www site is currently set up to automatically deploy via a Github hook, to [Netlify](https://www.netlify.com/).
+First, build the site. **Warning:** this will create a Mastodon post for every new garden node, assuming you have a `MASTODON_API_KEY` entry in a top-level `.env` file.
+
+```bash
+npm build
+```
+
+Next deploy to Netlify (`--prod` to skip the preview step):
+
+```bash
+netlify deploy --prod -d _site
+```
 
 ### Gemini
 The Gemini capsule is hosted from a server on [Digital Ocean](https://www.digitalocean.com/) using the excellent [Twins](https://code.rocket9labs.com/tslocum/twins) server and certificates from [Let's Encrypt](https://letsencrypt.org/). To deploy the Gemini site, run:
@@ -31,4 +41,4 @@ The Gemini capsule is hosted from a server on [Digital Ocean](https://www.digita
 GEM_USER=username GEM_HOST=some.site.garden.example.com npm run deploy-gemini
 ```
 
-This will run Eleventy, create a tarball, upload it to the remote host, and extract it to the necessary directory.
+This will run Eleventy in Gemini mode, create a tarball, upload it to the remote host, and extract it to the necessary directory.
