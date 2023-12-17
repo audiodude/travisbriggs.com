@@ -44,3 +44,13 @@ GEM_USER=username GEM_HOST=some.site.garden.example.com npm run deploy-gemini
 ```
 
 This will run Eleventy in Gemini mode, create a tarball, upload it to the remote host, and extract it to the necessary directory.
+
+## Recreating the comments database
+
+If you're in this section, I'm sad for you. You probably want to first [delete all existing comments](https://gist.github.com/audiodude/cb8234b4957892a65af6608f0ac3c359). Then run:
+
+```bash
+node create_comments_db.js
+```
+
+Finally, follow the build and deploy steps above.
