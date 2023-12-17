@@ -106,11 +106,21 @@ module.exports = {
       return backlinks;
     },
     comments: async (data) => {
+      if (Object.keys(data).length == 0) {
+        // For some reason, Elevnty calls this method twice, first with an empty object for data,
+        // and then again with it filled out. Skip the empty case.
+        return;
+      }
       const mapping = await getDbData();
       if (mapping[data.page.fileSlug]) {
         // Found commment status for this node, return it.
         return mapping[data.page.fileSlug];
       }
+
+      if (process.env.ELEVENTY_RUN_MODE != 'build') {
+        return;
+      }
+
       // No comment status, post a new one.
       const api_data = await postNewStatus(data);
       if (!api_data) {
