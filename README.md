@@ -34,6 +34,8 @@ Next deploy to Netlify (`--prod` to skip the preview step):
 netlify deploy --prod -d _site
 ```
 
+Finally, commit the code and push to Github (left to the reader). It's **important that this step is last**, because the comments.sqlite3 (where the Mastodon ids for node comments live) database is commited as part of the repo, and will be out of date if the repo is pushed before deploying.
+
 ### Gemini
 The Gemini capsule is hosted from a server on [Digital Ocean](https://www.digitalocean.com/) using the excellent [Twins](https://code.rocket9labs.com/tslocum/twins) server and certificates from [Let's Encrypt](https://letsencrypt.org/). To deploy the Gemini site, run:
 
