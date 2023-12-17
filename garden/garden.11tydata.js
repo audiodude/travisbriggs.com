@@ -149,7 +149,12 @@ module.exports = {
           },
         );
       }).then(() => {
-        return api_data;
+        return {
+          id: api_data.id,
+          host: 'mastodon.online',
+          username: '@digital_garden',
+          page_slug: data.page.fileSlug,
+        };
       });
     },
   },

@@ -4,7 +4,7 @@
   "description": "The digital garden of Travis Briggs.",
   "scripts": {
     "start": "eleventy --serve --quiet",
-    "compile": "eleventy",
+    "build": "eleventy",
     "deploy-gemini": "./deploy_gemini.sh"
   },
   "repository": {
