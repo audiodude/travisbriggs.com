@@ -135,17 +135,14 @@ small {
     font-size: 0.8em;
 }
 
-/* backlinks */
-.backlinks-title {
+.backlinks-title, .comments-title {
+    color: #245817;
+    margin-top: 1rem;
     margin-bottom: 0;
 }
 
-.backlinks-title, .comments-title {
-    margin-top: 1rem;
-}
-
 .title-larger {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .backlinks-container {
@@ -276,6 +273,10 @@ small {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+}
+
+.comments-exp-top {
+    margin-top: 0;
 }
 
 .comment-reply {
