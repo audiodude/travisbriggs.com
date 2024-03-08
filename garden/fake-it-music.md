@@ -1,5 +1,5 @@
 ---
-title: Fake until you make music
+title: Fake it until you make music
 date: 2024-03-08
 quality: B
 importance: Low
