@@ -1,12 +1,13 @@
 ---
 title: Now
 date: 2024-05-21
+updated: 2024-06-02
 quality: A
 importance: Top
 permalink: now/
 ---
 
-I just got back from Switzerland where I did a week long hackathon/conference with my friends from [Kiwix](https://kiwix.org/). I've volunteered with them since 2017 on the [[wp1-1.0|WP 1.0 bot]] and some offline Wikipedia activities.
+This past week, I revived an old website idea, the ["endless yard sale"](https://endlessyard.sale). It was fun to program, my first time working with [Next.js](https://nextjs.org/).
 
 Currently, I'm still living in San Francisco, in the same apartment I've lived in since we moved there in December 2012. What can I say, it's cozy, rent-controlled and in an awesome neighborhood (near Zeitgeist). I also have the same job at YouTube that I've had all that time.
 
@@ -14,7 +15,7 @@ I've been teaching a free [Python class](https://www.noisebridge.net/wiki/PyClas
 
 I'm playing D&D again, as of August 2023! I've got a fun group of 5 players and one DM who have varying levels of experience and a lot of enthusiasm. I'm playing a Bard, my favorite class.
 
-I've been playing [Balatro](https://www.playbalatro.com/) and watching the [Fallout TV series](<https://en.wikipedia.org/wiki/Fallout_(American_TV_series)>). I've also been going to Alamo Drafthouse a lot with my wife, who has a "season pass" type thing where we both get free tickets once a day (doesn't help with food costs though!). I started a [Letterboxd](https://letterboxd.com/audiodude/) account but I've been bad about adding reviews (go figure).
+I've been playing [Balatro](https://www.playbalatro.com/), and I still don't know how people score 5 billion points or whatever. I've also been going to Alamo Drafthouse a lot with my wife, who has a "season pass" type thing where we both get free tickets once a day (doesn't help with food costs though!). I started a [Letterboxd](https://letterboxd.com/audiodude/) account but I've been bad about adding reviews (go figure).
 
 ---
 

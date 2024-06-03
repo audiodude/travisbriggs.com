@@ -16,7 +16,7 @@ There are signs here, one of an elephant/mammoth type creature that reads: [@aud
 
 You also see what looks like a disheveled madman rambling to himself about [[blog|blogging]].
 
-There is a bulletin board here, with a bunch of post it notes that all start with [[til|Today I Learned...]].
+There is a bulletin board here, with a bunch of post it notes that all start with [[til|Today I Learned...]]. There's also a live digital display telling you about things that are going on right [[now]].
 
 In the corner of the garden, there is a large smelly [[compost|compost pile]].
 
