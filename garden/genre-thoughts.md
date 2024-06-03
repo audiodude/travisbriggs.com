@@ -1,6 +1,7 @@
 ---
 title: Thoughts on genres
 date: 2023-12-17
+updated: 2024-06-02
 quality: A
 importance: Low
 ---
@@ -13,11 +14,11 @@ Also, this isn't to say that you can't produce rock music with Ableton and a MID
 
 This dichotomy exists, though. I don't listen to enough purely electronic music to appreciate the subtleties or defining characteristics of the [literally hundreds of genres](https://music.ishkur.com/) it is made up of. I can't recognize when a song is employing a trope or deviating from one. And because of this, when I sit down and end up writing vaguely electronic music, it comes out sounding thin, simplistic and cliche.
 
-On the other hand, recording rock music without a band, in your home recording studio slash kitchen, is hard y'all! I have to program digital drums, compose and record a guitar part, compose and record a counterpunctual guitar part, compose and record bass either through keyboard or bass guitar. And that's before considerations of melody/lyrics/vocals, arrangement, sound design, and mixing and mastering. I guess the real problem isn't that all of that work goes into producing a finished song, a finished product. The problem is that some amount of that behemoth is necessary to even "sketch out ideas". Nevermind recording and producing a rock song, it is difficult to work in this environment when you're trying to even compose one.
+On the other hand, recording rock music without a band, in your home recording studio slash kitchen, is hard y'all! I have to program digital drums, compose and record a guitar part, compose and record a contrapunctual guitar part, compose and record bass either through keyboard or bass guitar. And that's before considerations of melody/lyrics/vocals, arrangement, sound design, and mixing and mastering. I guess the real problem isn't that all of that work goes into producing a finished song, a finished product. The problem is that some amount of that behemoth is necessary to even "sketch out ideas". Never mind recording and producing a rock song, it is difficult to work in this environment when you're trying to even compose one.
 
 Some of this node is just [[dg-public|thinking out loud]], so excuse me if I whine and rant.
 
-I guess the solution is to figure out new ways of composition that don't rely on all the production overhead. To figure out a way to get a "demo" out quickly that captures the song, to prove that it's written, and to worry about proper recording and production later. I have thought of this before of course. Song writing and song recording are two different disciplines. But it goes back to the electronic music production, where that statement doesn't seem to be true at all. When does a DJ/electronic music producer compose a song outside of their DAW, besides maybe on the aforementioned groovebox/drum machine/sampler?
+I guess the solution is to figure out new ways of composition that don't rely on all the production overhead. To figure out a way to get a "demo" out quickly that captures the song, to prove that it's written, and to worry about proper recording and production later. I even bought a [handheld recorder](https://zoomcorp.com/en/us/handheld-recorders/) at one point, that I still have, in order to be able to just play guitar out loud and have it record everything while I'm writing a song. I have thought of this before of course. Song writing and song recording are two different disciplines. But it goes back to the electronic music production, where that statement doesn't seem to be true at all. When does a DJ/electronic music producer compose a song outside of their DAW, besides maybe on the aforementioned groovebox/drum machine/sampler?
 
 So when I want to "make music" (whatever that means), my first step is to open Ableton. The next step is to stare at it, mouth agape. And the step after that is to start dialing in the same tired hip hop cliche beat patterns and lame synth lines and end up with another imitation electronic music track.
 
