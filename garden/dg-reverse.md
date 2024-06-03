@@ -1,9 +1,10 @@
 ---
 title: Digital gardens eschew reverse chronological sorting
 date: 2022-12-16
-quality: Start
+quality: B
 importance: Mid
 ---
+
 **Reverse is the curse!**
 
 When I read the materials that served as the inspiration to start this garden ([[digital-gardening-principles|linked here]]), one of the things that most viscerally resonated with me was the abhorrence of "reverse chronological sort". Fuck reverse chronological sort.

@@ -2,7 +2,7 @@
 title: Digital gardens allow and respond to feedback
 date: 2022-12-16
 updated: 2023-11-18
-quality: Start
+quality: B
 importance: Mid
 ---
 
