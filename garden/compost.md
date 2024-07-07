@@ -1,7 +1,7 @@
 ---
 title: Compost pile
 date: 2023-11-14
-updated: 2023-12-17
+updated: 2024-07-06
 quality: B
 importance: Mid
 ---
@@ -15,6 +15,8 @@ For this reason, I've created this "Compost pile". Maybe compost is a bad word, 
 ---
 
 I'm surprised by how many people who I consider "open source advocates" and "free software crusaders" are [[github|still comfortable using Github]].
+
+Speaking of GitHub, I've been [[codecov|fighting with Codecov for months]] (but may have finally won!).
 
 On my [[comments-research|quest for comments]] I learned a [[activity-pub|bit about ActivityPub]].
 
