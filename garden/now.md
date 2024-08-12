@@ -1,21 +1,23 @@
 ---
 title: Now
 date: 2024-05-21
-updated: 2024-06-02
+updated: 2024-07-06
 quality: A
 importance: Top
 permalink: now/
 ---
 
-This past week, I revived an old website idea, the ["endless yard sale"](https://endlessyard.sale). It was fun to program, my first time working with [Next.js](https://nextjs.org/).
+Tough couple of weeks recently, as my wife was inpatient in the hospital. She was getting a scheduled pain treatment, so no cause for alarm, but it was still stressful. When she got out she also started having some bad migraines, so we've been dealing with that.
+
+I got my first [PR for Mastodon](https://github.com/mastodon/mastodon/pull/26910) merged! It's something I really believe in.
 
 Currently, I'm still living in San Francisco, in the same apartment I've lived in since we moved there in December 2012. What can I say, it's cozy, rent-controlled and in an awesome neighborhood (near Zeitgeist). I also have the same job at YouTube that I've had all that time.
 
-I've been teaching a free [Python class](https://www.noisebridge.net/wiki/PyClass) ([github](https://github.com/audiodude/PythonClass)) at [Noisebridge](http://noisebridge.net/) on Monday nights. It's difficult and interesting to give the lectures, which I've been writing myself from scratch. There's a good number of people (5-8) that are coming on a regular basis so that's encouraging.
+The [Python class](https://www.noisebridge.net/wiki/PyClass) that I was teaching at [Noisebridge](http://noisebridge.net/) on Monday nights has evolved into a ["Computer Programming Study Group"](https://www.noisebridge.net/wiki/Computer_Programming_Study_Group). I was wondering what I would do for the next "iteration" of the class, and I'm trying to open it up to more topics and have less structure. It's been going ok, I'm still teaching some of the Python lectures every now and then, and I'm trying to develop some JavaScript lectures.
 
-I'm playing D&D again, as of August 2023! I've got a fun group of 5 players and one DM who have varying levels of experience and a lot of enthusiasm. I'm playing a Bard, my favorite class.
+I quit my D&D group, because I didn't really have the time for it unfortunately. The people I played with were really nice though.
 
-I've been playing [Balatro](https://www.playbalatro.com/), and I still don't know how people score 5 billion points or whatever. I've also been going to Alamo Drafthouse a lot with my wife, who has a "season pass" type thing where we both get free tickets once a day (doesn't help with food costs though!). I started a [Letterboxd](https://letterboxd.com/audiodude/) account but I've been bad about adding reviews (go figure).
+As far as video games, I finally sat down and finished [Universal Paperclips](https://www.decisionproblem.com/paperclips/index2.html) even though the ending had been spoiled for me a long time ago. What a cool clicker game! I've been given a recommendation for [Antimatter Dimensions](https://ivark.github.io/AntimatterDimensions/) for my next clicker game, which is considered one of the best of all time. I'm still eyeing New World Aeterneum, because I've always been (sadly) more of a "solo" MMO player, and never had big or small groups that I was consistently a part of. And of course, Factorio Space Age is coming out in October!
 
 ---
 
