@@ -1,6 +1,7 @@
 ---
 title: Codecov
 date: 2024-07-06
+updated: 2024-08-19
 quality: A
 importance: Low
 ---
@@ -17,8 +18,12 @@ All of this is to just document for future posterity the head-bang-on-desk momen
 
 The problem was that I assumed the hard part was the first part, adding the `CODECOV_TOKEN` to the GitHub repo settings. I was convinced that that's where the problem was. In actuality, what I had missed was that the syntax for calling v4 was slightly, but every so similarly lookingly (?), different from v3.
 
-![Code review showing GitHub actions code with one line changed](https://pixelfed.social/storage/m/_v2/588554065884192073/3781ba7d4-1bb9dc/8GbMvEfDtTR5/nXvjO8y0yPXBrI3XCEyQqs6cGn2chUypPiUX26T5.png)
+<img src="https://pxscdn.com/public/m/_v2/588554065884192073/3781ba7d4-1bb9dc/8GbMvEfDtTR5/nXvjO8y0yPXBrI3XCEyQqs6cGn2chUypPiUX26T5.png" alt="Code review showing GitHub actions code with one line changed" style="max-width: 50rem"/>
 
 I kept seeing the line where you set `env:` but reading it as "I already have `secrets.CODECOV_TOKEN` in there!". Facepalm.
 
 In all honesty though, the entire Codecov v3 to v4 upgrade has kind of been a nightmare, across multiple months and multiple repos. Thank god I'm not paying them any money!
+
+Update: I'm still getting these freaking errors! Every now and then my CI will flake out like this:
+
+<img src="https://pixelfed.social/storage/m/_v2/588554065884192073/0e43b1202-69768b/D9HJx5Y4yN0l/1y9kQRG1WPT2fQ4TPczdXPECDMHOKAuMgXN3IZ4S.png" alt="Github actions with Codecov Error: Codecov token not found. Please provide Codecov token with -t flag." style="max-width: 50rem"/>
