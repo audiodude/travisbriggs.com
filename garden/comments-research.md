@@ -1,10 +1,12 @@
 ---
 title: Enabling comments
 date: 2023-11-18
-updated: 2023-12-16
+updated: 2024-08-27
 quality: A
-importance: Mid
+importance: Top
 ---
+
+*Update: comments are working great! I just commited a change to update the styling and autoload them. Read below for a full catalog of my journey to this point.*
 
 Here's my research so far on comments, and my radical idea for enabling them.
 
