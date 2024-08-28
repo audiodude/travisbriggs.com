@@ -1,12 +1,13 @@
 {% if comments %}
+<hr style="margin: 2rem 0">
 <section id="comments" class="article-content">
   <h3 class="comments-title title-larger">Comments</h3>
-  <p class="comments-exp-top">With an account on the Fediverse or Mastodon, you can respond to this <a href="https://{{ comments.host }}/{{ comments.username }}/{{ comments.id }}">post</a>. Simply <a href="https://{{ comments.host }}/{{ comments.username }}/{{ comments.id }}">visit the post on its original server</a> and leave your comment. It and other known non-private replies will be displayed below.</p>
-  <p>Learn how this is implemented <a class="link" href="https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/">here.</a></p>
+  <p class="comments-exp-top comment-size">With an account on the Fediverse or Mastodon, you can respond to this <a href="https://{{ comments.host }}/{{ comments.username }}/{{ comments.id }}">post</a>. Simply <a href="https://{{ comments.host }}/{{ comments.username }}/{{ comments.id }}">visit the post on its original server</a> and leave your comment. It and other known non-private replies will be displayed below.</p>
+  <p class="comment-size">Learn how this is implemented <a class="link" href="https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/">here.</a></p>
 
-  <p id="mastodon-comments-list"><button id="load-comment">Load comments</button></p>
+  <p id="mastodon-comments-list"><span id="load-comment"></span></p>
   <div id="comments-wrapper">
-    <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://{{ comments.host }}/{{ comments.username }}/{{ comments.id }}">the original post</a> on Mastodon.</p></noscript>
+    <noscript><p class="comment-size">Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://{{ comments.host }}/{{ comments.username }}/{{ comments.id }}">the original post</a> on Mastodon.</p></noscript>
   </div>
   <noscript>You need JavaScript to view the comments.</noscript>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js" integrity="sha512-H+rglffZ6f5gF7UJgvH4Naa+fGCgjrHKMgoFOGmcPTRwR6oILo5R+gtzNrpDp7iMV3udbymBVjkeZGNz1Em4rQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -48,7 +49,6 @@
 
     function loadComments() {
       let commentsWrapper = document.getElementById("comments-wrapper");
-      document.getElementById("load-comment").innerHTML = "Loading";
       fetch('https://{{ comments.host }}/api/v1/statuses/{{ comments.id }}/context')
         .then(function(response) {
           return response.json();
@@ -60,7 +60,6 @@
             Array.isArray(descendants) &&
             descendants.length > 0
           ) {
-            document.getElementById("load-comment").innerHTML = "Refresh";
             commentsWrapper.innerHTML = "";
 
             descendants.forEach(function(status) {
@@ -185,11 +184,11 @@
               commentsWrapper.innerHTML += DOMPurify.sanitize(comment.outerHTML);
             });
           } else {
-            document.getElementById("load-comment").outerHTML = "<span>No commments</span>";
+            document.getElementById("load-comment").outerHTML = '<span style="font-style: italic">No commments</span>';
           }
         });
       }
-      document.getElementById("load-comment").addEventListener("click", loadComments);
+      loadComments();
   </script>
 </section>
 {% endif %}

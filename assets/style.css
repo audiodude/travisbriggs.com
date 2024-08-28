@@ -55,7 +55,7 @@ main {
 
 .page-footer {
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 1rem auto;
 }
 
 a[href] {
@@ -139,6 +139,10 @@ small {
     color: #245817;
     margin-top: 1rem;
     margin-bottom: 0;
+}
+
+.comment-size {
+    font-size: 0.75rem;
 }
 
 .title-larger {
