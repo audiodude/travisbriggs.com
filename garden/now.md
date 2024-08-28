@@ -1,15 +1,15 @@
 ---
 title: Now
 date: 2024-05-21
-updated: 2024-08-12
+updated: 2024-08-27
 quality: A
 importance: Top
 permalink: now/
 ---
 
-Tough couple of weeks recently, as my wife was inpatient in the hospital. She was getting a scheduled pain treatment, so no cause for alarm, but it was still stressful. When she got out she also started having some bad migraines, so we've been dealing with that.
+Still going through a rough period. My dad died last week. I'll probably write something about it in the garden after the funeral this Friday, when my feelings have taken more shape and settled. We'll be flying to the east coast soon.
 
-I got my first [PR for Mastodon](https://github.com/mastodon/mastodon/pull/26910) merged! It's something I really believe in.
+My first [PR for Mastodon](https://github.com/mastodon/mastodon/pull/26910) is being released in 4.3.0! It's live now on [mastodon.social](https://mastodon.social/).
 
 Currently, I'm still living in San Francisco, in the same apartment I've lived in since we moved there in December 2012. What can I say, it's cozy, rent-controlled and in an awesome neighborhood (near Zeitgeist). I also have the same job at YouTube that I've had all that time.
 
@@ -17,7 +17,9 @@ The [Python class](https://www.noisebridge.net/wiki/PyClass) that I was teaching
 
 I quit my D&D group, because I didn't really have the time for it unfortunately. The people I played with were really nice though.
 
-As far as video games, I finally sat down and finished [Universal Paperclips](https://www.decisionproblem.com/paperclips/index2.html) even though the ending had been spoiled for me a long time ago. What a cool clicker game! I've been given a recommendation for [Antimatter Dimensions](https://ivark.github.io/AntimatterDimensions/) for my next clicker game, which is considered one of the best of all time. I'm still eyeing New World Aeterneum, because I've always been (sadly) more of a "solo" MMO player, and never had big or small groups that I was consistently a part of. And of course, Factorio Space Age is coming out in October!
+For reading, I'm a couple of chapters into a couple of non-fiction books, and a couple of fiction books as well. Sigh.
+
+As far as video games, I'm still eyeing New World Aeterneum, because I've always been (sadly) more of a "solo" MMO player, and never had big or small groups that I was consistently a part of. And of course, Factorio Space Age is coming out in October! More recently, I've tried Cities Skylines II, which feels like a reskin of the original. I've also tried playing the original Fable for Xbox 360 and it is kind of slow and weird, but maybe I can get into it.
 
 ---
 
