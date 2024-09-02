@@ -7,11 +7,11 @@ quality: B
 importance: Mid
 ---
 
-**(moved to [[taper|another part]] of the garden)**
+*(moved to [[taper|another part]] of the garden)*
 
 ----
 
-**(moved to [[draft|another part]] of the garden)**
+*(moved to [[draft|another part]] of the garden)*
 
 ----
 
