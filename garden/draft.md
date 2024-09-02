@@ -1,11 +1,12 @@
 ---
 title: Draft (writing website)
 date: 2022-12-07
+updated: 2024-09-01
 quality: B
 importance: Low
 ---
 
-Draft is an online, distraction free, writing tool that is shutting down at the end of December 2022. I have used it extensively over the years.
+Draft was an online, distraction free, writing tool that shut down at the end of December 2022. I have used it extensively over the years.
 
 When I heard about it shutting down, I sent the following email to [Nate Kontny](https://twitter.com/natekontny), the site's creator:
 
@@ -37,4 +38,6 @@ Tonight, I sent a follow-up email when I retrieved my Draft archive and realized
 > 
 > -Travis
 
-I'll update here if I get any replies.
+I never got any response, but reading back through my emails just now, I definitely thought to myself that maybe he had taken the steps I suggested anyways, whether or not he was inspired by my words. It would certainly make more sense to have a non-operational, 1 GB database backup lying around than to subject yourself to the liability of permanently deleting someone's life work. And I mean liability in the broadest sense, because something like that wouldn't just have potential legal consequences, it's also just a gigantic emotional burden (in my opinon) should it happen.
+
+In the intervening two years I have switched to Google Docs for a lot of things. I also use Google Keep for shorter notes on a variety of random topics. I'm feeling nostalgic for Draft now though and wondering whether or not I should seek out an alternative. Of course plenty of potential writers have been thwarted by not having a fancy enough notebook, pen, or typewriter (sarcasm).
