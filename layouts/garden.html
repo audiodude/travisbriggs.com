@@ -7,10 +7,10 @@ layout: default
   {% if date or quality or importance %}
     <div class="meta">
       {% if date %}
-        <span class="created">Created: {{ date | simpleDate }}</span>
+        <span class="created">Created: {{ page.date | simpleDate }}</span>
         {% if updated %}
           |
-          <span class="updated">{{ updated | outputIfNotEqualTo: date }}</span>
+          <span class="updated">{{ updated | outputIfNotEqualTo: page.date }}</span>
         {% endif %}
       {% endif %}
       {% if quality %}

@@ -2,7 +2,9 @@ const { DateTime } = require('luxon');
 
 module.exports.commonConfig = function (eleventyConfig) {
   eleventyConfig.addFilter('simpleDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toLocaleString(
+      DateTime.DATE_MED,
+    );
   });
 
   eleventyConfig.addFilter('outputIfNotEqualTo', (dateObj, othDateObj) => {
@@ -12,9 +14,9 @@ module.exports.commonConfig = function (eleventyConfig) {
     ) {
       return;
     }
-    return `Updated: ${DateTime.fromJSDate(dateObj).toLocaleString(
-      DateTime.DATE_MED
-    )}`;
+    return `Updated: ${DateTime.fromJSDate(dateObj, {
+      zone: 'utc',
+    }).toLocaleString(DateTime.DATE_MED)}`;
   });
 
   eleventyConfig.addFilter('updatedDate', (post) => {
@@ -31,11 +33,11 @@ module.exports.commonConfig = function (eleventyConfig) {
       return new Date(
         Math.max(
           ...collection.map((item) =>
-            item.data.updated ? item.data.updated : item.data.page.date
-          )
-        )
+            item.data.updated ? item.data.updated : item.data.page.date,
+          ),
+        ),
       );
-    }
+    },
   );
 
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
