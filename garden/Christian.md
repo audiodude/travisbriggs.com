@@ -1,8 +1,9 @@
 ---
 title: Christian
 date: 2022-12-01
+updated: 2024-09-02
 quality: Stub
 importance: Low
 ---
 
-My friend Christian, who was in my wedding party and whom I've generally kept up with through the years, has recently moved to San Francisco. Well, about a year ago in 2021. But anyways, he's much much closer now. Almost too close, like a block away.
+I have a friend named Christian, who was in my wedding party, and who I worked with at [[Qwobl]] back in like 2008.
