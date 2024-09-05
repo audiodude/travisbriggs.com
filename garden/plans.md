@@ -1,7 +1,7 @@
 ---
 title: Plans for the digital garden
 date: 2022-12-12
-updated: 2024-06-02
+updated: 2024-09-05
 quality: B
 importance: Mid
 ---
@@ -13,6 +13,8 @@ I'm trying to do all this in accordance with my interpretation of the [[digital-
 I added a [[now]] page, which I think is some kind of progress. Now (see what I did there?) I need to make sure I keep it updated. That's the struggle in general with this garden, is that if I don't have something new to say or some idea to convey, I don't spend much time "tending" it. So far, my [[compost|compost pile]] is a good step in the direction of eschewing [[dg-reverse|reverse chronilogical links]] at least.
 
 I still want to move the content in my blog posts into more organic topic pages. Some of them, like [[blog/what-programming-language-should-i-learn|"What programming language should I learn?"]] lend themselves nicely to that. But others, where I'm just [[blog/latest-and-not-so-greatest|randomly complaining about music production]] or something, I'm not sure how to work them in. Maybe that's the fun!
+
+I also want to dismantle the [[TIL|til]] section completely and integrate that content, also in service of removing reverse-chronological-ordered nodes.
 
 I think the spirit of the thing is that it grows organically, like a real garden.
 
