@@ -18,6 +18,8 @@ I'm surprised by how many people who I consider "open source advocates" and "fre
 
 Speaking of GitHub, I've been [[codecov|fighting with Codecov for months]] (but may have finally won!).
 
+At the beginning of 2023 I [[apache|wrote an email]] to the [Apache Software Foundation](https://www.apache.org/) about the lack of inclusive language in their name.
+
 On my [[comments-research|quest for comments]] I learned a [[activity-pub|bit about ActivityPub]].
 
 Trying to organize my [[genre-thoughts|thoughts on genres]] and how they affect my music practice.
