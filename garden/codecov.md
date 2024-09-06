@@ -1,7 +1,7 @@
 ---
 title: Codecov
 date: 2024-07-06
-updated: 2024-08-19
+updated: 2024-09-05
 quality: A
 importance: Low
 ---
@@ -26,4 +26,6 @@ In all honesty though, the entire Codecov v3 to v4 upgrade has kind of been a ni
 
 Update: I'm still getting these freaking errors! Every now and then my CI will flake out like this:
 
-<img src="https://pixelfed.social/storage/m/_v2/588554065884192073/0e43b1202-69768b/D9HJx5Y4yN0l/1y9kQRG1WPT2fQ4TPczdXPECDMHOKAuMgXN3IZ4S.png" alt="Github actions with Codecov Error: Codecov token not found. Please provide Codecov token with -t flag." style="max-width: 50rem"/>
+<img src="https://pxscdn.com/public/m/_v2/588554065884192073/0e43b1202-69768b/D9HJx5Y4yN0l/1y9kQRG1WPT2fQ4TPczdXPECDMHOKAuMgXN3IZ4S.png" alt="Github actions with Codecov Error: Codecov token not found. Please provide Codecov token with -t flag." style="max-width: 50rem"/>
+
+Update the Second: I am still getting these intermittent flaky errors. I've decided to [demote Codecov](https://github.com/openzim/wp1/pull/758), and set my GitHub actions CI so that if all the tests pass and only the Codecov upload fails, the CI still passes. Sigh.
