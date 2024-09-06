@@ -2,9 +2,12 @@
 <hr style="margin: 2rem 0">
 <section id="comments" class="article-content">
   <h3 class="comments-title title-larger">Comments</h3>
-  <p class="comments-exp-top comment-size">With an account on the Fediverse or Mastodon, you can respond to this <a href="https://{{ comments.host }}/{{ comments.username }}/{{ comments.id }}">post</a>. Simply <a href="https://{{ comments.host }}/{{ comments.username }}/{{ comments.id }}">visit the post on its original server</a> and leave your comment. It and other known non-private replies will be displayed below.</p>
-  <p class="comment-size">Learn how this is implemented <a class="link" href="https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/">here.</a></p>
-
+  <p class="comments-exp-top comment-size">
+    With an account on the Fediverse or Mastodon, you can respond to this <a href="https://{{ comments.host }}/{{ comments.username }}/{{ comments.id }}">post</a>.
+    Simply <a href="https://{{ comments.host }}/{{ comments.username }}/{{ comments.id }}">visit the post on its original server</a> and leave your comment.
+    It and other known non-private replies will be displayed below. Learn how this is implemented
+    <a class="link" href="https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/">here</a> and <a href="/garden/comments-research/">here</a>.
+  </p>
   <p id="mastodon-comments-list"><span id="load-comment"></span></p>
   <div id="comments-wrapper">
     <noscript><p class="comment-size">Loading comments relies on JavaScript. Try enabling JavaScript and reloading, or visit <a href="https://{{ comments.host }}/{{ comments.username }}/{{ comments.id }}">the original post</a> on Mastodon.</p></noscript>
