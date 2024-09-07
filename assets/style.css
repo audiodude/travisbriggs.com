@@ -135,7 +135,7 @@ small {
     font-size: 0.8em;
 }
 
-.backlinks-title, .comments-title {
+.backlinks-title, .comments-title, .recent-title {
     color: #245817;
     margin-top: 1rem;
     margin-bottom: 0;
