@@ -23,3 +23,9 @@ At the beginning of 2023 I [[apache|wrote an email]] to the [Apache Software Fou
 On my [[comments-research|quest for comments]] I learned a [[activity-pub|bit about ActivityPub]].
 
 Trying to organize my [[genre-thoughts|thoughts on genres]] and how they affect my music practice.
+
+I felt really inspired when I read Robin Sloan's excellent [newsletter post](https://www.robinsloan.com/lab/new-avenues/) about "A Year of New Avenues". It is hopelessly exuberant and optimistic, and in that way extremely intoxicating. It also challenges the reader, especially in the span of prompting for "new avenues" for 2023 but at the same time gently chastising that "Mastodon is not it".
+
+In my internet travels, I've been looking at [[gemini|Gemini]] as a protocol that could be useful for building the next internet thing in the whale corpse of Facebook and Twitter.
+
+I've also heard of [Secure Scuttlebutt](https://scuttlebutt.nz/) a few years back, around the time I was first learning about Mastodon. It seems much more quirky, experimental and revolutionary than Mastodon will ever be. Especially with it's focus on offline social networks (did you even know there was such a thing?).

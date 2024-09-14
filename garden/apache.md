@@ -1,6 +1,5 @@
 ---
 title: Email to the Apache Software Foundation
-tags: til
 date: 2023-01-11
 quality: GA
 importance: Mid
