@@ -7,7 +7,7 @@ importance: Top
 include_recent: true
 ---
 
-Hi, I'm **Travis Briggs** and you've stumbled upon my digital garden. Welcome! If you're interested in what I'm thinking or working on, feel free to walk through the [[gate|garden gate]].
+Hi, I'm **Travis Briggs** and you've stumbled upon my digital garden. Welcome! If you're interested in what I'm thinking or working on, feel free to [[gate|enter the garden]].
 
 I'm trying to follow the [[digital-gardening-principles|principles of digital gardening]] here.
 
