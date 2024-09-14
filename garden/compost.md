@@ -29,3 +29,5 @@ I felt really inspired when I read Robin Sloan's excellent [newsletter post](htt
 In my internet travels, I've been looking at [[gemini|Gemini]] as a protocol that could be useful for building the next internet thing in the whale corpse of Facebook and Twitter.
 
 I've also heard of [Secure Scuttlebutt](https://scuttlebutt.nz/) a few years back, around the time I was first learning about Mastodon. It seems much more quirky, experimental and revolutionary than Mastodon will ever be. Especially with it's focus on offline social networks (did you even know there was such a thing?).
+
+I always have a nagging desire to learn [[spanish|Spanish]], but I'm not sure it will ever translate into real motivation and action.
