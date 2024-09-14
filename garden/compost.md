@@ -1,12 +1,12 @@
 ---
 title: Compost pile
 date: 2023-11-14
-updated: 2024-07-06
+updated: 2024-09-14
 quality: B
 importance: Mid
 ---
 
-I've struggled against [[dg-reverse|Reverse Chronological Order]], but I've still found myself replicating it in my collection of previously published [[blog|blog posts]] and even a new [[til|TIL]] section I created just for this site. Why, why must we repeat the mistakes of the past?
+I've struggled against [[dg-reverse|Reverse Chronological Order]], but I've still found myself replicating it in my collection of previously published [[blog|blog posts]]. Why, why must we repeat the mistakes of the past?
 
 In the meantime, I've felt handcuffed from adding new content to this Garden. While I thought I would be writing a bunch of [[dg-evergreen|evergreen posts]], I ended up being shackled by the fact that when I had an idea of something to write about, I couldn't think of anywhere to link it from! So I had all these ideas for garden "nodes", but no "place in the garden" for them.
 
