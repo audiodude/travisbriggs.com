@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<article>
+  <h1>{{title}}</h1>
+  {% if date %}
+  <div class="meta">
+    {% if date %}
+    <span class="created">Created: {{ page.date | simpleDate }}</span>
+    {% endif %}
+  </div>
+  {% endif %}
+  <div class="writing">{{content}}</div>
+</article>
+
+{% include 'backlinks.html' %} {% include 'comments.html' %}

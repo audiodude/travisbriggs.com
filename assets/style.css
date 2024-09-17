@@ -294,3 +294,10 @@ small {
 .avatar-link, .author, .display, #comments-wrapper time, .instance {
     margin-right: .75rem;
 }
+
+.writing {
+    background-color: #eee;
+    padding: 2rem;
+    border: 1px solid #999;
+    border-top: none;
+}
