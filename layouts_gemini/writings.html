@@ -1,0 +1,11 @@
+---
+layout: default
+---
+# {{title}}
+{% if date or quality or importance -%}
+    {%- if date %}
+Created: {{ date | simpleDate }}
+    {%- endif -%}
+{%- endif %}
+{{content}}
+{% include 'backlinks.html' %}
