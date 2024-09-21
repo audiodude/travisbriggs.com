@@ -1,7 +1,7 @@
 ---
 title: The highs and lows of producing music in your home studio/kitchen
 date: 2023-01-26
-updated: 2023-12-17
+updated: 2024-09-21
 quality: GA
 importance: High
 ---
@@ -10,7 +10,7 @@ I don't really want to give a detailed history of my experiences with writing an
 
 I think the interesting bits start with the formation of my [[danger-third-rail|"band"]]. In 2017, I got more "serious" about recording music in my kitchen, and decided that with some help from a remote [drummer in the UK](https://emilydrums.com/) and [[DistroKid]], I could actually release some polished music to Spotify (which is what I considered "making it"). So I did. That was the _Pink Fluffy Cloud_ single. Releasing the single was definitely a high point. I printed out business cards with the album art and a [URL](https://dangerthirdrail.com) on it. Between the drums, and recording the vocals in an actual studio and getting it mixed and mastered, the project cost about $1200.
 
-Okay 2018 is a long time ago. We've had a new US president and at least one global pandemic since then. The pandemic years can be considered wasted because there was so much confusion and uncertainty during that time. But what about 2019? What about 2022 [ed: 2023]? Why hasn't Danger Third Rail released any new music?
+Okay 2017 is a long time ago. We've had a new US president and at least one global pandemic since then. The pandemic years can be considered wasted because there was so much confusion and uncertainty during that time. But what about 2019? What about 2022 [ed: 2023] [ed: 2024]? Why hasn't Danger Third Rail released any new music?
 
 Sometimes, it's a problem of getting going and [[genre-thoughts|writing the songs]].
 

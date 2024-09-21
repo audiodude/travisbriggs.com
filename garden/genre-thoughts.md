@@ -1,7 +1,7 @@
 ---
-title: Thoughts on genres
+title: Writing in the genre you listen to
 date: 2023-12-17
-updated: 2024-06-02
+updated: 2024-09-21
 quality: A
 importance: Low
 ---
