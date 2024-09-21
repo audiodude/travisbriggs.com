@@ -14,10 +14,10 @@ Okay 2017 is a long time ago. We've had a new US president and at least one glob
 
 Sometimes, it's a problem of getting going and [[genre-thoughts|writing the songs]].
 
-But in this case, I've actually written the songs. I've got about a dozen that I have even recorded demos of that I consider high enough quality to release. Yes, I am still thinking about the [[blog/latest-and-not-so-greatest|100:10:1]] rule, but if you look at my drafts/demos website at [songs.travisbriggs.com](https://songs.travisbriggs.com), you'll see that I have actually written 100s of songs and song fragments (though I apparently posted _nothing at all_ in 2022, which is a crime).
+But in this case, I've actually [[fake-it-music|written the songs]]. I've got about a dozen that I have even recorded demos of that I consider high enough quality to release. Yes, I am still thinking about the [[blog/latest-and-not-so-greatest|100:10:1]] rule, but if you look at my drafts/demos website at [songs.travisbriggs.com](https://songs.travisbriggs.com), you'll see that I have actually written 100s of songs and song fragments (though I apparently posted _nothing at all_ in 2022, which is a crime).
 
 I started taking mixing lessons so I could mix and master the songs myself, to make the album 100% DIY. However, the mixing lessons were hard and hard to keep up with. I haven't felt like at my current skill level I could do the songs justice. At the same time, I don't want to spend thousands of dollars to get them professionally mixed and mastered, since I've made a grand total of about 50 bucks ever selling music (from Spotify/iTunes/Amazon/YouTube payments and Bandcamp donations).
 
-Really, it's not sustainable to continue paying others to mix and master my music, even if I stopped hiring Emily to do the drums and just used software. I need to learn to do it myself. I need to [[blog/nike-the-shit-out-of-it|DIY the shit out of it]].
+Really, it's not sustainable to continue paying others to mix and master my music, even if I stopped hiring Emily to do the drums and just used software. I need to learn to do it myself. I need to [[nike-the-shit-out-of-it|DIY the shit out of it]].
 
 It could be a problem of [[motivation-music|motivation]]. Am I happy with what I've already done? Am I resting on my laurels, as thin as they might be?

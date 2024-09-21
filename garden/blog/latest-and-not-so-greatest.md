@@ -2,7 +2,9 @@
 title: Latest and Not-so-greatest
 tags: blog
 date: 2020-08-13
+updated: 2024-09-21
 quality: GA
+importance: Mid
 ---
 
 Today I sent a cold email to someone who has 90k subscribers on YouTube, asking if they could maybe give me music production lessons. On the one hand, I don't expect a response, even at all. On the other hand, this person did put their (an?) email address in the description of a YouTube video so maybe they're open to being contacted. Maybe?
@@ -13,9 +15,9 @@ That's when I started feeling mortified.
 
 Right now the newest song on my demo website is a sloppy punk track called "Goodbyes" ([link](https://songs.travisbriggs.com/goodbyes/)). If you listen to 5 seconds of it, you probably think, "Wow this guy is great at making awful noise, but I wouldn't call it music!". It's certainly my latest track, but it's far from being my greatest.
 
-Now there's a whole discussion around the difference between the demos on this site and the songs which I had made into my [Danger Third Rail EP](https://dangerthirdrail.com). Not only did I select my best material for the EP, but I meticulously re-recorded the parts. They also got professionally mixed and mastered. So I think those tracks in particular are going to sound the best out of the wide range of material I've published, and be the greatest. They're a far cry from being the latest though.
+Now there's a whole discussion around the difference between the demos on this site and the songs which I had made into my [Danger Third Rail EP](https://dangerthirdrail.com). Not only did I select my best material for the EP, but I meticulously [[recording-setup|re-recorded]] the parts. They also got professionally mixed and mastered. So I think those tracks in particular are going to sound the best out of the wide range of material I've published, and be the greatest. They're a far cry from being the latest though.
 
-So at this point I'm thinking about progression over time. Am I getting better at making music? Not even a specific genre of music, not "Am I getting better at writing music?" or "Am I getting better at performing/mixing/mastering/whatever music?". Basically, can you look at the musical artifacts I've created, the songs I've created, over time and see that yes, the quality is increasing?
+So at this point I'm thinking about [[highs-and-lows-musician|progression over time]]. Am I getting better at making music? Not even a specific genre of music, not "Am I getting better at writing music?" or "Am I getting better at performing/mixing/mastering/whatever music?". Basically, can you look at the musical artifacts I've created, the songs I've created, over time and see that yes, the quality is increasing?
 
 I think that I can't honestly answer that question. Not because I'm afraid the answer might be no -- though I am afraid of that! -- but because the demo songs website is not really set up to produce that kind of an answer.
 
