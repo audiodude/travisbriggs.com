@@ -10,7 +10,7 @@ In case you didn't know [ActivityPub](https://www.theverge.com/2023/4/20/2368957
 
 I found a [plugin for Eleventy](https://github.com/LewisDaleUK/eleventy-plugin-activity-pub) (the static site generator used for this garden) that offered to turn my garden into it's own ActivityPub "node" (not sure what to call it). The basic idea was to sort of hack the [WebFinger](https://en.wikipedia.org/wiki/WebFinger) protocol that ActivityPub uses to discover actors on a site, and have it return a static file in response to all queries. This gave me the following account that I could see from my Mastodon server:
 
-![Screenshot of a Mastodon account belonging to "Digital Garden of Travis Briggs"/@digital.garden@travisbriggs.com](https://pixelfed.social/storage/m/_v2/588554065884192073/bf4779419-8cf74f/8duMzD0IWbpB/bCuOgEm3kXRTU46PaN0wyCBcLNeZr6qRrs6MwuiO.png)
+![Screenshot of a Mastodon account belonging to "Digital Garden of Travis Briggs"/@digital.garden@travisbriggs.com](https://pxscdn.com/public/m/_v2/588554065884192073/bf4779419-8cf74f/8duMzD0IWbpB/bCuOgEm3kXRTU46PaN0wyCBcLNeZr6qRrs6MwuiO.png)
 
 That seemed like progress! Unfortunately, of the 74 "Posts" that it claimed this user had, all of them were hidden. And there was no "home server" where I could view these posts/statuses -- because they didn't really exist! The plugin had, however, created an [Outbox](https://www.w3.org/TR/activitypub/#outbox) on this site that contained "Create Note" actions. So I thought, why don't I just post these actions to my [Inbox](https://www.w3.org/TR/activitypub/#inbox) on sfba.social?
 

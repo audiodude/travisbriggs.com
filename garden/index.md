@@ -1,22 +1,22 @@
 ---
-title: Outside a Digital Garden
+title: Entering the garden
 date: 2022-11-26
-updated: 2023-12-16
-quality: FA
+updated: 2024-09-14
+quality: GA
 importance: Top
 include_recent: true
 ---
 
-Hi, I'm **Travis Briggs** and you've stumbled upon my digital garden. Welcome! If you're interested in what I'm thinking or working on, feel free to [[gate|enter the garden]].
+_I'm trying desperately to resist the urge to write this entire website as a choose-your-own adventure game. Must, resist._
 
-I'm trying to follow the [[digital-gardening-principles|principles of digital gardening]] here.
+As you enter the garden, you can see a bunch of [[best albums in the universe|records]] for sale, or at least on display. You also hear [[danger-third-rail|a band]] playing somewhere inside. It's impossible to miss the huge amount of power extension cords and other wires darting through the gate, laying on the ground, and even going up over the walls of the garden. Whatever is going on here requires plenty of electricity it would seem.
 
-This garden is also available as a [[gemini|Gemini]] capsule at [gemini://gem.travisbriggs.com](gemini://gem.travisbriggs.com).
+You also see what looks like a disheveled madman rambling to himself about [[blog|blogging]].
 
-Comments are enabled by replying to a Mastodon post for each garden node.
+There's a live digital display telling you about things that are going on right [[now]].
 
-The source code for this garden is [available](https://github.com/audiodude/garden.travisbriggs.com), and I'm tracking [issues to improve it](https://github.com/audiodude/garden.travisbriggs.com/issues). It is based on [Eleventy Garden](https://github.com/binyamin/eleventy-garden) which is based on [Eleventy](https://www.11ty.dev/).
+A [[writings|scrappy-looking journal]] is open on a simple table, with some handwritten poetry and the like. 
 
-Welcome!
+In the corner of the garden, there is a large smelly [[compost|compost pile]].
 
-[[gate|Garden Gate]]
+You can also read about [[digital-garden-itself|the digital garden itself]].

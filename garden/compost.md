@@ -10,7 +10,7 @@ I've struggled against [[dg-reverse|Reverse Chronological Order]], but I've stil
 
 In the meantime, I've felt handcuffed from adding new content to this Garden. While I thought I would be writing a bunch of [[dg-evergreen|evergreen posts]], I ended up being shackled by the fact that when I had an idea of something to write about, I couldn't think of anywhere to link it from! So I had all these ideas for garden "nodes", but no "place in the garden" for them.
 
-For this reason, I've created this "Compost pile". Maybe compost is a bad word, because it implies decay. On the other hand, it also implies new growth. The idea is to stick a bunch of random thoughts here, as a place to link my new nodes from. If they eventually grow into something greater, than I can hopefully "plant" them somewhere else in the garden. If not...well at least they're not in Reverse Chronological Order.
+For this reason, I've created this "Compost pile". Maybe compost is a bad word, because it implies decay. On the other hand, it also implies new growth. The idea is to stick a bunch of random thoughts here, as a place to link my new nodes from. If they eventually grow into something greater, than I can hopefully "plant" them somewhere else in the garden. If not...well at least they're not in [[dg-reverse|Reverse Chronological Order]]!
 
 ---
 
@@ -26,10 +26,4 @@ On my [[comments-research|quest for comments]] I learned a [[activity-pub|bit ab
 
 Trying to organize my [[genre-thoughts|thoughts on genres]] and how they affect my music practice.
 
-I felt really inspired when I read Robin Sloan's excellent [newsletter post](https://www.robinsloan.com/lab/new-avenues/) about "A Year of New Avenues". It is hopelessly exuberant and optimistic, and in that way extremely intoxicating. It also challenges the reader, especially in the span of prompting for "new avenues" for 2023 but at the same time gently chastising that "Mastodon is not it".
-
-In my internet travels, I've been looking at [[gemini|Gemini]] as a protocol that could be useful for building the next internet thing in the whale corpse of Facebook and Twitter.
-
-I've also heard of [Secure Scuttlebutt](https://scuttlebutt.nz/) a few years back, around the time I was first learning about Mastodon. It seems much more quirky, experimental and revolutionary than Mastodon will ever be. Especially with it's focus on offline social networks (did you even know there was such a thing?).
-
-I always have a nagging desire to learn [[spanish|Spanish]], but I'm not sure it will ever translate into real motivation and action.
+[[excited|Some things I'm excited about]].
