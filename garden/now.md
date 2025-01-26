@@ -1,14 +1,17 @@
 ---
 title: Now
 date: 2024-05-21
-updated: 2024-11-21
+updated: 2025-01-24
 quality: A
 importance: Top
 permalink: now/
 ---
-I just celebrated my 10th wedding anniversary with a trip to the Madonna Inn in
-San Luis Obispo. It was very lovely, including the 4 hour drive each way which
-was actually nice, because Abby and I like to go on road trips together.
+I can't believe January is almost over already! I've started doing morning pages
+again at the new [750words.com](https://750words.com), so we'll see how long
+that lasts. I celebrated Wikipedia's birthday at [Wikipedia
+day](https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Day) last weekend. And I
+had an awful time with my doctor's office about getting some controlled meds
+refilled.
 
 Currently, I'm still living in San Francisco, in the same apartment I've lived
 in since we moved there in December 2012. What can I say, it's cozy,
@@ -17,21 +20,25 @@ same job at YouTube that I've had all that time.
 
 I'm still teaching a free [Python
 class](https://www.noisebridge.net/wiki/PyClass) at
-[Noisebridge](http://noisebridge.net/) on Monday nights. We're a couple of weeks
-into series 4. The first class was very well attended, though there have been
-some hiccups in the ensuing weeks.
+[Noisebridge](http://noisebridge.net/) on Monday nights. It's been over a month
+since I taught a class (the class on my birthday was covered by soeone else), so
+I'm excited to get back into it this Monday.
 
 I've been putting some time into
 [mwoffliner](https://github.com/openzim/mwoffliner), the software that scrapes
 Mediawiki sites (like Wikipedia) to create offline ZIM files. I've also done a
-lot of work on [Rainfall](https://rainfall.dev), including implementing 1-click
-deploy to Netlify.
+lot of work on [Rainfall](https://rainfall.dev), most of which was changing the
+architecture significantly so that it can properly scale, in case it ever gets
+thousands of users. My thought is that I wouldn't want to put all this work into
+it, and then it suddenly hits the front page of [Hacker
+News](https://news.ycombinator.com) and breaks and I have no chance to fix it.
 
 For reading, I'm a couple of chapters into a couple of non-fiction books, and a
 couple of fiction books as well. Sigh.
 
-As far as video games, I've been playing dozens of hours of Factorio Space Age
-now that it's been released. Stil haven't gotten off Nauvis yet though.
+As far as video games, I'm still focusing on Factorio Space Age, but I kind of
+took a break after the holidays. I've also started a Pokémon Sapphire game,
+though I've never successfully "beaten" any Pokémon game.
 
 ---
 
