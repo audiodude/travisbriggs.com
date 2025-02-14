@@ -1,17 +1,14 @@
 ---
 title: Now
 date: 2024-05-21
-updated: 2025-01-24
+updated: 2025-02-14
 quality: A
 importance: Top
 permalink: now/
 ---
-I can't believe January is almost over already! I've started doing morning pages
-again at the new [750words.com](https://750words.com), so we'll see how long
-that lasts. I celebrated Wikipedia's birthday at [Wikipedia
-day](https://en.wikipedia.org/wiki/Wikipedia:Wikipedia_Day) last weekend. And I
-had an awful time with my doctor's office about getting some controlled meds
-refilled.
+February is off to a tough start, I was hospitalized for several days and had
+to miss a bunch of work and extra cirricular stuff. I'm feeling better now,
+still ramping back up.
 
 Currently, I'm still living in San Francisco, in the same apartment I've lived
 in since we moved there in December 2012. What can I say, it's cozy,
