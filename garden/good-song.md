@@ -1,0 +1,15 @@
+---
+title: A good song is a good song
+date: 2025-02-15
+quality: B
+importance: Low
+---
+A few weeks ago, [[Abby]] and I saw [A Complete Unknown](https://www.imdb.com/title/tt11563598/), the Bob Dylan biopic starring Timothée Chalamet. I really enjoyed the film, partly because of Chalamet's great performance (he's been nominated for an Oscar) but mostly because the whole thing plays out like a music video almost. They're playing and singing songs the entire movie, and Chalamet actually learned how to play the guitar from scratch for the role.
+
+The film has inspired us to listen to more Dylan and folk music broadly. Abby has actually been writing new verses to classic folk songs like _This Land Is Your Land_ and _Casey Jones (the union scab)_. I wrote a [folk song](https://songs.travisbriggs.com/trash-on-the-nash/) that I posted to my [demo songs website](https://songs.travisbriggs.com). We've been playing around with the [Omnichord](https://soundgenetics.com/guide-to-the-omnichord/) I got her for Christmas, strumming chords for songs we want to sing and using it as a bare bones compositional tool (you just play the chords, don't have to worry about voicings or anything).
+
+All this makes me wonder if I really have to worry about [[fake-it-music|faking it]], or if writing the songs I write, in the way I write them, is enough. I would like for it to be enough. If I can write a good song, like the one linked above, I can always go back and write new verses or record it properly or create an arrangement with strings and drums and whatever. There's a quote in the movie that goes by quickly, but basically it's as simple as "A good song is a good song". When I googled that phrase, lots of stuff came up, so I think it's kind of a timeless sentiment.
+
+And I still believe that songs are sung and while we use the shorthand "song" to refer to most pieces of recorded music, stuff like 8 minute EDM trance tracks are not proper "songs". Sorry bedroom producers. I'm not trying to put people down who put together tracks on their laptops. I'm just trying to focus my own practice and realize that while 1 minute loops and whatnot can be fun, they're not songs. They're not the music that I want to make. In the context of [[motivation-music|what motivates me]], producing a "bangin" EDM track is simply not it.
+
+Think of songs that have been covered over and over. Those compositions were not driven by the performance of the guitar riffs, or the charisma of the lead singer, both of which are likely stripped away in the cover version. And they don't have to be entirely transformational. The excellence of the song itself is the driving factor. I saw [Guster](https://www.guster.com/) last night and they performed their cover of _(Nothing But) Flowers_ by the Talking Heads. It's just a great song.
