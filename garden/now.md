@@ -1,14 +1,14 @@
 ---
 title: Now
 date: 2024-05-21
-updated: 2025-02-14
+updated: 2025-03-19
 quality: A
 importance: Top
 permalink: now/
 ---
-February is off to a tough start, I was hospitalized for several days and had
-to miss a bunch of work and extra cirricular stuff. I'm feeling better now,
-still ramping back up.
+March has been going better than February. I'm feeling a lot better after my
+hospitalization, and I was able to complete some follow up care which really
+helped. Abby's family visited too, which was nice.
 
 Currently, I'm still living in San Francisco, in the same apartment I've lived
 in since we moved there in December 2012. What can I say, it's cozy,
@@ -17,25 +17,26 @@ same job at YouTube that I've had all that time.
 
 I'm still teaching a free [Python
 class](https://www.noisebridge.net/wiki/PyClass) at
-[Noisebridge](http://noisebridge.net/) on Monday nights. It's been over a month
-since I taught a class (the class on my birthday was covered by soeone else), so
-I'm excited to get back into it this Monday.
+[Noisebridge](http://noisebridge.net/) on Monday nights. I'm trying a new format
+where I intentionally repeat lessons several times, in order to give people a
+chance to catch up when they miss classes (which people tend to do a lot) and
+also reinforce material that may have been mystifying the first time around.
 
-I've been putting some time into
-[mwoffliner](https://github.com/openzim/mwoffliner), the software that scrapes
-Mediawiki sites (like Wikipedia) to create offline ZIM files. I've also done a
-lot of work on [Rainfall](https://rainfall.dev), most of which was changing the
-architecture significantly so that it can properly scale, in case it ever gets
-thousands of users. My thought is that I wouldn't want to put all this work into
-it, and then it suddenly hits the front page of [Hacker
-News](https://news.ycombinator.com) and breaks and I have no chance to fix it.
+All the work I put into [Rainfall](https://rainfall.dev) has kind of been a
+bust. I added [matomo analytics](https://matomo.org/) and it seems like I'm
+getting between 1-3 visits a week. Yikes. Not sure if I want to ramp up some
+efforts to promote the thing, or just let it die a quiet death. At this point I
+don't feel particularly inspired to add new features based on the fact that no
+one is using it.
 
-For reading, I'm a couple of chapters into a couple of non-fiction books, and a
-couple of fiction books as well. Sigh.
-
-As far as video games, I'm still focusing on Factorio Space Age, but I kind of
-took a break after the holidays. I've also started a Pokémon Sapphire game,
-though I've never successfully "beaten" any Pokémon game.
+I bought a beautiful used copy of _Zen Mind, Beginner's Mind_ from Dog Eared
+Books and I'm definitely enjoying it. I also took out another Zen book from the
+library, about zazen and Zen meditation. Both books emphasize that there's kind
+of no point in "reading about Zen" and that the real value is from the practice
+of sitting zazen. So I'm thinking about going to the beginner day at the [San
+Francisco Zen Center](https://sfzc.org) (which is the sangha founded by Shunryu
+Suzuki, the author of the book) on April 6. It's walking distance from my
+apartment!
 
 ---
 
