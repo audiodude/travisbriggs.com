@@ -14,3 +14,5 @@ This garden is also available as a [[gemini|Gemini]] capsule at [gemini://gem.tr
 [[comments|Comments]] are enabled by replying to a Mastodon post for each garden node.
 
 The source code for this garden is [available on GitHub](https://github.com/audiodude/garden.travisbriggs.com), and I'm tracking [issues to improve it](https://github.com/audiodude/garden.travisbriggs.com/issues). It is based on [Eleventy Garden](https://github.com/binyamin/eleventy-garden) which is based on [Eleventy](https://www.11ty.dev/).
+
+There's always a temptation to just re-write the software for the whole thing, following the natural [[blog-cycle|blog cycle]].
