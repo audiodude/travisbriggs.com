@@ -6,10 +6,17 @@ quality: A
 importance: Top
 permalink: now/
 ---
-The main news right now is that [[Abby]] is going to be starting a chemotherapy
-drug in the next few months that will hopefully shrink some of her tumors.
-She'll be on it for at least 18 months and there's a lot of potential side
-effects, so I have a lot of anxiety, but also hope.
+[[Abby]] will be having surgery on tumors in the back of her scalp on April 29.
+She's currently visiting her family in Massachusetts, though I might fly out
+this coming monday (Apr 21) to meet them in New York City. She's also going to
+be starting a chemotherapy drug in the next few months that will hopefully
+shrink some of her other tumors. We have a lot of anxiety but also a lot of
+hope.
+
+I checked out the [San Francisco Zen Center](https://sfzc.org) on April 6. It
+is, in fact, walking distance from my apartment! Of course now I'm kind of
+obsessed with Zen, which is literally ironic. The more you grasp at it, the more
+it slips through your fingers and all that.
 
 Currently, I'm still living in San Francisco, in the same apartment I've lived
 in since we moved there in December 2012. What can I say, it's cozy,
@@ -18,29 +25,19 @@ same job at YouTube that I've had all that time.
 
 I'm still teaching a free [Python
 class](https://www.noisebridge.net/wiki/PyClass) at
-[Noisebridge](http://noisebridge.net/) on Monday nights. I'm trying a new format
-where I intentionally repeat lessons several times, in order to give people a
-chance to catch up when they miss classes (which people tend to do a lot) and
-also reinforce material that may have been mystifying the first time around.
-I've also been experimenting with
-[recording](https://www.youtube.com/watch?v=2XALGw2P4Ac) the lessons.
+[Noisebridge](http://noisebridge.net/) on Monday nights. The new format of
+repeating each lesson several times has been going well! I've also been
+experimenting with
+[recording](https://www.youtube.com/watch?v=2XALGw2P4Ac&list=PLFfm7ymJs-GxWVuqKVt8Ge2TjHNFJHcGt)
+the lessons.
 
-All the work I put into [Rainfall](https://rainfall.dev) has kind of been a
-bust. I added [matomo analytics](https://matomo.org/) and it seems like I'm
-getting between 1-3 visits a week. Yikes. Not sure if I want to ramp up some
-efforts to promote the thing, or just let it die a quiet death. Meanwhile,
-[Faircamp](https://simonrepp.com/faircamp/), which Rainfall is based on, got
-some new features and it seems like a good time to support those features, so I
-have _some_ amount of inspiration to continue development.
-
-I bought a beautiful used copy of _Zen Mind, Beginner's Mind_ from Dog Eared
-Books and I'm definitely enjoying it. I also took out another Zen book from the
-library, about zazen and Zen meditation. Both books emphasize that there's kind
-of no point in "reading about Zen" and that the real value is from the practice
-of sitting zazen. So I'm thinking about going to the beginner day at the [San
-Francisco Zen Center](https://sfzc.org) (which is the sangha founded by Shunryu
-Suzuki, the author of the book) on April 6. It's walking distance from my
-apartment!
+Someone reached out about a bug in [Rainfall](https://rainfall.dev) but it seems
+to have resolved itself? Meanwhile, [Faircamp](https://simonrepp.com/faircamp/),
+which Rainfall is based on, got some new features and it seems like a good time
+to support those features, so I have _some_ amount of inspiration to continue
+development. I'm still secretly hoping that it goes viral and gets popular or
+something, especially considering all the work I put into specifically making it
+scalable.
 
 ---
 
