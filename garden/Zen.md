@@ -1,7 +1,7 @@
 ---
 title: Zen
 date: 2025-04-18
-quality: Start
+quality: A
 importance: Low
 ---
 

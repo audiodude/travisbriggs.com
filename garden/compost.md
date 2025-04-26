@@ -14,6 +14,8 @@ For this reason, I've created this "Compost pile". Maybe compost is a bad word, 
 
 ---
 
+I've collected a lot of my thoughts and opinions on [[programming languages]] that I use and/or am familiar with.
+
 Some thoughts on [[new-year-2025 | New Year's 2025]].
 
 I'm surprised by how many people who I consider "open source advocates" and "free software crusaders" are [[github|still comfortable using Github]].

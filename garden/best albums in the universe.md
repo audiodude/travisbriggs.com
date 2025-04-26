@@ -1,11 +1,11 @@
 ---
 title: The Best Albums in the Universe
-date: 2022-11-26
-quality: B
+date: 2025-04-25
+quality: A
 importance: Top
 ---
 
-I think I started this project in 2011 or 2012. It lives on the web at [bestalbumsintheuniverse.com](https://bestalbumsintheuniverse.com) and on Gemini at [gem.bestalbumsintheuniverse.com](gemini://gem.bestalbumsintheuniverse.com).
+I think I started this project in 2011 or 2012. It lives on the web at [bestalbumsintheuniverse.com](https://bestalbumsintheuniverse.com) and on [[gemini|Gemini]] at [gem.bestalbumsintheuniverse.com](gemini://gem.bestalbumsintheuniverse.com).
 
 When I was coming up with the name, I knew I wanted to keep track of a curated collection of my favorite albums, mostly for my own reference. But I thought it would be lame to be like my-favorite-albums.com or something like that. Why not go big and call it Best Albums in the Universe?
 
@@ -27,4 +27,6 @@ The interesting thing about that early version was that I wrote all of the album
 
 Also, the markdown files didn't directly translate into the "cover art squares" you see on the website. Instead, I had an `albums.json` file in my root directory that contained a [Liquid](https://shopify.github.io/liquid/) template for generating a full [JSON](https://www.json.org/json-en.html) document of the final albums. Then, when the site loaded, the Javascript on the page would request the `albums.json` file, parse it, and use [Mustache templates](https://mustache.github.io/) to generate the final HTML document. There's also a "grid layout library" called [Masonry](https://masonry.desandro.com/) that is used, plus some custom Javascript to control when to display or collapse albums when they are clicked, and to create permalinks to a version of the site with certain albums already open.
 
-There's more to this history of this site and how it is generated, including the Gemini version and the current "headless CMS" version, so be sure to check back here.
+A few years ago, I decided to write a "headless CMS" for the site, so that when I type in a [Wikidata](https://wikidata.org) ID for an album, it does an API lookup on Wikidata and grabs the Artist, Title, Release Year, Spotify ID (the best albums page includes Spotify embeds), and album art. At that point, all I have to do is write the description, click save, and then upload the result to the static site. [This CMS](https://github.com/audiodude/best-albums-headless) is written in [[Ruby on Rails]] and is hosted on the same server that hosts the best albums site itself.
+
+At some point I'll write about my [[gemini|Gemini]] version (which is still listed in the historical record of the [first fifty Gemini hosts](https://geminiprotocol.net/history/servers.gmi)).

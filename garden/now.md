@@ -15,7 +15,7 @@ hope.
 
 I checked out the [San Francisco Zen Center](https://sfzc.org) on April 6. It
 is, in fact, walking distance from my apartment! Of course now I'm kind of
-obsessed with Zen, which is literally ironic. The more you grasp at it, the more
+obsessed with [[Zen]], which is literally ironic. The more you grasp at it, the more
 it slips through your fingers and all that.
 
 Currently, I'm still living in San Francisco, in the same apartment I've lived
