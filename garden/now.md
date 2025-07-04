@@ -6,17 +6,11 @@ quality: A
 importance: Top
 permalink: now/
 ---
-[[Abby]] will be having surgery on tumors in the back of her scalp on April 29.
-She's currently visiting her family in Massachusetts, though I might fly out
-this coming monday (Apr 21) to meet them in New York City. She's also going to
-be starting a chemotherapy drug in the next few months that will hopefully
-shrink some of her other tumors. We have a lot of anxiety but also a lot of
-hope.
-
-I checked out the [San Francisco Zen Center](https://sfzc.org) on April 6. It
-is, in fact, walking distance from my apartment! Of course now I'm kind of
-obsessed with [[Zen]], which is literally ironic. The more you grasp at it, the more
-it slips through your fingers and all that.
+YouTube (and I think Google in general) has called all fully remote workers back
+into the office starting in September. It will be a hybrid schedule, the same as
+everyone else, Tuesday through Thursday in the office. In preparing for this, we
+bought a new car, a 2025 Toyota RAV4, black. I'm excited to have a car for a
+number of reasons, but I'm not terribly excited to have to street park it.
 
 Currently, I'm still living in San Francisco, in the same apartment I've lived
 in since we moved there in December 2012. What can I say, it's cozy,
@@ -31,14 +25,16 @@ experimenting with
 [recording](https://www.youtube.com/watch?v=2XALGw2P4Ac&list=PLFfm7ymJs-GxWVuqKVt8Ge2TjHNFJHcGt)
 the lessons.
 
-Someone reached out about a bug in [Rainfall](https://rainfall.dev) but it seems
-to have resolved itself? Meanwhile, [Faircamp](https://simonrepp.com/faircamp/),
-which Rainfall is based on, got some new features and it seems like a good time
-to support those features, so I have _some_ amount of inspiration to continue
-development. I'm still secretly hoping that it goes viral and gets popular or
-something, especially considering all the work I put into specifically making it
-scalable.
+I've also got a [Google Summer of Code](https://summerofcode.withgoogle.com/)
+intern with [Kiwix](https://kiwix.org/en/), working on [[wp-1.0|WP1]]. It's been
+going well so far, the student is very capable and engaged.
 
+I've kind of gone down a "audiophile"/high fidelity rabbit hole. I subscribed to
+[Qobuz](https://www.qobuz.com/us-en/discover) and although I'm not fully
+conviced I can tell the difference between 320kbps MP3 and CD quality, I bought
+a high definition DAC that plugs into my laptop and iPad, and a new set of high
+quality Beyerdynamic headphones. It's certainly made my music listening less
+convenient!
 ---
 
 ### What is a 'now' page?
