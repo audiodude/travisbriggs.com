@@ -35,6 +35,7 @@ conviced I can tell the difference between 320kbps MP3 and CD quality, I bought
 a high definition DAC that plugs into my laptop and iPad, and a new set of high
 quality Beyerdynamic headphones. It's certainly made my music listening less
 convenient!
+
 ---
 
 ### What is a 'now' page?
