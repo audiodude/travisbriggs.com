@@ -17,13 +17,11 @@ in since we moved there in December 2012. What can I say, it's cozy,
 rent-controlled and in an awesome neighborhood (near Zeitgeist). I also have the
 same job at YouTube that I've had all that time.
 
-I'm still teaching a free [Python
-class](https://www.noisebridge.net/wiki/PyClass) at
-[Noisebridge](http://noisebridge.net/) on Monday nights. The new format of
-repeating each lesson several times has been going well! I've also been
-experimenting with
-[recording](https://www.youtube.com/watch?v=2XALGw2P4Ac&list=PLFfm7ymJs-GxWVuqKVt8Ge2TjHNFJHcGt)
-the lessons.
+I've paused my [Python class](https://www.noisebridge.net/wiki/PyClass) at
+[Noisebridge](http://noisebridge.net/). I'm not sure if I'm going to start it
+back up, but if I do, it will be in September. I also rescinded my membership at
+Noisebridge because I'm worried about their financial troubles. I'm not sure if
+it's worth it to pay dues for 11 months, and then in month 12 they fold anyway.
 
 I've also got a [Google Summer of Code](https://summerofcode.withgoogle.com/)
 intern with [Kiwix](https://kiwix.org/en/), working on [[wp-1.0|WP1]]. It's been
