@@ -1,7 +1,7 @@
 ---
 title: Now
 date: 2024-05-21
-updated: 2025-03-19
+updated: 2025-07-03
 quality: A
 importance: Top
 permalink: now/
