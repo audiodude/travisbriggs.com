@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData('eleventyComputed', () => {
     return {
       permalink(data) {
-        if (data.permalink) {
+        if (data.permalink && !data.permalink.endsWith('/')) {
           return data.permalink;
         }
         const { inputPath, filePathStem } = data.page;
