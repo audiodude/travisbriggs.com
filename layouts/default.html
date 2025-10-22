@@ -15,6 +15,9 @@
       <a href="/garden/">Garden</a>
       <a href="/garden/about">About Me</a>
       <a href="/now">Now</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <span class="theme-toggle-icon">◐</span>
+      </button>
     </nav>
   </header>
   <main>{{content}}</main>
@@ -33,6 +36,54 @@
       </p>
     </div>
   </footer>
+
+  <script>
+    // Theme toggle functionality
+    (function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const html = document.documentElement;
+      const body = document.body;
+
+      // Check for saved theme preference or default to system preference
+      const getPreferredTheme = () => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          return savedTheme;
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      };
+
+      // Apply theme
+      const applyTheme = (theme) => {
+        if (theme === 'dark') {
+          body.classList.remove('light-theme');
+          body.classList.add('dark-theme');
+        } else {
+          body.classList.remove('dark-theme');
+          body.classList.add('light-theme');
+        }
+        localStorage.setItem('theme', theme);
+      };
+
+      // Initialize theme on page load
+      const currentTheme = getPreferredTheme();
+      applyTheme(currentTheme);
+
+      // Toggle theme on button click
+      themeToggle.addEventListener('click', () => {
+        const currentTheme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(newTheme);
+      });
+
+      // Listen for system theme changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+          applyTheme(e.matches ? 'dark' : 'light');
+        }
+      });
+    })();
+  </script>
 </body>
 
 </html>
