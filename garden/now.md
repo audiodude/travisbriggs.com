@@ -6,35 +6,29 @@ quality: A
 importance: Top
 permalink: now/
 ---
-YouTube (and I think Google in general) has called all fully remote workers back
-into the office starting in <strikethrough>September</strikethrough> October. It
-will be a hybrid schedule, the same as everyone else, Tuesday through Thursday
-in the office. In preparing for this, we bought a new car, a 2025 Toyota RAV4,
-black. I'm excited to have a car for a number of reasons, but I'm not terribly
-excited to have to street park it. Or drive it to work for that matter.
+I'm officially back in the office at YouTube. So far the commute has been fine,
+but being stuck at a desk all day with no option to take breaks and chat with
+[[Abby|my wife]] has been kind of a bummer. I made a joke on the second day to
+my boss that "I don't know office etiquette anymore, I need to be
+re-socialized!" and I think that actually might be kind of true.
 
 Currently, I'm still living in San Francisco, in the same apartment I've lived
 in since we moved there in December 2012. What can I say, it's cozy,
 rent-controlled and in an awesome neighborhood (near Zeitgeist). I also have the
 same job at YouTube that I've had all that time.
 
-My friends at [Noisebridge](http://noisebridge.net/) encouraged me to resume my
-free [Python class](https://www.noisebridge.net/wiki/PyClass) in September. Well
-it's September, and I haven't resumed it. I'm not sure I will. I just don't feel
-particularly confident in Noisebridge as an institution to justify investing my
-effort there anymore.
+I'm pretty confident that I won't be resuming my free [Python
+class](https://www.noisebridge.net/wiki/PyClass) at this point. Just kind of
+feel like I've disengaged from [Noisebridge](https://noisebridge.net) and the
+ship has sailed.
 
-My [Google Summer of Code](https://summerofcode.withgoogle.com/) intern with
-[Kiwix](https://kiwix.org/en/) finished his project successfully! He worked on
-[[wp-1.0|WP1]] and you can read his final writeup [in his own
-words](https://gist.github.com/nicolapace/822fc72fa1e438c1fb3848043347f9ce).
+My friend Will, soon after getting married, has moved back to Berlin with his
+new bride. Now, I barely saw him when he was in LA, but really the big problem
+with this move, from my perspective, is the time zone difference.
 
-My friend Will got married in Philadelphia! I was part of the unofficial
-official wedding party and we all looked great and had a great time. I cried
-during the ceremony quite a bit and cursed myself for not bringing tissues.
-
-I've taken on a paid tutoring gig for a coworker's son, and I offered to tutor
-the brother of my friend's new wife, who I talked to at the wedding.
+My "meds" are currently being adjusted, so just...be gentle with me. Have you
+ever heard of [anhedonia](https://en.wikipedia.org/wiki/Anhedonia)? I wouldn't
+recommend it.
 
 ---
 
