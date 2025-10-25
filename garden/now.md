@@ -12,6 +12,13 @@ but being stuck at a desk all day with no option to take breaks and chat with
 my boss that "I don't know office etiquette anymore, I need to be
 re-socialized!" and I think that actually might be kind of true.
 
+I've been officially elected Secretary of BAWUG, the [Bay Area Wikipedians User
+Group](https://meta.wikimedia.org/wiki/Bay_Area_Wikipedians_User_Group)!
+Practically speaking, I was part of the only slate of candidates that there was,
+and what it really means is just making official the duties I was already
+volunteering for. But it's exciting! We had a successful event at SFPL North
+Beach branch on Oct 7.
+
 Currently, I'm still living in San Francisco, in the same apartment I've lived
 in since we moved there in December 2012. What can I say, it's cozy,
 rent-controlled and in an awesome neighborhood (near Zeitgeist). I also have the
