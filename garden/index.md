@@ -1,7 +1,7 @@
 ---
 title: Entering the garden
 date: 2022-11-26
-updated: 2024-09-14
+updated: 2026-02-03
 quality: GA
 importance: Top
 include_recent: true
@@ -9,14 +9,50 @@ include_recent: true
 
 _I'm trying desperately to resist the urge to write this entire website as a choose-your-own adventure game. Must, resist._
 
-As you enter the garden, you can see a bunch of [[best albums in the universe|records]] for sale, or at least on display. You also hear [[danger-third-rail|a band]] playing somewhere inside. It's impossible to miss the huge amount of power extension cords and other wires darting through the gate, laying on the ground, and even going up over the walls of the garden. Whatever is going on here requires plenty of electricity it would seem.
+## Welcome to the Garden 🌱
 
-You also see what looks like a disheveled madman rambling to himself about [[blog|blogging]].
+This digital garden has grown organically over time, and now it's organized into thematic areas to help you explore. Like any good garden, there are **multiple pathways** through the content - wander wherever interests you!
+
+## 🗺️ Garden Areas
+
+### 🎵 **[Music](/garden/music/)** 
+Recording, production, genre thoughts, and the highs and lows of being a musician. You can see [[music/best albums in the universe|records]] for sale and hear [[meta/danger-third-rail|a band]] playing somewhere inside.
+
+### 💻 **[Technology](/garden/technology/)**  
+Programming languages, tools, and technical deep-dives. From JavaScript to Python, with plenty of extension cords and wires - whatever is going on here requires electricity.
+
+### 🤔 **[Philosophy](/garden/philosophy/)**
+Personal beliefs, atheism, Zen, and life reflections. Including thoughts on getting [[philosophy/excited|excited]] about things.
+
+### 🛠️ **[Projects](/garden/projects/)**
+Specific tools and applications I've built, from Qwobl to Rainfall.
+
+### 🌿 **[Principles](/garden/principles/)**  
+The meta-garden: how digital gardening works, principles, and [[principles/digital-garden-itself|the garden itself]].
+
+### 🔧 **[Meta](/garden/meta/)**
+Garden maintenance, [[meta/plans|plans]], [[meta/about|about]], and the [[meta/compost|compost pile]] in the corner.
+
+## 📊 Browse by Quality
+
+- **<span class="quality FA">Featured</span> & <span class="quality GA">Good</span>**: My best, most complete content
+- **<span class="quality B">B-Class</span>**: Solid articles with room to grow  
+- **<span class="quality Start">Developing</span>**: Work in progress, learning in public
+- **<span class="quality Stub">Seeds</span>**: Early ideas and placeholders
+
+## 🎯 Browse by Importance  
+
+- **<span class="importance Top">Essential</span>**: Core to understanding who I am and what I do
+- **<span class="importance High">Important</span>**: Key areas of expertise and interest
+- **<span class="importance Mid">Supporting</span>**: Good context and background
+- **<span class="importance Low">Peripheral</span>**: Interesting but not central
+
+## 🕐 What's Happening
 
 There's a live digital display telling you about things that are going on right [[now]].
 
-A [[writings|scrappy-looking journal]] is open on a simple table, with some handwritten poetry and the like. 
+A disheveled madman (me) rambles about [[blog|blogging]] and keeps a [[writings|scrappy-looking journal]] open on a simple table, with handwritten poetry and the like.
 
-In the corner of the garden, there is a large smelly [[compost|compost pile]].
+---
 
-You can also read about [[digital-garden-itself|the digital garden itself]].
+*This garden follows the principles of **learning in public**, **continuous growth**, and **contextual linking**. Content is never finished, always evolving. Jump in anywhere that catches your interest!*
