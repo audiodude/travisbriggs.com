@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "The digital garden of Travis Briggs.",
   "scripts": {
-    "start": "eleventy --serve --quiet",
-    "build": "eleventy",
+    "start": "npx @11ty/eleventy --serve --quiet",
+    "build": "npx @11ty/eleventy",
     "deploy-gemini": "./deploy_gemini.sh"
   },
   "repository": {
@@ -36,6 +36,7 @@
   "dependencies": {
     "dotenv": "^16.3.1",
     "luxon": "^3.7.2",
+    "netlify-cli": "^23.15.1",
     "node-fetch": "^3.3.2",
     "sqlite3": "^5.1.6"
   }

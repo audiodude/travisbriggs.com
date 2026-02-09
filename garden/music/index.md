@@ -1,46 +1,16 @@
 ---
 title: Music & Audio
-date: 2026-02-03
+date: 2026-02-07
 quality: B
 importance: High
 ---
 
-# 🎵 Music & Audio
+Music has always been at the center of what happens here, and this corner of the garden reflects that obsession. You'll find the [[recording-setup|current studio setup]] represents years of tweaking and upgrading, chasing that perfect signal chain that probably doesn't exist. [[Ableton]] remains the weapon of choice for digital audio work, though [[ableton-12|the latest version]] brings its own set of possibilities and frustrations.
 
-Music production, recording, instruments, and the creative process. This is where the electrical wires and extension cords lead - serious audio work requires serious power.
+The creative side is messier, more human. You can explore thoughts about [[genre-thoughts|how we categorize music]] and whether those boundaries actually mean anything. There's something to be said for the [[highs-and-lows-musician|emotional rollercoaster]] that comes with making music - one day you're convinced you've written the next great song, the next day you're wondering why you even bother. The question of [[good-song|what makes a song actually good]] keeps coming up, especially when deep in the production weeds.
 
-## 🎧 Production & Recording
+The business side creeps in too. You'll notice that [[Bandcamp]] still feels like the most artist-friendly platform, even as [[Spotify]] dominates how most people discover music. [[YouTube]] serves as this weird hybrid of music platform and video service, while [[DistroKid]] handles the unglamorous but necessary work of getting music onto all these services. 
 
-**<span class="quality B importance High">High Priority</span>**
-- [[recording-setup]] - My current studio setup and signal chain
-- [[ableton]] - Digital Audio Workstation of choice
-- [[ableton-12]] - Thoughts on the latest version
+You might find fascinating the psychology around [[bands-as-sports-teams|how we relate to musicians]] - this idea that fan loyalty works similarly whether you're following a band or cheering for your home team. There's definitely some truth to treating the [[best albums in the universe|greatest albums]] like personal treasures worth defending.
 
-## 🎭 Creative Process & Philosophy  
-
-**<span class="quality B importance Mid">Creative Insights</span>**
-- [[genre-thoughts]] - Thoughts on musical genres and categorization
-- [[highs-and-lows-musician]] - The emotional rollercoaster of making music
-- [[good-song]] - What makes a song actually good?
-
-**<span class="quality Start importance Mid">Developing Ideas</span>**
-- [[fake-it-music]] - On authenticity vs. "faking it" in music
-- [[motivation-music]] - Finding motivation in the creative process
-
-## 🌐 Music Platforms & Distribution
-
-**<span class="quality Start importance Mid">Platform Thoughts</span>**
-- [[Bandcamp]] - The artist-friendly platform
-- [[Spotify]] - Streaming giant thoughts
-- [[YouTube]] - Video and music platform
-- [[DistroKid]] - Distribution service notes
-
-## 🏟️ Music Culture
-
-**<span class="quality C importance Low">Cultural Commentary</span>**
-- [[bands-as-sports-teams]] - Fan loyalty in music
-- [[best albums in the universe]] - Personal all-time favorites
-
----
-
-← Back to [[/garden/|Garden Index]] | 🎯 Filter by **<span class="importance High">importance</span>** or **<span class="quality GA">quality</span>**
+The process itself remains elusive. Sometimes [[fake-it-music|authenticity feels performative]], and [[motivation-music|staying motivated]] requires constant maintenance. But when everything clicks - when the levels are right, the performance is there, and the arrangement serves the song - there's nothing quite like it.
