@@ -210,7 +210,7 @@ a[href^="/"]:focus {
 /* Typography */
 p {
     color: var(--text-primary);
-    margin-bottom: 1.15rem;
+    margin-bottom: 1rem;
 }
 
 h1,
@@ -245,13 +245,17 @@ h5,
     font-size: 1.25em;
 }
 
+.garden-hr {
+    margin: 1rem 0 0.25rem;
+}
+
 small {
     font-size: 0.8em;
 }
 
 .backlinks-title, .comments-title, .recent-title {
     color: var(--text-section);
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 0;
 }
 

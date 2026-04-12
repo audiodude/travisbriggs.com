@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The digital garden of Travis Briggs.",
   "scripts": {
-    "start": "eleventy --serve --quiet",
+    "dev": "eleventy --serve --quiet",
     "build": "eleventy",
     "deploy-gemini": "./deploy_gemini.sh"
   },

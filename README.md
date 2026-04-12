@@ -16,7 +16,7 @@ This static site generator is built off the awesome template [Eleventy Garden](h
 
 ```bash
 npm install
-npm start
+npm run dev
 ```
 
 ## Deploying
