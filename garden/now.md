@@ -2,7 +2,7 @@
 title: Now
 date: 2024-05-21
 updated: 2025-09-14
-quality: A
+quality: GA
 importance: Top
 permalink: now/
 ---

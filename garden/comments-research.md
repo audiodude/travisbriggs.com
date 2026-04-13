@@ -2,7 +2,7 @@
 title: Enabling comments
 date: 2023-11-18
 updated: 2024-08-27
-quality: A
+quality: GA
 importance: Top
 ---
 

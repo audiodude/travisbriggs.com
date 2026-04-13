@@ -1,7 +1,7 @@
 ---
 title: Zen
 date: 2025-04-18
-quality: A
+quality: GA
 importance: Low
 ---
 

@@ -2,7 +2,7 @@
 title: Python
 date: 2022-12-01
 updated: 2024-09-14
-quality: A
+quality: GA
 importance: Mid
 ---
 

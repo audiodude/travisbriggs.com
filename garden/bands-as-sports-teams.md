@@ -2,7 +2,7 @@
 title: Bands and sports teams
 date: 2024-03-08
 updated: 2024-09-21
-quality: A
+quality: GA
 importance: Low
 ---
 

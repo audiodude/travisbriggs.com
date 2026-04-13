@@ -2,7 +2,7 @@
 title: Codecov
 date: 2024-07-06
 updated: 2024-09-05
-quality: A
+quality: GA
 importance: Low
 ---
 

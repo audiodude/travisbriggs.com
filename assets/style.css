@@ -1,12 +1,12 @@
+/* Light theme is the default. Dark theme applies when the OS prefers dark
+   AND the user hasn't manually picked light, or when .dark-theme is set. */
 :root {
-    /* Light theme colors */
     --accent: #2159ba;
     --accent-hover: #0f2854;
     --external: #ba6d21;
     --external-hover: #804c17;
     --grey: #444;
 
-    /* Light theme palette */
     --text-primary: #4D5061;
     --text-heading: #5C80BC;
     --text-section: #245817;
@@ -22,19 +22,17 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        /* Dark theme colors */
+    body:not(.light-theme) {
         --accent: #6b9eff;
         --accent-hover: #a8c7ff;
         --external: #ffaa66;
         --external-hover: #ffc999;
         --grey: #b0b0b0;
 
-        /* Dark theme palette */
         --text-primary: #d4d4d8;
-        --text-heading: #9db4e0;
+        --text-heading: #c5d5f0;
         --text-section: #90c27f;
-        --bg-body: #1a1a1a;
+        --bg-body: #262630;
         --bg-meta: #2d2a1f;
         --bg-preview: #2a2a2a;
         --bg-writing: #252525;
@@ -46,37 +44,17 @@
     }
 }
 
-/* Manual theme override classes */
-body.light-theme {
-    --accent: #2159ba;
-    --accent-hover: #0f2854;
-    --external: #ba6d21;
-    --external-hover: #804c17;
-    --grey: #444;
-    --text-primary: #4D5061;
-    --text-heading: #5C80BC;
-    --text-section: #245817;
-    --bg-body: #ffffff;
-    --bg-meta: lightyellow;
-    --bg-preview: #ffffff;
-    --bg-writing: #eeeeee;
-    --border-meta: #333333;
-    --border-comment: #cccccc;
-    --border-writing: #999999;
-    --preview-gradient: linear-gradient(transparent, white);
-    --shadow-color: rgba(0, 0, 0, 0.25);
-}
-
 body.dark-theme {
     --accent: #6b9eff;
     --accent-hover: #a8c7ff;
     --external: #ffaa66;
     --external-hover: #ffc999;
     --grey: #b0b0b0;
+
     --text-primary: #d4d4d8;
-    --text-heading: #9db4e0;
+    --text-heading: #c5d5f0;
     --text-section: #90c27f;
-    --bg-body: #1a1a1a;
+    --bg-body: #262630;
     --bg-meta: #2d2a1f;
     --bg-preview: #2a2a2a;
     --bg-writing: #252525;
@@ -219,7 +197,7 @@ h3,
 h4,
 h5 {
     color: var(--text-heading);
-    margin: 2.75rem 0 1.05rem;
+    margin: 1.75rem 0 1.05rem;
     font-weight: 400;
     line-height: 1.15;
 }

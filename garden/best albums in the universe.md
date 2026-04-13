@@ -1,7 +1,7 @@
 ---
 title: The Best Albums in the Universe
 date: 2025-04-25
-quality: A
+quality: GA
 importance: Top
 ---
 
