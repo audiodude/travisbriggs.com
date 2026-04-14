@@ -1,42 +1,28 @@
 ---
 title: Now
 date: 2024-05-21
-updated: 2025-09-14
+updated: 2026-04-13
 quality: GA
 importance: Top
 permalink: now/
 ---
-I'm officially back in the office at YouTube. So far the commute has been fine,
-but being stuck at a desk all day with no option to take breaks and chat with
-[[Abby|my wife]] has been kind of a bummer. I made a joke on the second day to
-my boss that "I don't know office etiquette anymore, I need to be
-re-socialized!" and I think that actually might be kind of true.
+So far 2026 has been really tough. I won't beat around the bush, I've been dealing
+with significant issues in the realm of my mental health. It's been hard on me and
+my family, both my immediate and my in laws.
 
-I've been officially elected Secretary of BAWUG, the [Bay Area Wikipedians User
-Group](https://meta.wikimedia.org/wiki/Bay_Area_Wikipedians_User_Group)!
-Practically speaking, I was part of the only slate of candidates that there was,
-and what it really means is just making official the duties I was already
-volunteering for. But it's exciting! We had a successful event at SFPL North
-Beach branch on Oct 7.
+I've got a new manager at work, and a new team and whatnot. I was worried a bit about
+not getting a raise this year, but no one at Google got a raise this year. I had other
+worries too, but a few weeks back I had a nice meeting with my boss' boss and he
+gave me a lot of reassurance and explained some things to me. So work is actually
+going pretty well. As well as it has in a long time.
+
+I've been vibe coding things like a fiend, and even getting back into generative AI
+art and videos using local GPU, which has been a lot of fun.
 
 Currently, I'm still living in San Francisco, in the same apartment I've lived
 in since we moved there in December 2012. What can I say, it's cozy,
 rent-controlled and in an awesome neighborhood (near Zeitgeist). I also have the
 same job at YouTube that I've had all that time.
-
-I'm pretty confident that I won't be resuming my free [Python
-class](https://www.noisebridge.net/wiki/PyClass) at this point. Just kind of
-feel like I've disengaged from [Noisebridge](https://noisebridge.net) and the
-ship has sailed.
-
-My friend Will, soon after getting married, has moved back to Berlin with his
-new bride. Now, I barely saw him when he was in LA, but really the big problem
-with this move, from my perspective, is the time zone difference.
-
-My "meds" are currently being adjusted, so just...be gentle with me. Have you
-ever heard of [anhedonia](https://en.wikipedia.org/wiki/Anhedonia)? I wouldn't
-recommend it.
-
 ---
 
 ### What is a 'now' page?
