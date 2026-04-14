@@ -23,6 +23,7 @@ Currently, I'm still living in San Francisco, in the same apartment I've lived
 in since we moved there in December 2012. What can I say, it's cozy,
 rent-controlled and in an awesome neighborhood (near Zeitgeist). I also have the
 same job at YouTube that I've had all that time.
+
 ---
 
 ### What is a 'now' page?
