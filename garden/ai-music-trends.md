@@ -15,4 +15,6 @@ In 2048, there will be a place for niche, “artisinal”, human made music, sur
 
 I say this as a musician, who was trained in music, a composer, a [[danger-third-rail|recording artist]] with [[spotify|published works]] (though none profitable!).
 
+If we could peek inside of Spotify’s analytics, I think most people already put on “vibe playlists” (rock workout, chill study, electronic drive home) on shuffle. In that case, the artist, be them human or AI, doesn’t even register anyway. I imagine once the labels agree (remember, the lables basically own Spotify through their investments and profit sharing deals), Spotify will just acquire whatever AI music making platform is the best developed or has the biggest following. They will see it as cutting out the human musician “middleman”.
+
 The writing’s on the wall. See you in 2048!
