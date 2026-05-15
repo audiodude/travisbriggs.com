@@ -55,5 +55,42 @@ export function fileRoutes() {
     res.json({ frontmatter: data, body: content });
   });
 
+  router.put('/files/*', (req, res) => {
+    const slug = req.params[0];
+    const filePath = path.join(gardenPath(), slug + '.md');
+    if (!fs.existsSync(filePath)) {
+      return res.status(404).json({ error: 'Not found' });
+    }
+    const { frontmatter, body } = req.body;
+    const output = matter.stringify(body || '', frontmatter);
+    fs.writeFileSync(filePath, output);
+    res.json({ ok: true });
+  });
+
+  router.post('/files', (req, res) => {
+    const { slug, frontmatter, body } = req.body;
+    const filePath = path.join(gardenPath(), slug + '.md');
+    if (fs.existsSync(filePath)) {
+      return res.status(409).json({ error: 'File already exists' });
+    }
+    const dir = path.dirname(filePath);
+    fs.mkdirSync(dir, { recursive: true });
+    const output = matter.stringify(body || '', frontmatter);
+    fs.writeFileSync(filePath, output);
+    res.status(201).json({ path: slug });
+  });
+
+  router.get('/slugs', (req, res) => {
+    const root = gardenPath();
+    const files = findMarkdownFiles(root);
+    const slugs = files.map((rel) => {
+      const raw = fs.readFileSync(path.join(root, rel), 'utf-8');
+      const { data } = matter(raw);
+      const slug = rel.replace(/\.md$/, '');
+      return { slug, title: data.title || slug };
+    });
+    res.json(slugs);
+  });
+
   return router;
 }

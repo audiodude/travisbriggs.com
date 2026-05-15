@@ -143,3 +143,140 @@ describe('GET /api/files/:path', () => {
     assert.equal(res.status, 404);
   });
 });
+
+describe('PUT /api/files/:path', () => {
+  let server, base;
+
+  before(() => {
+    setupFixtures();
+  });
+
+  after(() => {
+    cleanFixtures();
+  });
+
+  beforeEach(async () => {
+    ({ server, base } = await startApp(FIXTURE_DIR));
+  });
+
+  afterEach(() => {
+    server.close();
+  });
+
+  it('overwrites file with new frontmatter and body', async () => {
+    const res = await fetch(`${base}/api/files/compost`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        frontmatter: {
+          title: 'Compost pile',
+          date: '2023-11-14',
+          updated: '2026-05-15',
+          quality: 'GA',
+          importance: 'High',
+        },
+        body: 'Updated content.\n',
+      }),
+    });
+    assert.equal(res.status, 200);
+
+    const raw = fs.readFileSync(path.join(FIXTURE_DIR, 'compost.md'), 'utf-8');
+    assert.ok(raw.includes('quality: GA'));
+    assert.ok(raw.includes('Updated content.'));
+  });
+
+  it('returns 404 for missing files', async () => {
+    const res = await fetch(`${base}/api/files/nonexistent`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ frontmatter: { title: 'X' }, body: '' }),
+    });
+    assert.equal(res.status, 404);
+  });
+});
+
+describe('POST /api/files', () => {
+  let server, base;
+
+  before(() => {
+    setupFixtures();
+  });
+
+  after(() => {
+    cleanFixtures();
+  });
+
+  beforeEach(async () => {
+    ({ server, base } = await startApp(FIXTURE_DIR));
+  });
+
+  afterEach(() => {
+    server.close();
+  });
+
+  it('creates a new markdown file', async () => {
+    const res = await fetch(`${base}/api/files`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        slug: 'new-topic',
+        frontmatter: {
+          title: 'New Topic',
+          date: '2026-05-15',
+          quality: 'Stub',
+          importance: 'Mid',
+        },
+        body: '',
+      }),
+    });
+    assert.equal(res.status, 201);
+    const data = await res.json();
+    assert.equal(data.path, 'new-topic');
+
+    assert.ok(fs.existsSync(path.join(FIXTURE_DIR, 'new-topic.md')));
+  });
+
+  it('returns 409 if file already exists', async () => {
+    const res = await fetch(`${base}/api/files`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        slug: 'compost',
+        frontmatter: { title: 'Dup' },
+        body: '',
+      }),
+    });
+    assert.equal(res.status, 409);
+  });
+});
+
+describe('GET /api/slugs', () => {
+  let server, base;
+
+  before(() => {
+    setupFixtures();
+  });
+
+  after(() => {
+    cleanFixtures();
+  });
+
+  beforeEach(async () => {
+    ({ server, base } = await startApp(FIXTURE_DIR));
+  });
+
+  afterEach(() => {
+    server.close();
+  });
+
+  it('returns slug and title pairs', async () => {
+    const res = await fetch(`${base}/api/slugs`);
+    assert.equal(res.status, 200);
+    const slugs = await res.json();
+    assert.ok(slugs.length >= 3);
+
+    const compost = slugs.find((s) => s.slug === 'compost');
+    assert.ok(compost);
+    assert.equal(compost.title, 'Compost pile');
+  });
+});
