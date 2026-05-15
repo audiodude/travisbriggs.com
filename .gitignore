@@ -7,3 +7,4 @@ _gemini/
 .vscode/
 garden.tgz
 .env
+cms/node_modules

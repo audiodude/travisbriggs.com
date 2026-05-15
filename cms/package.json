@@ -1,0 +1,31 @@
+{
+  "name": "garden-cms",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "node --watch server/index.js",
+    "dev:all": "npm run dev:server & npm run dev",
+    "build": "vite build",
+    "test": "node --test test/**/*.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "@codemirror/autocomplete": "^6.18.6",
+    "@codemirror/lang-markdown": "^6.3.2",
+    "@codemirror/language": "^6.10.8",
+    "@codemirror/state": "^6.5.2",
+    "@codemirror/view": "^6.36.5",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "codemirror": "^6.0.1",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.1",
+    "vite": "^6.3.5"
+  }
+}
