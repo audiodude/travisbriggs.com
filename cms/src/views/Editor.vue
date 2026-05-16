@@ -21,7 +21,15 @@ const slugs = listSlugs();
 const dirty = ref(false);
 let autoSaveTimer = null;
 
+function onKeydown(e) {
+  if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+    e.preventDefault();
+    if (!saving.value && !loading.value) save();
+  }
+}
+
 onMounted(async () => {
+  window.addEventListener('keydown', onKeydown);
   const data = await getFile(filePath);
   frontmatter.value = data.frontmatter;
   body.value = data.body;
@@ -33,6 +41,7 @@ onMounted(async () => {
 });
 
 onBeforeUnmount(() => {
+  window.removeEventListener('keydown', onKeydown);
   if (autoSaveTimer) clearInterval(autoSaveTimer);
 });
 
