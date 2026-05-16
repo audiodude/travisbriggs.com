@@ -6,7 +6,7 @@ importance: High
 ---
 In 2026, I've now really embraced [[ai|AI]] and [[vibe coding]]. Like really embraced it.
 
-One of the projects that I've been working on is [Null Rail](https://null.dangerthirdrail.com) [ [external link](https://null.dangerthirdrail.com). It is a site where I am "learning" in public, just like this digital garden. It basically came about because I wanted to share some of these tracks/songs, but I didn't want to conflate them with my actual, hand-crafted, 100% human made demos at [songs.travisbriggs.com](https://songs.travisbriggs.com). I also wanted to be able to share notes on each of the songs, to really document my process as well as my thoughts on the end result.
+One of the projects that I've been working on is [Null Rail](https://null.dangerthirdrail.com). It is a site where I am "learning" in public, just like this digital garden. It basically came about because I wanted to share some of these tracks/songs, but I didn't want to conflate them with my actual, hand-crafted, 100% human made demos at [songs.travisbriggs.com](https://songs.travisbriggs.com). I also wanted to be able to share notes on each of the songs, to really document my process as well as my thoughts on the end result.
 
 I took the opportunity to use [Claude Design](https://www.anthropic.com/news/claude-design-anthropic-labs), which was pretty new at the time. I fed it a screenshot of the now defunct [[Rainfall]], RIP (TODO: embed image). It came up with a site with a remarkably close color scheme and design system. The point of using Rainfall was not because that site was particularly well designed, but that it was designed _by me, from scratch, with my own ideas_.
 
