@@ -163,6 +163,24 @@ describe('PUT /api/files/:path', () => {
     server.close();
   });
 
+  it('creates stubs for wikilinks to nonexistent pages', async () => {
+    const res = await fetch(`${base}/api/files/compost`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        frontmatter: { title: 'Compost pile', date: '2023-11-14' },
+        body: 'Link to [[brand-new-page]] and [[now]] which exists.\n',
+      }),
+    });
+    assert.equal(res.status, 200);
+    const data = await res.json();
+    assert.deepEqual(data.stubs, ['brand-new-page']);
+
+    const stub = fs.readFileSync(path.join(FIXTURE_DIR, 'brand-new-page.md'), 'utf-8');
+    assert.ok(stub.includes('quality: Stub'));
+    assert.ok(stub.includes('title: Brand New Page'));
+  });
+
   it('overwrites file with new frontmatter and body', async () => {
     const res = await fetch(`${base}/api/files/compost`, {
       method: 'PUT',

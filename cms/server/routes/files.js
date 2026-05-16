@@ -34,6 +34,26 @@ function fileSummary(filePath, rel) {
   };
 }
 
+const wikilinkRegExp = /\[\[\s?([^\[\]\|\n\r]+)(\|[^\[\]\|\n\r]+)?\s?\]\]/g;
+
+function createStubsForWikilinks(body) {
+  const root = gardenPath();
+  const created = [];
+  for (const match of body.matchAll(wikilinkRegExp)) {
+    const slug = match[1].replace(/\.(md|markdown)\s?$/i, '').trim();
+    const filePath = path.join(root, slug + '.md');
+    if (fs.existsSync(filePath)) continue;
+    const dir = path.dirname(filePath);
+    fs.mkdirSync(dir, { recursive: true });
+    const today = new Date().toISOString().split('T')[0];
+    const title = slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+    const stub = matter.stringify('', { title, date: today, quality: 'Stub', importance: 'Mid' });
+    fs.writeFileSync(filePath, stub);
+    created.push(slug);
+  }
+  return created;
+}
+
 export function fileRoutes() {
   const router = Router();
 
@@ -64,7 +84,8 @@ export function fileRoutes() {
     const { frontmatter, body } = req.body;
     const output = matter.stringify(body || '', frontmatter);
     fs.writeFileSync(filePath, output);
-    res.json({ ok: true });
+    const stubs = createStubsForWikilinks(body || '');
+    res.json({ ok: true, stubs });
   });
 
   router.post('/files', (req, res) => {
@@ -77,7 +98,8 @@ export function fileRoutes() {
     fs.mkdirSync(dir, { recursive: true });
     const output = matter.stringify(body || '', frontmatter);
     fs.writeFileSync(filePath, output);
-    res.status(201).json({ path: slug });
+    const stubs = createStubsForWikilinks(body || '');
+    res.status(201).json({ path: slug, stubs });
   });
 
   router.get('/slugs', (req, res) => {
