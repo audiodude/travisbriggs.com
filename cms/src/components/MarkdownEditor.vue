@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, watch, shallowRef } from 'vue';
 import { EditorView, keymap } from '@codemirror/view';
-import { EditorState } from '@codemirror/state';
+import { EditorState, Prec } from '@codemirror/state';
 import { markdown } from '@codemirror/lang-markdown';
 import { defaultKeymap, history, historyKeymap } from '@codemirror/commands';
 import { autocompletion } from '@codemirror/autocomplete';
@@ -38,7 +38,7 @@ const markdownHighlight = HighlightStyle.define([
   { tag: tags.strong, color: '#e8e8e8', fontWeight: 'bold' },
   { tag: tags.emphasis, color: '#e8e8e8', fontStyle: 'italic' },
   { tag: tags.link, color: '#7cc4e8' },
-  { tag: tags.url, color: '#7cc4e8', textDecoration: 'underline' },
+  { tag: [tags.url, tags.literal, tags.string], color: '#7cc4e8', textDecoration: 'underline' },
   { tag: tags.monospace, color: '#d8a060' },
   { tag: tags.quote, color: '#a0a8b8', fontStyle: 'italic' },
   { tag: tags.list, color: '#d0d4dc' },
@@ -70,7 +70,7 @@ onMounted(() => {
       extensions: [
         basicSetup,
         markdown(),
-        syntaxHighlighting(markdownHighlight),
+        Prec.highest(syntaxHighlighting(markdownHighlight)),
         wikilinkClickHandler,
         autocompletion({
           override: [wikilinkCompletion(props.slugs)],
