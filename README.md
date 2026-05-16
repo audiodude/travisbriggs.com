@@ -45,6 +45,19 @@ GEM_USER=username GEM_HOST=some.site.garden.example.com npm run deploy-gemini
 
 This will run Eleventy in Gemini mode, create a tarball, upload it to the remote host, and extract it to the necessary directory.
 
+## CMS
+
+There's a local-only CMS for editing garden content, vibe coded with Claude. It's a Vue 3 SPA with an Express backend that reads and writes the markdown files in `garden/` directly.
+
+```bash
+cd cms
+npm install
+npm run dev:all
+# Open http://localhost:5173
+```
+
+Features: sortable/filterable file list, frontmatter form with quality/importance dropdowns, CodeMirror 6 markdown editor with `[[wikilink]]` autocomplete, and new page creation with slug auto-generation. Run `npm run dev` in the repo root alongside it if you want the preview links to work.
+
 ## Recreating the comments database
 
 If you're in this section, I'm sad for you. You probably want to first [delete all existing comments](https://gist.github.com/audiodude/cb8234b4957892a65af6608f0ac3c359). Then run:
