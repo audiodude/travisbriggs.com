@@ -3,7 +3,7 @@ import { computed } from 'vue';
 
 const QUALITY_OPTIONS = ['', 'FA', 'GA', 'B', 'Start', 'Stub'];
 const IMPORTANCE_OPTIONS = ['', 'Top', 'High', 'Mid', 'Low'];
-const KNOWN_KEYS = ['title', 'date', 'updated', 'quality', 'importance', 'tags'];
+const KNOWN_KEYS = ['title', 'date', 'updated', 'quality', 'importance'];
 
 const props = defineProps({
   modelValue: { type: Object, required: true },
@@ -86,26 +86,6 @@ function formatDate(val) {
             {{ i || '—' }}
           </option>
         </select>
-      </label>
-    </div>
-
-    <div class="form-row">
-      <label>
-        Tags
-        <input
-          type="text"
-          :value="(modelValue.tags || []).join(', ')"
-          @input="
-            update(
-              'tags',
-              $event.target.value
-                .split(',')
-                .map((t) => t.trim())
-                .filter(Boolean)
-            )
-          "
-          placeholder="tag1, tag2"
-        />
       </label>
     </div>
 
