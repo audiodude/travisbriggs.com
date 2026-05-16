@@ -20,6 +20,12 @@ function findMarkdownFiles(dir, base = '') {
   return results;
 }
 
+function formatDate(val) {
+  if (!val) return null;
+  if (val instanceof Date) return val.toISOString().split('T')[0];
+  return String(val).split('T')[0];
+}
+
 function fileSummary(filePath, rel) {
   const raw = fs.readFileSync(filePath, 'utf-8');
   const { data } = matter(raw);
@@ -27,8 +33,8 @@ function fileSummary(filePath, rel) {
   return {
     path: slug,
     title: data.title || slug,
-    date: data.date ? data.date.toISOString().split('T')[0] : null,
-    updated: data.updated ? data.updated.toISOString().split('T')[0] : null,
+    date: formatDate(data.date),
+    updated: formatDate(data.updated),
     quality: data.quality || null,
     importance: data.importance || null,
   };
@@ -100,6 +106,36 @@ export function fileRoutes() {
     fs.writeFileSync(filePath, output);
     const stubs = createStubsForWikilinks(body || '');
     res.status(201).json({ path: slug, stubs });
+  });
+
+  router.get('/backlinks/*', (req, res) => {
+    const targetSlug = req.params[0];
+    const root = gardenPath();
+    const files = findMarkdownFiles(root);
+    const linkers = [];
+    for (const rel of files) {
+      const slug = rel.replace(/\.md$/, '');
+      if (slug === targetSlug) continue;
+      const raw = fs.readFileSync(path.join(root, rel), 'utf-8');
+      for (const match of raw.matchAll(wikilinkRegExp)) {
+        const linked = match[1].replace(/\.(md|markdown)\s?$/i, '').trim();
+        if (linked === targetSlug) {
+          linkers.push(slug);
+          break;
+        }
+      }
+    }
+    res.json(linkers);
+  });
+
+  router.delete('/files/*', (req, res) => {
+    const slug = req.params[0];
+    const filePath = path.join(gardenPath(), slug + '.md');
+    if (!fs.existsSync(filePath)) {
+      return res.status(404).json({ error: 'Not found' });
+    }
+    fs.unlinkSync(filePath);
+    res.json({ ok: true });
   });
 
   router.get('/slugs', (req, res) => {

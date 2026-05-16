@@ -33,6 +33,18 @@ export async function createFile(slug, frontmatter, body) {
   return res.json();
 }
 
+export async function getBacklinks(path) {
+  const res = await fetch(`${BASE}/backlinks/${path}`);
+  if (!res.ok) throw new Error(`Failed to get backlinks: ${res.status}`);
+  return res.json();
+}
+
+export async function deleteFile(path) {
+  const res = await fetch(`${BASE}/files/${path}`, { method: 'DELETE' });
+  if (!res.ok) throw new Error(`Failed to delete file: ${res.status}`);
+  return res.json();
+}
+
 export async function listSlugs() {
   const res = await fetch(`${BASE}/slugs`);
   if (!res.ok) throw new Error(`Failed to list slugs: ${res.status}`);

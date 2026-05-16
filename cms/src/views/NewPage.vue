@@ -105,7 +105,7 @@ async function create() {
 }
 
 .back-link {
-  color: #4a90d9;
+  color: #6aa8e8;
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -122,23 +122,25 @@ async function create() {
   flex-direction: column;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #555;
+  color: #8890a0;
   gap: 0.25rem;
   flex: 1;
 }
 
 .slug-row input {
   padding: 0.4rem 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid #404550;
   border-radius: 4px;
   font-size: 0.95rem;
   font-family: monospace;
+  background: #282c34;
+  color: #d0d4dc;
 }
 
 .slug-preview {
   font-family: monospace;
   font-size: 0.8rem;
-  color: #888;
+  color: #707888;
   white-space: nowrap;
 }
 
@@ -169,6 +171,6 @@ async function create() {
 
 .error-message {
   font-size: 0.85rem;
-  color: #c33;
+  color: #e05555;
 }
 </style>

@@ -1,7 +1,7 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onBeforeUnmount, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import { getFile, saveFile, listSlugs } from '../api.js';
+import { getFile, saveFile, deleteFile, getBacklinks, listSlugs } from '../api.js';
 import FrontmatterForm from '../components/FrontmatterForm.vue';
 import MarkdownEditor from '../components/MarkdownEditor.vue';
 
@@ -18,24 +18,50 @@ const saving = ref(false);
 const message = ref('');
 const slugs = listSlugs();
 
+const dirty = ref(false);
+let autoSaveTimer = null;
+
 onMounted(async () => {
   const data = await getFile(filePath);
   frontmatter.value = data.frontmatter;
   body.value = data.body;
   loading.value = false;
+  watch([frontmatter, body], () => (dirty.value = true), { deep: true });
+  autoSaveTimer = setInterval(() => {
+    if (dirty.value && !saving.value) save({ auto: true });
+  }, 15000);
 });
 
-async function save() {
+onBeforeUnmount(() => {
+  if (autoSaveTimer) clearInterval(autoSaveTimer);
+});
+
+async function save({ auto = false } = {}) {
   saving.value = true;
-  message.value = '';
+  if (!auto) message.value = '';
   try {
     await saveFile(filePath, frontmatter.value, body.value);
-    message.value = 'Saved.';
+    dirty.value = false;
+    message.value = auto ? 'Auto-saved.' : 'Saved.';
     setTimeout(() => (message.value = ''), 2000);
   } catch (e) {
     message.value = `Error: ${e.message}`;
   } finally {
     saving.value = false;
+  }
+}
+
+async function remove() {
+  try {
+    const backlinks = await getBacklinks(filePath);
+    const warning = backlinks.length
+      ? `${backlinks.length} page${backlinks.length === 1 ? '' : 's'} link to this page. Delete "${filePath}" anyway?`
+      : `Delete "${filePath}"? This cannot be undone.`;
+    if (!confirm(warning)) return;
+    await deleteFile(filePath);
+    router.push('/');
+  } catch (e) {
+    message.value = `Error: ${e.message}`;
   }
 }
 
@@ -49,9 +75,12 @@ function previewUrl() {
     <div class="editor-header">
       <router-link to="/" class="back-link">← Back</router-link>
       <span class="editor-path">{{ filePath }}</span>
-      <a :href="previewUrl()" target="_blank" class="preview-link" title="Open in Eleventy dev server">
-        Preview ↗
-      </a>
+      <div class="header-links">
+        <router-link :to="`/?backlinks=${filePath}`">Backlinks</router-link>
+        <a :href="previewUrl()" target="_blank" title="Open in Eleventy dev server">
+          Preview ↗
+        </a>
+      </div>
     </div>
 
     <p v-if="loading">Loading...</p>
@@ -64,6 +93,7 @@ function previewUrl() {
         <button @click="save" :disabled="saving" class="save-btn">
           {{ saving ? 'Saving...' : 'Save' }}
         </button>
+        <button @click="remove" class="delete-btn">Delete</button>
         <span v-if="message" class="save-message">{{ message }}</span>
       </div>
     </template>
@@ -79,7 +109,7 @@ function previewUrl() {
 }
 
 .back-link {
-  color: #4a90d9;
+  color: #6aa8e8;
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -91,17 +121,22 @@ function previewUrl() {
 .editor-path {
   font-family: monospace;
   font-size: 0.85rem;
-  color: #888;
+  color: #707888;
 }
 
-.preview-link {
+.header-links {
   margin-left: auto;
-  color: #4a90d9;
+  display: flex;
+  gap: 1rem;
+}
+
+.header-links a {
+  color: #6aa8e8;
   text-decoration: none;
   font-size: 0.85rem;
 }
 
-.preview-link:hover {
+.header-links a:hover {
   text-decoration: underline;
 }
 
@@ -113,7 +148,7 @@ function previewUrl() {
 
 .save-btn {
   padding: 0.5rem 1.5rem;
-  background: #4a90d9;
+  background: #4a8ad0;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -122,7 +157,7 @@ function previewUrl() {
 }
 
 .save-btn:hover {
-  background: #3a7ac0;
+  background: #3a78b8;
 }
 
 .save-btn:disabled {
@@ -130,8 +165,23 @@ function previewUrl() {
   cursor: not-allowed;
 }
 
+.delete-btn {
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  color: #c05050;
+  border: 1px solid #c05050;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #c05050;
+  color: #fff;
+}
+
 .save-message {
   font-size: 0.85rem;
-  color: #2a7a2a;
+  color: #5cb85c;
 }
 </style>

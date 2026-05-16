@@ -100,8 +100,8 @@ function formatDate(val) {
 
 <style scoped>
 .frontmatter-form {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: #242830;
+  border: 1px solid #3a3e48;
   border-radius: 6px;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -127,7 +127,7 @@ label {
   flex-direction: column;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #555;
+  color: #8890a0;
   gap: 0.25rem;
 }
 
@@ -135,14 +135,16 @@ input,
 select {
   font-size: 0.95rem;
   padding: 0.4rem 0.5rem;
-  border: 1px solid #ccc;
+  border: 1px solid #404550;
   border-radius: 4px;
   font-family: inherit;
+  background: #282c34;
+  color: #d0d4dc;
 }
 
 input:focus,
 select:focus {
-  outline: 2px solid #4a90d9;
+  outline: 2px solid #6aa8e8;
   outline-offset: 1px;
 }
 </style>

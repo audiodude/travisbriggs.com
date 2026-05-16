@@ -23,8 +23,8 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  color: #1a1a1a;
-  background: #f5f5f5;
+  color: #d0d4dc;
+  background: #1e2028;
   line-height: 1.5;
 }
 
@@ -33,12 +33,12 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem 1.5rem;
-  background: #1a1a1a;
-  color: #fff;
+  background: #16181e;
+  color: #d0d4dc;
 }
 
 .app-header a {
-  color: #fff;
+  color: #d0d4dc;
   text-decoration: none;
 }
 
@@ -49,13 +49,13 @@ body {
 
 .app-header nav a {
   padding: 0.4rem 0.8rem;
-  border: 1px solid #555;
+  border: 1px solid #505868;
   border-radius: 4px;
   font-size: 0.85rem;
 }
 
 .app-header nav a:hover {
-  background: #333;
+  background: #2a2e38;
 }
 
 main {
