@@ -26,6 +26,19 @@ function formatDate(val) {
   return String(val).split('T')[0];
 }
 
+const DATE_KEYS = ['date', 'updated'];
+const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+
+function normalizeFrontmatter(fm) {
+  const out = { ...fm };
+  for (const key of DATE_KEYS) {
+    if (typeof out[key] === 'string' && ISO_DATE_RE.test(out[key])) {
+      out[key] = new Date(out[key] + 'T00:00:00Z');
+    }
+  }
+  return out;
+}
+
 function fileSummary(filePath, rel) {
   const raw = fs.readFileSync(filePath, 'utf-8');
   const { data } = matter(raw);
@@ -88,7 +101,7 @@ export function fileRoutes() {
       return res.status(404).json({ error: 'Not found' });
     }
     const { frontmatter, body } = req.body;
-    const output = matter.stringify(body || '', frontmatter);
+    const output = matter.stringify(body || '', normalizeFrontmatter(frontmatter));
     fs.writeFileSync(filePath, output);
     const stubs = createStubsForWikilinks(body || '');
     res.json({ ok: true, stubs });
@@ -102,7 +115,7 @@ export function fileRoutes() {
     }
     const dir = path.dirname(filePath);
     fs.mkdirSync(dir, { recursive: true });
-    const output = matter.stringify(body || '', frontmatter);
+    const output = matter.stringify(body || '', normalizeFrontmatter(frontmatter));
     fs.writeFileSync(filePath, output);
     const stubs = createStubsForWikilinks(body || '');
     res.status(201).json({ path: slug, stubs });
