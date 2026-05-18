@@ -1,9 +1,10 @@
 ---
 title: Music Projects as Ephemera
 tags: blog
-date: 2018-03-01
+date: 2018-03-01T00:00:00.000Z
 quality: GA
 importance: Top
+updated: 2026-05-17
 ---
 
 At some point in the past year, I upgraded my version of [Reason](https://www.reasonstudios.com/shop/product/reason-11/) from version 10 to version 11.
@@ -34,6 +35,10 @@ The problem is that they no longer communicate. The Reason file, with my drums a
 
 Reason Studios, for their part, doesn't offer downloads of old versions of their software. Maybe they would throw a DMG my way if I explained my issues, maybe not, I haven't tried contacting them.
 
+I wonder now, though, in the age of vibe coding, if there isn't some way I could automate a solution for the Reason drum beat issue and somehow render and transclude the beat with scripting/automation?
+
+And honestly, do I need the beats really? Most of them, especially for the rock-oriented songs, are literally the stock Dr Rex "College 130" beat. I can probably recreate or do without?
+
 ---
 
 Okay, I've got files on my computer, backed up to Dropbox, of songs I wrote and played around with 24 odd years ago, when I was in middle school. I know the programs that wrote these files don't exist anymore (they were on the pre-OS X, MacOS 8 operating system, not even MacOS 9!). I guess I keep them around for sentimental reasons.
@@ -44,8 +49,8 @@ I guess I didn't expect my music files to constitute such ephemera, based on the
 
 I think the point is that I _should_ have expected this to happen. Every piece of digital everything is ephemera. Just look at how quickly [link rot](https://www.newyorker.com/magazine/2015/01/26/cobweb) takes over the web (it's impressive that the linked New Yorker article from 2015 still exists, but is that even its original URL?). Ask anyone my age where their digital photos from college or before are, now that they've lost that phone 10 years ago, or the hard drive on that laptop crashed. I get it.
 
-I haven't posted about this before because I feel a "Burning Man" style need to just let my art disappear into the desert sky. To metaphorically burn the last 10 years of music creation, most of which I was never going to meaningfully revisit anyway, and use the ashes as fertilizer for something new. That's probably the healthiest thing to do. The best ideas are ahead of me, not behind me. I am an overflowing font of endless creativity. Etc.
-
 I don't feel the need to warn anyone that this might happen to them. The versions of the software are old enough now that if it was going to happen, it's likely already happened. I also don't mean to whine or complain publicly, though a bit of that seems to be helping. And I'm not here to tell everyone to "back up all your files in 5 different formats and 6 different timezones" or whatever.
+
+For myself, I'm thinking of rendering everything as `.wav` in the future, so that I have _some_ kind of tangible artifact in case this keeps happening.
 
 This is more a eulogy for my lost files. Goodbye old songs. May you live on in MP3 format on [songs.travisbriggs.com](https://songs.travisbriggs.com) and Soundcloud. And by writing this, may I get some peace and closure.

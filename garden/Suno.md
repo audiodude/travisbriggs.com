@@ -1,6 +1,6 @@
 ---
 title: Suno
-date: '2026-05-16'
+date: 2026-05-16
 quality: Stub
 importance: Mid
 ---

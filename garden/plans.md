@@ -1,14 +1,16 @@
 ---
 title: Plans for the digital garden
-date: 2022-12-12
-updated: 2024-09-14
-quality: B
-importance: Mid
+date: '2022-12-12T00:00:00.000Z'
+updated: 2026-05-18T00:00:00.000Z
+quality: GA
+importance: High
 ---
 
 Here I'd like to discuss some of my plans, hopes, aspirations and whatnot for this digital garden. I've documented some of the more [technical issues](https://github.com/audiodude/garden.travisbriggs.com/issues) on the garden's [Github repo](https://github.com/audiodude/garden.travisbriggs.com). But I guess what I want to do here is talk more about what I plan to write about, how I plan to organize things.
 
 I'm trying to do all this in accordance with my interpretation of the [[digital-gardening-principles|digital gardening principles]].
+
+I did eventually add a [[comments-research|comments system]], which I'm quite proud of!
 
 I added a [[now]] page, which I think is some kind of progress. Now (see what I did there?) I need to make sure I keep it updated. That's the struggle in general with this garden, is that if I don't have something new to say or some idea to convey, I don't spend much time "tending" it. So far, my [[compost|compost pile]] is a good step in the direction of eschewing [[dg-reverse|reverse chronilogical links]] at least.
 
