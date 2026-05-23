@@ -36,8 +36,9 @@ async function postNewStatus(data) {
     setTimeout(resolve, Math.random() * 2000);
   });
 
+  const url = encodeURI(`https://travisbriggs.com${data.page.url}`);
   body = JSON.stringify({
-    status: `New garden node! "${data.title}":\n\nhttps://travisbriggs.com${data.page.url}\n\nPublic replies to this status will be posted on the site.`,
+    status: `New garden node! "${data.title}":\n\n${url}\n\nPublic replies to this status will be posted on the site.`,
     visibility: 'public',
   });
   const resp = await fetch('https://mastodon.online/api/v1/statuses', {
