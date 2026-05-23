@@ -1,8 +1,8 @@
 ---
 title: philosophy
-date: 2022-11-26
-updated: 2025-04-18
-quality: Start
+date: '2022-11-26T00:00:00.000Z'
+updated: 2026-05-23T00:00:00.000Z
+quality: B
 importance: Low
 ---
 
@@ -10,7 +10,7 @@ I don't have a ton of opinions on philosophy. I consider myself something of an 
 
 I don't believe in free will. I am a determinist. I believe there is plenty of evidence that "free will" is the name we give to the process by which our conscious mind explains to itself why it did something.
 
-I'm also an [[atheism|atheist]], which probably deserves its own article.
+I'm also an [[atheism|atheist]], some sort of [[zen|Zen Buddhist]].
 
 It's hard to write a garden node title "philosophy", which exists in the abstract without any particular object that the supposed philosophy is focused on. Relatedly, I've started getting interested in [[Zen]] again. In one of the books I was reading about Zen, the author discussed how it's impossible to picture an object without a subject. I think this page is kind of a testament to that.
 

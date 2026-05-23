@@ -1,28 +1,28 @@
 ---
 title: Now
-date: 2024-05-21
-updated: 2026-04-13
+date: '2024-05-21T00:00:00.000Z'
+updated: 2026-05-23T00:00:00.000Z
 quality: GA
 importance: Top
 permalink: now/
 ---
-So far 2026 has been really tough. I won't beat around the bush, I've been dealing
-with significant issues in the realm of my mental health. It's been hard on me and
-my family, both my immediate and my in laws.
+2026 has been getting much better! Mostly from a mental health perspective. I've
+come to truly believe that it's [[not the circumstances]] but how you react to them
+that matters. In that sense, what I'm saying is: "things" aren't going better, they
+weren't that bad to begin with.
 
-I've got a new manager at work, and a new team and whatnot. I was worried a bit about
-not getting a raise this year, but no one at Google got a raise this year. I had other
-worries too, but a few weeks back I had a nice meeting with my boss' boss and he
-gave me a lot of reassurance and explained some things to me. So work is actually
-going pretty well. As well as it has in a long time.
+I really have truly embraced [[vibe coding]], and now not only as a practice that
+I feel is somehow necessary to avoid my total obselescence in society.
 
-I've been vibe coding things like a fiend, and even getting back into generative AI
-art and videos using local GPU, which has been a lot of fun.
+Speaking of payoffs, I've also been working on building [[intrisic motivation]].
+
+Work is going well. More stressful than usual, but I actually think that's because
+I'm more motivated and engaged then I've been in a long time.
 
 Currently, I'm still living in San Francisco, in the same apartment I've lived
 in since we moved there in December 2012. What can I say, it's cozy,
-rent-controlled and in an awesome neighborhood (near Zeitgeist). I also have the
-same job at YouTube that I've had all that time.
+rent-controlled and in an awesome neighborhood (near Zeitgeist and Pizza Zone).
+I also have the same job at YouTube that I've had all that time.
 
 ---
 
