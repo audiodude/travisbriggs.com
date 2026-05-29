@@ -85,7 +85,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 
-    max-width: 50rem;
+    max-width: 60rem;
     margin: 0 auto;
     padding: 0 56px;
     border-left: 8px solid var(--border-gutter);
@@ -105,7 +105,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 50rem;
+    max-width: 58rem;
     width: 100%;
     margin: 8px auto 0;
 }
@@ -157,7 +157,7 @@ nav a {
 
 main {
     flex-grow: 1;
-    max-width: 50rem;
+    max-width: 60rem;
     width: 100%;
     margin: 0 auto;
 }
@@ -241,7 +241,18 @@ h5,
 }
 
 .garden-hr {
-    margin: 1rem 0 0.25rem;
+    margin: 2.5rem 0 1.5rem;
+}
+
+article {
+    max-width: 58rem;
+    margin: 0 auto;
+}
+
+article hr:not(.garden-hr) {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 small {
@@ -483,6 +494,11 @@ html.dark-theme .importance.mid {
 html.dark-theme .importance.Low,
 html.dark-theme .importance.low {
     background-color: #ffd6ff;
+}
+
+#comments {
+    max-width: 45rem;
+    margin: 3rem auto 0;
 }
 
 #comments-wrapper .avatar {
