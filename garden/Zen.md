@@ -1,6 +1,6 @@
 ---
 title: Zen
-date: 2025-04-18
+date: '2025-04-18T00:00:00.000Z'
 quality: GA
 importance: Low
 ---
@@ -36,3 +36,10 @@ And finally a poem I wrote which I think is a Zen poem (every poem is a Zen poem
 > Such is life
 >
 > I don't mind
+>
+
+---
+
+Anyways I'm not sure if this page should be completely empty, completely full, or if it already is both.
+
+Wry observations like the above make me feel clever, but I realize that the cleveriness isn't the point. Hopefully they can just help me have some pure experience.
