@@ -38,15 +38,19 @@ since Gemini is raw TLS on 1965 and cannot pass through Cloudflare's HTTP proxy.
 
 ## Target design
 
-- **Box:** Hetzner **CAX11** (ARM, 2 vCPU / 4 GB / 40 GB), location **ash**
-  (Ashburn, VA — closest US DC to current droplet, low latency for US audience).
-  ~€3.79/mo + ~€0.50 IPv4 ≈ **$4.60/mo (~67% cut)**. Image `ubuntu-24.04`.
-  SSH key `tmoney@tmoney-linux` (local `~/.ssh/id_skynet`).
+- **Box:** Hetzner **CPX11** (AMD x86, 2 vCPU / 2 GB / 40 GB), location **ash**
+  (Ashburn, VA — closest US DC to current droplet). *(As-built: CAX/ARM is
+  EU-only, so the US box is CPX11 x86 at ~€4.15/mo; still ~70% cut.)* Image
+  `ubuntu-24.04`. SSH key `tmoney@tmoney-linux` (local `~/.ssh/id_skynet`).
+  Provisioned IPv4 `178.156.194.27`, IPv6 `2a01:4ff:f0:d710::1`.
 - **Gemini server:** **Agate** v3.3.22 (`aarch64-unknown-linux-gnu`), single
   static Rust binary, run under systemd as a dedicated `gemini` user.
   - Content dir `/srv/gemini/content/<hostname>/`
-  - Certs dir `/srv/gemini/certs/<hostname>/{cert.pem,key.pem}` (symlinked to the
-    LE live dir; Agate reloads on restart via certbot deploy-hook).
+  - Certs dir `/srv/gemini/certs/<hostname>/{cert.der,key.der}`. *(As-built:
+    Agate v3 requires **DER**, not PEM — the certbot deploy-hook
+    `/usr/local/bin/agate-deploy-hook.sh` converts LE `cert.pem`/`privkey.pem` →
+    `cert.der`/`key.der` with openssl and restarts Agate. Leaf cert only, which
+    is correct for Gemini's TOFU model.)*
 - **Certs:** certbot + **`dns-cloudflare`** plugin (DNS-01). Works on grey-cloud
   records (DNS-01 only creates `_acme-challenge` TXT records — proxy status is
   irrelevant). A **scoped** CF API token (Zone:DNS:Edit + Zone:Read for the two

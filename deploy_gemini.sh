@@ -1,20 +1,29 @@
 #! /bin/bash
-# This script requires ENV variables of GEM_HOST and GEM_USER, which should be
-# set to the user@host that serves the Gemini version of the site. Your shell
-# should have an /.ssh/config setup so that scp/ssh to that host can procede
-# without password prompt.
+# Build the Gemini version of the garden and sync it to the Agate content root
+# for gem.travisbriggs.com on the Hetzner box.
 #
-# By default, the remote host is expected to be serving the Gemini site from the
-# garden_gemini/ directory in the home directory of the GEM_USER.
+# Agate serves each vhost from /srv/gemini/content/<hostname>/, so the built
+# _gemini/ tree is rsynced into the gem.travisbriggs.com content dir and chowned
+# to the gemini service user.
+#
+# Env (with defaults):
+#   GEM_HOST  ssh host of the Gemini server   (default: gem.travisbriggs.com)
+#   GEM_USER  ssh user                         (default: root)
+#   GEM_DEST  remote content dir               (default: /srv/gemini/content/gem.travisbriggs.com)
+#   GEM_KEY   ssh identity file                (default: ~/.ssh/id_skynet)
 set -e
 
-if [[ -z "${GEM_USER}" || -z "${GEM_HOST}" ]]; then
-  echo 'Please set GEM_USER and GEM_HOST env variables and then run this script again'
-  exit 1
-fi
+GEM_HOST="${GEM_HOST:-gem.travisbriggs.com}"
+GEM_USER="${GEM_USER:-root}"
+GEM_DEST="${GEM_DEST:-/srv/gemini/content/gem.travisbriggs.com}"
+GEM_KEY="${GEM_KEY:-$HOME/.ssh/id_skynet}"
+SSH="ssh -i ${GEM_KEY} -o StrictHostKeyChecking=accept-new"
 
 rm -rf _gemini
 npx @11ty/eleventy --config=.eleventy.gemini.js
-tar -czf garden.tgz _gemini/
-scp garden.tgz "$GEM_USER@$GEM_HOST:"
-ssh "$GEM_USER@$GEM_HOST" 'tar -xzf garden.tgz && rm -rf garden_gemini && mv _gemini garden_gemini && rm garden.tgz'
+
+# Mirror the built gemtext into the Agate content root (--delete prunes removed pages).
+rsync -az --delete -e "${SSH}" _gemini/ "${GEM_USER}@${GEM_HOST}:${GEM_DEST}/"
+${SSH} "${GEM_USER}@${GEM_HOST}" "chown -R gemini:gemini '${GEM_DEST}'"
+
+echo "Deployed garden -> ${GEM_USER}@${GEM_HOST}:${GEM_DEST}"
