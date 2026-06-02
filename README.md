@@ -37,13 +37,13 @@ netlify deploy --prod -d _site
 Finally, commit the code and push to Github (left to the reader). It's **important that this step is last**, because the comments.sqlite3 (where the Mastodon ids for node comments live) database is commited as part of the repo, and will be out of date if the repo is pushed before deploying.
 
 ### Gemini
-The Gemini capsule is hosted from a server on [Digital Ocean](https://www.digitalocean.com/) using the excellent [Twins](https://code.rocket9labs.com/tslocum/twins) server and certificates from [Let's Encrypt](https://letsencrypt.org/). To deploy the Gemini site, run:
+The Gemini capsule is hosted on a [Hetzner](https://www.hetzner.com/) box using the [Agate](https://github.com/mbrubeck/agate) server, with [Let's Encrypt](https://letsencrypt.org/) certificates auto-renewed via Cloudflare DNS-01. Agate serves each vhost from `/srv/gemini/content/<hostname>/`. To deploy the Gemini site, run:
 
 ```bash
-GEM_USER=username GEM_HOST=some.site.garden.example.com npm run deploy-gemini
+npm run deploy-gemini
 ```
 
-This will run Eleventy in Gemini mode, create a tarball, upload it to the remote host, and extract it to the necessary directory.
+This runs Eleventy in Gemini mode and rsyncs the built `_gemini/` tree into the `gem.travisbriggs.com` content root on the box. Defaults (host `gem.travisbriggs.com`, user `root`, key `~/.ssh/id_skynet`, dest `/srv/gemini/content/gem.travisbriggs.com`) can be overridden with the `GEM_HOST`, `GEM_USER`, `GEM_KEY`, and `GEM_DEST` env vars.
 
 ## CMS
 
