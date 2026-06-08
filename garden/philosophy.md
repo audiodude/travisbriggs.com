@@ -1,6 +1,6 @@
 ---
 title: philosophy
-date: '2022-11-26T00:00:00.000Z'
+date: 2022-11-26T00:00:00.000Z
 updated: 2026-05-23T00:00:00.000Z
 quality: B
 importance: Low

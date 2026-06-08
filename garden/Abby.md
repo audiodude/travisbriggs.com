@@ -1,6 +1,6 @@
 ---
 title: Abby
-date: '2022-11-26T00:00:00.000Z'
+date: 2022-11-26T00:00:00.000Z
 quality: Start
 importance: Top
 updated: 2026-05-29T00:00:00.000Z

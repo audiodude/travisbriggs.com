@@ -1,6 +1,6 @@
 ---
 title: Intrisic Motivation
-date: '2026-05-23T00:00:00.000Z'
+date: 2026-05-23T00:00:00.000Z
 quality: GA
 importance: Mid
 ---

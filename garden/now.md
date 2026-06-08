@@ -1,6 +1,6 @@
 ---
 title: Now
-date: '2024-05-21T00:00:00.000Z'
+date: 2024-05-21T00:00:00.000Z
 updated: 2026-05-23T00:00:00.000Z
 quality: GA
 importance: Top

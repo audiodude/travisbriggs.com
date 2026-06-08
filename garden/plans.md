@@ -1,6 +1,6 @@
 ---
 title: Plans for the digital garden
-date: '2022-12-12T00:00:00.000Z'
+date: 2022-12-12T00:00:00.000Z
 updated: 2026-05-29T00:00:00.000Z
 quality: GA
 importance: High

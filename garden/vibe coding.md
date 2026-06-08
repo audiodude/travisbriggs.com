@@ -1,6 +1,6 @@
 ---
 title: Vibe Coding
-date: '2026-05-16T00:00:00.000Z'
+date: 2026-05-16T00:00:00.000Z
 quality: Start
 importance: High
 ---
