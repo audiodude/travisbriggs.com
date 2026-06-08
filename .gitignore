@@ -9,3 +9,4 @@ garden.tgz
 .env
 cms/node_modules
 cms/dist
+link-suggestions.html
