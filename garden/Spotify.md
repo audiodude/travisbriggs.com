@@ -1,7 +1,7 @@
 ---
 title: Spotify
-date: 2022-11-26
-updated: 2024-12-01
+date: '2022-11-26T00:00:00.000Z'
+updated: '2024-12-01T00:00:00.000Z'
 quality: B
 importance: Low
 ---
