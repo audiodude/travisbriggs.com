@@ -1,7 +1,7 @@
 ---
 title: Now
 date: 2024-05-21T00:00:00.000Z
-updated: 2026-05-23T00:00:00.000Z
+updated: 2026-06-23T00:00:00.000Z
 quality: GA
 importance: Top
 permalink: now/
@@ -10,6 +10,10 @@ permalink: now/
 come to truly believe that it's [[not the circumstances]] but how you react to them
 that matters. In that sense, what I'm saying is: "things" aren't going better, they
 weren't that bad to begin with.
+
+I'm mentoring someone in [Google Summer of Code](https://summerofcode.withgoogle.com/)!
+I've done it twice before, both times for [[Kiwix]]. It's going well so far, my
+student is really easy going and fun to work with.
 
 I really have truly embraced [[vibe coding]], and now not only as a practice that
 I feel is somehow necessary to avoid my total obselescence in society.

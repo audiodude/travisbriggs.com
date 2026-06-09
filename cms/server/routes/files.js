@@ -32,8 +32,15 @@ const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 function normalizeFrontmatter(fm) {
   const out = { ...fm };
   for (const key of DATE_KEYS) {
-    if (typeof out[key] === 'string' && ISO_DATE_RE.test(out[key])) {
-      out[key] = new Date(out[key] + 'T00:00:00Z');
+    const val = out[key];
+    if (typeof val !== 'string') continue;
+    // Bare YYYY-MM-DD: pin to UTC midnight. Full ISO timestamps (what the
+    // frontend sends back after a JSON round-trip of a parsed Date) parse
+    // directly. Either way we store a Date so js-yaml emits an unquoted
+    // timestamp that Eleventy parses as a Date, not a String.
+    const parsed = new Date(ISO_DATE_RE.test(val) ? val + 'T00:00:00Z' : val);
+    if (!Number.isNaN(parsed.getTime())) {
+      out[key] = parsed;
     }
   }
   return out;

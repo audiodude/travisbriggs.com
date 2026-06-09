@@ -203,6 +203,29 @@ describe('PUT /api/files/:path', () => {
     assert.ok(raw.includes('Updated content.'));
   });
 
+  it('writes full-ISO dates unquoted so Eleventy parses them as Dates', async () => {
+    const res = await fetch(`${base}/api/files/compost`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        frontmatter: {
+          title: 'Compost pile',
+          // What the frontend sends back: a JSON-serialized Date.
+          date: '2023-11-14T00:00:00.000Z',
+          updated: '2026-05-15T00:00:00.000Z',
+        },
+        body: 'Body.\n',
+      }),
+    });
+    assert.equal(res.status, 200);
+
+    const raw = fs.readFileSync(path.join(FIXTURE_DIR, 'compost.md'), 'utf-8');
+    assert.ok(raw.includes('date: 2023-11-14T00:00:00.000Z'), raw);
+    assert.ok(raw.includes('updated: 2026-05-15T00:00:00.000Z'), raw);
+    assert.ok(!raw.includes("'2023-11-14"), 'date must not be quoted');
+    assert.ok(!raw.includes("'2026-05-15"), 'updated must not be quoted');
+  });
+
   it('returns 404 for missing files', async () => {
     const res = await fetch(`${base}/api/files/nonexistent`, {
       method: 'PUT',
