@@ -1,8 +1,9 @@
 ---
 title: AI
-date: 2026-04-13
-quality: B
+date: 2026-04-13T00:00:00.000Z
+quality: GA
 importance: High
+updated: 2026-06-25T00:00:00.000Z
 ---
 
 As I write this, it is April 13th, 2026. ChatGPT was released in November 2022, with an estimated 5 million users within a week of launch, slamming the world into the "AI era" that we find ourselves in now. That was three and a half years ago, and in all that time, I haven't written a single thing in my digital garden about AI. I wrote plenty to my friends, discussed it at work, fretted about it with my wife, but nothing here.
@@ -11,7 +12,9 @@ If a Digital Garden is about [[dg-public|learning in public]], the meta lesson i
 
 I'm just going to make a good old bullet list with questions I want to research answers to and other topics, and then fill these in later when I have time:
 
-One thing I'll address off the bat: **Is it capitulation to spit in the face of 70 years of Computer Science research and accept that the current techniques of LLMs should be wholly referred to as "AI"?** I'm going to go the GNU/Linux route here. Yes, Linux is just a kernel, and GNU is the suite of programs that made that kernel useful. But in the broad vernacular, Linux is an operating system and has been for years. It's vernacular, that's how it works. ChatGPT is understood by millions and millions of people to be "AI", so we can just go with that. 
+One thing I'll address off the bat: **Is it capitulation to spit in the face of 70 years of Computer Science research and accept that the current techniques of LLMs should be wholly referred to as "AI"?** I'm going to go the GNU/Linux route here. Yes, Linux is just a kernel, and GNU is the suite of programs that made that kernel useful. But in the broad vernacular, Linux is an operating system and has been for years. It's vernacular, that's how it works. ChatGPT is understood by millions and millions of people to be "AI", so we can just go with that.
+
+For most of 2026, Claude Code has been the most popular solution for AI-assisted coding, or sometimes "vibe coding". Many have suggested that the [[harness-matters-more|harness matters more]] but a lot of people still chase [[ai-coding-benchmarks|AI coding benchmarks]].
 
 Other questions I'd like to answer:
 

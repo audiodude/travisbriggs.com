@@ -28,6 +28,8 @@ in since we moved there in December 2012. What can I say, it's cozy,
 rent-controlled and in an awesome neighborhood (near Zeitgeist and Pizza Zone).
 I also have the same job at YouTube that I've had all that time.
 
+Now I'm typing a whole bunch of crap! Why? Because I want to test if the autosave interrupts my typing!
+
 ---
 
 ### What is a 'now' page?
