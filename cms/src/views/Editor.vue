@@ -20,6 +20,10 @@ const slugs = listSlugs();
 
 const dirty = ref(false);
 let autoSaveTimer = null;
+// Save only after the user pauses, never mid-keystroke. A fixed interval
+// would write the garden file (and trigger a full `eleventy --serve`
+// rebuild) every 15s while typing, which janks the editor.
+const AUTOSAVE_IDLE_MS = 2500;
 
 function onKeydown(e) {
   if ((e.ctrlKey || e.metaKey) && e.key === 's') {
@@ -34,15 +38,22 @@ onMounted(async () => {
   frontmatter.value = data.frontmatter;
   body.value = data.body;
   loading.value = false;
-  watch([frontmatter, body], () => (dirty.value = true), { deep: true });
-  autoSaveTimer = setInterval(() => {
-    if (dirty.value && !saving.value) save({ auto: true });
-  }, 15000);
+  watch(
+    [frontmatter, body],
+    () => {
+      dirty.value = true;
+      clearTimeout(autoSaveTimer);
+      autoSaveTimer = setTimeout(() => {
+        if (dirty.value && !saving.value) save({ auto: true });
+      }, AUTOSAVE_IDLE_MS);
+    },
+    { deep: true }
+  );
 });
 
 onBeforeUnmount(() => {
   window.removeEventListener('keydown', onKeydown);
-  if (autoSaveTimer) clearInterval(autoSaveTimer);
+  if (autoSaveTimer) clearTimeout(autoSaveTimer);
 });
 
 async function save({ auto = false } = {}) {
