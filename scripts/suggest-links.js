@@ -1,4 +1,4 @@
-// One-off: scan garden nodes and use Claude Haiku to suggest:
+// One-off: scan garden nodes and use Claude Opus to suggest:
 //   1. Wikilinks this node could add to other existing nodes
 //   2. Other nodes that could elaborate on topics this one touches
 //
@@ -12,29 +12,29 @@
 //
 // Requires ANTHROPIC_API_KEY in .env.
 
-require('dotenv').config();
+require("dotenv").config();
 
-const fs = require('node:fs');
-const path = require('node:path');
-const matter = require('gray-matter');
-const { titleCase } = require('title-case');
-const Anthropic = require('@anthropic-ai/sdk').default;
+const fs = require("node:fs");
+const path = require("node:path");
+const matter = require("gray-matter");
+const { titleCase } = require("title-case");
+const Anthropic = require("@anthropic-ai/sdk").default;
 
-const GARDEN = path.join(__dirname, '..', 'garden');
-const DEFAULT_OUT = path.join(__dirname, '..', 'link-suggestions.html');
+const GARDEN = path.join(__dirname, "..", "garden");
+const DEFAULT_OUT = path.join(__dirname, "..", "link-suggestions.html");
 const WIKILINK_RE = /\[\[\s?([^\[\]\|\n\r]+)(\|[^\[\]\|\n\r]+)?\s?\]\]/g;
 
 function loadNodes() {
   const nodes = [];
-  function walk(dir, base = '') {
+  function walk(dir, base = "") {
     for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
       const full = path.join(dir, e.name);
       const rel = path.join(base, e.name);
       if (e.isDirectory()) {
         walk(full, rel);
-      } else if (e.name.endsWith('.md')) {
-        const { data, content } = matter(fs.readFileSync(full, 'utf-8'));
-        const slug = rel.replace(/\.md$/, '').split(path.sep).join('/');
+      } else if (e.name.endsWith(".md")) {
+        const { data, content } = matter(fs.readFileSync(full, "utf-8"));
+        const slug = rel.replace(/\.md$/, "").split(path.sep).join("/");
         const fileSlug = path.basename(slug);
         nodes.push({
           slug,
@@ -52,52 +52,71 @@ function loadNodes() {
 function existingLinks(content) {
   const links = new Set();
   for (const m of content.matchAll(WIKILINK_RE)) {
-    links.add(m[1].replace(/\.(md|markdown)\s?$/i, '').trim().toLowerCase());
+    links.add(
+      m[1]
+        .replace(/\.(md|markdown)\s?$/i, "")
+        .trim()
+        .toLowerCase(),
+    );
   }
   return links;
 }
 
 function summarize(content, n = 800) {
   return content
-    .replace(/\[\[([^\[\]\|]+)(\|[^\[\]]+)?\]\]/g, '$1')
-    .replace(/\s+/g, ' ')
+    .replace(/\[\[([^\[\]\|]+)(\|[^\[\]]+)?\]\]/g, "$1")
+    .replace(/\s+/g, " ")
     .trim()
     .slice(0, n);
 }
 
 const SCHEMA = {
-  type: 'object',
+  type: "object",
   properties: {
     suggested_links: {
-      type: 'array',
-      description: 'Wikilinks to add inside the body of THIS node.',
+      type: "array",
+      description: "Wikilinks to add inside the body of THIS node.",
       items: {
-        type: 'object',
+        type: "object",
         properties: {
-          slug: { type: 'string', description: 'Target node fileSlug (must exist in the index)' },
-          anchor_text: { type: 'string', description: 'The exact phrase in the body to wikilink' },
-          context: { type: 'string', description: 'Short quote (~15 words) of the surrounding text where the link belongs' },
-          rationale: { type: 'string', description: 'Why this link is meaningful (one sentence)' },
+          slug: {
+            type: "string",
+            description: "Target node fileSlug (must exist in the index)",
+          },
+          anchor_text: {
+            type: "string",
+            description: "The exact phrase in the body to wikilink",
+          },
+          context: {
+            type: "string",
+            description:
+              "Short quote (~15 words) of the surrounding text where the link belongs",
+          },
+          rationale: {
+            type: "string",
+            description: "Why this link is meaningful (one sentence)",
+          },
         },
-        required: ['slug', 'anchor_text', 'context', 'rationale'],
+        required: ["slug", "anchor_text", "context", "rationale"],
         additionalProperties: false,
       },
     },
     cross_references: {
-      type: 'array',
-      description: 'Other nodes whose existing content could elaborate or extend topics in THIS node.',
+      type: "array",
+      description:
+        "Other nodes whose existing content could elaborate or extend topics in THIS node.",
       items: {
-        type: 'object',
+        type: "object",
         properties: {
-          slug: { type: 'string' },
-          rationale: { type: 'string' },
+          slug: { type: "string" },
+          rationale: { type: "string" },
         },
-        required: ['slug', 'rationale'],
+        required: ["slug", "rationale"],
         additionalProperties: false,
       },
     },
   },
-  required: ['suggested_links', 'cross_references'],
+  required: ["suggested_links", "cross_references"],
   additionalProperties: false,
 };
 
@@ -109,7 +128,7 @@ function buildSystemPrompt(allNodes) {
       (n) =>
         `- slug=${JSON.stringify(n.fileSlug)} title=${JSON.stringify(n.title)}: ${summarize(n.content)}`,
     )
-    .join('\n');
+    .join("\n");
 
   return `You analyze garden nodes from a personal digital garden and suggest network improvements.
 
@@ -136,31 +155,35 @@ async function analyzeNode(client, system, node) {
   const userPrompt = `Current node:
   slug: ${node.fileSlug}
   title: ${node.title}
-  already-linked slugs (don't re-suggest): ${[...existing].join(', ') || '(none)'}
+  already-linked slugs (don't re-suggest): ${[...existing].join(", ") || "(none)"}
 
 Body:
 ${node.content.trim()}`;
 
   const response = await client.messages.create({
-    model: 'claude-sonnet-4-6',
+    model: "claude-opus-4-8",
     max_tokens: 8192,
-    thinking: { type: 'adaptive' },
+    thinking: { type: "adaptive" },
     system: [
-      { type: 'text', text: system, cache_control: { type: 'ephemeral' } },
+      { type: "text", text: system, cache_control: { type: "ephemeral" } },
     ],
-    messages: [{ role: 'user', content: userPrompt }],
+    messages: [{ role: "user", content: userPrompt }],
     output_config: {
-      effort: 'medium',
-      format: { type: 'json_schema', schema: SCHEMA },
+      effort: "medium",
+      format: { type: "json_schema", schema: SCHEMA },
     },
   });
 
-  const text = response.content.find((b) => b.type === 'text')?.text || '';
+  const text = response.content.find((b) => b.type === "text")?.text || "";
   let parsed;
   try {
     parsed = JSON.parse(text);
   } catch (e) {
-    return { error: `failed to parse JSON: ${e.message}`, raw: text, usage: response.usage };
+    return {
+      error: `failed to parse JSON: ${e.message}`,
+      raw: text,
+      usage: response.usage,
+    };
   }
   return { parsed, usage: response.usage };
 }
@@ -168,9 +191,9 @@ ${node.content.trim()}`;
 function parseArgs(argv) {
   const out = { limit: Infinity, node: null, out: DEFAULT_OUT };
   for (let i = 0; i < argv.length; i++) {
-    if (argv[i] === '--limit') out.limit = Number(argv[++i]);
-    else if (argv[i] === '--node') out.node = argv[++i];
-    else if (argv[i] === '--out') out.out = path.resolve(argv[++i]);
+    if (argv[i] === "--limit") out.limit = Number(argv[++i]);
+    else if (argv[i] === "--node") out.node = argv[++i];
+    else if (argv[i] === "--out") out.out = path.resolve(argv[++i]);
   }
   return out;
 }
@@ -181,19 +204,45 @@ function pad(n, width) {
 
 function htmlEscape(s) {
   return String(s)
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#39;');
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
 }
 
-function renderHtml({ results, totals, generatedAt, nodeCount, allNodes, droppedCount }) {
-  const totalLinks = results.reduce((a, r) => a + (r.parsed?.suggested_links?.length || 0), 0);
-  const totalRefs = results.reduce((a, r) => a + (r.parsed?.cross_references?.length || 0), 0);
+function renderHtml({
+  results,
+  totals,
+  generatedAt,
+  nodeCount,
+  allNodes,
+  droppedCount,
+}) {
+  const totalLinks = results.reduce(
+    (a, r) => a + (r.parsed?.suggested_links?.length || 0),
+    0,
+  );
+  const totalRefs = results.reduce(
+    (a, r) => a + (r.parsed?.cross_references?.length || 0),
+    0,
+  );
 
-  const allNodesMin = allNodes.map((n) => ({ slug: n.slug, fileSlug: n.fileSlug, title: n.title }));
-  const dataJson = JSON.stringify({ results, totals, generatedAt, nodeCount, totalLinks, totalRefs, allNodes: allNodesMin, droppedCount });
+  const allNodesMin = allNodes.map((n) => ({
+    slug: n.slug,
+    fileSlug: n.fileSlug,
+    title: n.title,
+  }));
+  const dataJson = JSON.stringify({
+    results,
+    totals,
+    generatedAt,
+    nodeCount,
+    totalLinks,
+    totalRefs,
+    allNodes: allNodesMin,
+    droppedCount,
+  });
 
   return `<!doctype html>
 <html lang="en">
@@ -336,7 +385,7 @@ main .node-meta a:hover { text-decoration: underline; }
   </main>
 </div>
 
-<script id="data" type="application/json">${dataJson.replaceAll('</', '<\\/')}</script>
+<script id="data" type="application/json">${dataJson.replaceAll("</", "<\\/")}</script>
 <script>
 const DATA = JSON.parse(document.getElementById('data').textContent);
 const ELEVENTY = 'http://localhost:8080';
@@ -510,7 +559,7 @@ selectFromHash();
 
 async function main() {
   if (!process.env.ANTHROPIC_API_KEY) {
-    console.error('ANTHROPIC_API_KEY not set in environment / .env');
+    console.error("ANTHROPIC_API_KEY not set in environment / .env");
     process.exit(1);
   }
 
@@ -520,7 +569,9 @@ async function main() {
 
   let targets;
   if (args.node) {
-    targets = nodes.filter((n) => n.fileSlug === args.node || n.slug === args.node);
+    targets = nodes.filter(
+      (n) => n.fileSlug === args.node || n.slug === args.node,
+    );
     if (!targets.length) {
       console.error(`No node matches "${args.node}"`);
       process.exit(1);
@@ -528,7 +579,9 @@ async function main() {
   } else {
     targets = nodes.slice(0, args.limit);
   }
-  console.error(`Analyzing ${targets.length} node${targets.length === 1 ? '' : 's'}...`);
+  console.error(
+    `Analyzing ${targets.length} node${targets.length === 1 ? "" : "s"}...`,
+  );
 
   const client = new Anthropic();
   const system = buildSystemPrompt(nodes);
@@ -542,7 +595,9 @@ async function main() {
 
   for (let i = 0; i < targets.length; i++) {
     const node = targets[i];
-    process.stderr.write(`[${pad(i + 1, width)}/${targets.length}] ${node.slug}…`);
+    process.stderr.write(
+      `[${pad(i + 1, width)}/${targets.length}] ${node.slug}…`,
+    );
     try {
       const r = await analyzeNode(client, system, node);
       // Drop hallucinated slugs and self-references before they reach the report.
@@ -552,24 +607,39 @@ async function main() {
           const key = s.slug.toLowerCase();
           const isSelf = key === node.fileSlug.toLowerCase();
           const exists = validSlugs.has(key);
-          if (!exists || isSelf) { dropped++; return false; }
+          if (!exists || isSelf) {
+            dropped++;
+            return false;
+          }
           return true;
         };
         r.parsed.suggested_links = r.parsed.suggested_links.filter(filter);
         r.parsed.cross_references = r.parsed.cross_references.filter(filter);
       }
       droppedCount += dropped;
-      results.push({ node, parsed: r.parsed, error: r.error, raw: r.raw, usage: r.usage });
+      results.push({
+        node,
+        parsed: r.parsed,
+        error: r.error,
+        raw: r.raw,
+        usage: r.usage,
+      });
       totals.input += r.usage.input_tokens || 0;
       totals.output += r.usage.output_tokens || 0;
       totals.cacheRead += r.usage.cache_read_input_tokens || 0;
       totals.cacheWrite += r.usage.cache_creation_input_tokens || 0;
       const links = r.parsed?.suggested_links?.length || 0;
       const refs = r.parsed?.cross_references?.length || 0;
-      const dropNote = dropped ? ` (dropped ${dropped})` : '';
-      process.stderr.write(` ${r.error ? 'ERR' : `${links} links, ${refs} refs${dropNote}`}\n`);
+      const dropNote = dropped ? ` (dropped ${dropped})` : "";
+      process.stderr.write(
+        ` ${r.error ? "ERR" : `${links} links, ${refs} refs${dropNote}`}\n`,
+      );
     } catch (e) {
-      results.push({ node, error: e.message, usage: { input_tokens: 0, output_tokens: 0 } });
+      results.push({
+        node,
+        error: e.message,
+        usage: { input_tokens: 0, output_tokens: 0 },
+      });
       process.stderr.write(` ERROR: ${e.message}\n`);
     }
   }
@@ -585,18 +655,23 @@ async function main() {
 
   fs.writeFileSync(args.out, html);
 
-  // Sonnet 4.6: $3/M input, $15/M output, $0.30/M cache read, $3.75/M cache write
+  // Opus 4.8: $5/M input, $25/M output, $0.50/M cache read, $6.25/M cache write
   const cost =
-    (totals.input * 3) / 1_000_000 +
-    (totals.output * 15) / 1_000_000 +
-    (totals.cacheRead * 0.3) / 1_000_000 +
-    (totals.cacheWrite * 3.75) / 1_000_000;
+    (totals.input * 5) / 1_000_000 +
+    (totals.output * 25) / 1_000_000 +
+    (totals.cacheRead * 0.5) / 1_000_000 +
+    (totals.cacheWrite * 6.25) / 1_000_000;
 
-  console.error('');
+  console.error("");
   console.error(`Wrote ${args.out}`);
-  console.error(`Tokens: input=${totals.input} output=${totals.output} cache_read=${totals.cacheRead} cache_write=${totals.cacheWrite}`);
+  console.error(
+    `Tokens: input=${totals.input} output=${totals.output} cache_read=${totals.cacheRead} cache_write=${totals.cacheWrite}`,
+  );
   console.error(`Cost: $${cost.toFixed(4)}`);
-  if (droppedCount) console.error(`Filtered out ${droppedCount} hallucinated/self-referential suggestion${droppedCount === 1 ? '' : 's'}.`);
+  if (droppedCount)
+    console.error(
+      `Filtered out ${droppedCount} hallucinated/self-referential suggestion${droppedCount === 1 ? "" : "s"}.`,
+    );
   console.error(`Open: file://${args.out}`);
 }
 
