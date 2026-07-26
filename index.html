@@ -3,13 +3,45 @@ layout: default
 updated: 2023-01-01
 ---
 
-<h1 style="text-align: center">Digital Garden of Travis Briggs</h1>
-
-<div style="text-align: center; margin: 4rem auto">
-  <a href="/garden/" style="font-size: 1.5rem">Approach the garden</a>
-  <div style="margin-top: 0.5rem; color: #444">
-    <a href="https://maggieappleton.com/garden-history"
+<section class="hero">
+  <h1>Digital Garden of Travis Briggs</h1>
+  <p>
+    <a class="hero-enter" href="/garden/">Approach the garden</a><br />
+    <a class="hero-what" href="https://maggieappleton.com/garden-history"
       >What is a digital garden?</a
     >
-  </div>
-</div>
+  </p>
+</section>
+
+<section id="random-song" class="home-widget">
+  <div class="section-label">A random song of mine</div>
+  <button id="random-song-btn" class="btn" type="button">
+    &#9654; Play a random song
+  </button>
+  <span class="widget-note"
+    >from
+    <a href="https://songs.travisbriggs.com">songs.travisbriggs.com</a> &middot;
+    est. 2008</span
+  >
+  <div id="random-song-now" class="now-playing" hidden></div>
+  <audio id="random-song-audio" controls hidden></audio>
+</section>
+
+<section class="home-widget">
+  <div class="section-label">Latest toot</div>
+  <p id="latest-toot" class="mastodon-line">
+    <a href="https://sfba.social/@audiodude">@audiodude@sfba.social</a>
+  </p>
+</section>
+
+<section class="home-widget">
+  <div class="section-label">Recently tended</div>
+  <ul class="home-recent">
+    {% assign links = collections.rss | reverse %} {% for link in links limit:6
+    %} {% if link.data.title %}
+    <li><a href="{{link.page.url}}">{{link.data.title}}</a></li>
+    {% endif %} {% endfor %}
+  </ul>
+</section>
+
+<script src="/assets/home.js"></script>
