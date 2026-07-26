@@ -1,6 +1,6 @@
 {% if include_recent %}
 <hr class="garden-hr">
-<h3 class="recent-title title-larger">Recently Updated</h3>
+<div class="section-label">Recently updated</div>
 <ul class="backlinks-container">
   {% assign links = collections.rss | reverse %}
   {% for link in links limit:6 %}
