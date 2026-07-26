@@ -83,7 +83,6 @@ in `--accent-dim`, full accent on hover).
 - `includes/head.html` — Google Fonts (Archivo Black + Inter), drop old font refs
 - `includes/recent.html`, `includes/backlinks.html`, `includes/comments.html` —
   restyled (hairline lists, thin-bordered comment cards)
-- `netlify.toml` — add Mastodon API proxy rewrite
 - h-card microformats markup in header preserved
 
 ### Files untouched
@@ -107,24 +106,14 @@ in `--accent-dim`, full accent on hover).
 
 ### Latest Mastodon post (homepage)
 
-- sfba.social API has no CORS headers (verified 2026-07-26), so direct browser
-  fetch is impossible. Add to `netlify.toml`:
-
-  ```toml
-  [[redirects]]
-    from = "/masto/*"
-    to = "https://sfba.social/api/v1/:splat"
-    status = 200
-    force = true
-  ```
-
+- sfba.social sends `Access-Control-Allow-Origin: *` on API requests that carry
+  an `Origin` header (verified 2026-07-26) — browsers always send it, so direct
+  client-side fetch works. No proxy needed.
 - Client-side fetch of
-  `/masto/accounts/111123478093089904/statuses?limit=1&exclude_replies=true&exclude_reblogs=true`,
+  `https://sfba.social/api/v1/accounts/111123478093089904/statuses?limit=1&exclude_replies=true&exclude_reblogs=true`,
   render latest toot: plain-text snippet (HTML stripped), relative timestamp,
   link to the post. Account ID 111123478093089904 (@audiodude@sfba.social).
 - Failure fallback: static "Mastodon ↗" link.
-- Local dev: fetch fails gracefully (no proxy locally); optionally add an
-  Eleventy dev-server proxy — nice-to-have, not required.
 
 ## Page furniture
 
