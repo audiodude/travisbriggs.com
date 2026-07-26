@@ -506,6 +506,23 @@ a.badge:hover {
   border-color: var(--accent-dim);
 }
 
+.badge-img-link {
+  border-bottom: none;
+  display: inline-flex;
+}
+
+.badge-img {
+  height: 18px;
+  width: auto;
+  display: block;
+  border: 1px solid var(--border-strong);
+  box-sizing: content-box;
+}
+
+.badge-img-link:hover .badge-img {
+  border-color: var(--accent-dim);
+}
+
 .page-footer .copy {
   margin: 0 auto;
   font-size: 0.72rem;
