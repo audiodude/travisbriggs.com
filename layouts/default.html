@@ -8,7 +8,8 @@
 <body>
   <header class="page-header">
     <div class="h-card page-header__logo">
-      <a href="/" title="Go home"><img class="u-photo" src="/assets/avatar.jpg" alt="Travis Briggs" width="48"/></a>
+      <a href="/" title="Go home"><img class="u-photo" src="/assets/avatar.jpg" alt="Travis Briggs" width="40" /></a>
+      <a class="site-name p-name" href="/">Travis Briggs</a>
       <p class="p-note" style="display:none">Musician. Programmer. Digital
       Gardener. Atheist. Life, the Universe, and Everything. Toots auto-delete
       after 90 days. I'm audiodude pretty much everywhere, including at
@@ -23,70 +24,26 @@
       <a href="/garden/">Garden</a>
       <a href="/garden/about">About Me</a>
       <a href="/now">Now</a>
-      <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
-        <span class="theme-toggle-icon">◐</span>
-      </button>
     </nav>
   </header>
   <main>{{content}}</main>
 
   <footer class="page-footer">
-    <div style="font-size: 0.75rem">
-      <p class="copyright">Copyright © {% year %} {{site.author}}</p>
-      <p class="copyright">
-        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License"
-            style="border-width: 0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work and
-        all contents of this website are licensed under
-        a<br />
-        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike
-          4.0 International
-          License</a>.
-      </p>
+    <div class="badges">
+      <a class="badge" href="https://gem.travisbriggs.com">GEMINI</a>
+      <a class="badge" href="/feed.xml">RSS</a>
+      <span class="badge">EST. 2015</span>
     </div>
+    <p class="copy">
+      &copy; {% year %} {{site.author}} &middot;
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+    </p>
+    <p class="copy">
+      <a href="https://songs.travisbriggs.com">songs</a> &middot;
+      <a href="https://dangerthirdrail.com">danger third rail</a> &middot;
+      <a href="https://sfba.social/@audiodude">mastodon</a>
+    </p>
   </footer>
-
-  <script>
-    // Theme toggle functionality
-    (function() {
-      const themeToggle = document.getElementById('theme-toggle');
-      const html = document.documentElement;
-
-      const getPreferredTheme = () => {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-          return savedTheme;
-        }
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      };
-
-      const applyTheme = (theme) => {
-        if (theme === 'dark') {
-          html.classList.remove('light-theme');
-          html.classList.add('dark-theme');
-        } else {
-          html.classList.remove('dark-theme');
-          html.classList.add('light-theme');
-        }
-        localStorage.setItem('theme', theme);
-      };
-
-      const currentTheme = getPreferredTheme();
-      applyTheme(currentTheme);
-
-      themeToggle.addEventListener('click', () => {
-        const currentTheme = html.classList.contains('dark-theme') ? 'dark' : 'light';
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        applyTheme(newTheme);
-      });
-
-      // Listen for system theme changes
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        if (!localStorage.getItem('theme')) {
-          applyTheme(e.matches ? 'dark' : 'light');
-        }
-      });
-    })();
-  </script>
 </body>
 
 </html>
