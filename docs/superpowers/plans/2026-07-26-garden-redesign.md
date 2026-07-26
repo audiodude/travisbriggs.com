@@ -1,6 +1,6 @@
 # Garden Redesign Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Reskin travisbriggs.com (Eleventy digital garden) with a dark-only, flat, hand-made IndieWeb identity, plus two homepage widgets (random-song player, latest Mastodon toot).
 
@@ -44,7 +44,7 @@
 
 - Produces: `--font-display: 'Archivo Black'` and `--font-body: 'Inter'` usable in CSS (Task 2 relies on these family names).
 
-- [ ] **Step 1: Update the Google Fonts link**
+- [x] **Step 1: Update the Google Fonts link**
 
 Replace the Inter-only link:
 
@@ -64,13 +64,13 @@ with Archivo Black + Inter:
 />
 ```
 
-- [ ] **Step 2: Build and verify**
+- [x] **Step 2: Build and verify**
 
 Run: `npm run build`
 Then: `grep -o "Archivo+Black" _site/index.html`
 Expected: build succeeds; grep prints `Archivo+Black`.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add includes/head.html
@@ -90,7 +90,7 @@ git commit -m "Load Archivo Black display font"
 - Consumes: font families from Task 1.
 - Produces: every selector the existing templates use (`.page-header`, `.meta`, `.quality.*`, `.importance.*`, `.backlink`, `.backlink__preview`, `.comment`, `.writing`, `.garden-hr`, `.section-label`, etc.) plus homepage widget styles (`.hero`, `.home-widget`, `.btn`, `.now-playing`, `.badges`, `.badge`, `.site-name`, `.home-recent`, `.mastodon-line`) used by Tasks 3–5.
 
-- [ ] **Step 1: Replace `assets/style.css` entirely**
+- [x] **Step 1: Replace `assets/style.css` entirely**
 
 ```css
 /* Digital Garden of Travis Briggs — dark-only "nearly flat IndieWeb" theme.
@@ -723,13 +723,13 @@ a.badge:hover {
 }
 ```
 
-- [ ] **Step 2: Build and verify**
+- [x] **Step 2: Build and verify**
 
 Run: `npm run build`
 Then: `grep -c "Archivo Black" _site/assets/style.css && grep -c "theme-toggle" _site/assets/style.css || true`
 Expected: build succeeds; first grep prints `1`; second prints `0` (grep exit 1 is why `|| true`).
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add assets/style.css
@@ -749,7 +749,7 @@ git commit -m "Rewrite stylesheet: dark-only flat IndieWeb theme"
 - Consumes: `.site-name`, `.badges`, `.badge`, header/footer CSS from Task 2.
 - Produces: `{{ content }}` wrapper used by all layouts; no theme JS anywhere.
 
-- [ ] **Step 1: Replace `layouts/default.html` entirely**
+- [x] **Step 1: Replace `layouts/default.html` entirely**
 
 ```html
 <!DOCTYPE html>
@@ -817,13 +817,13 @@ git commit -m "Rewrite stylesheet: dark-only flat IndieWeb theme"
 </html>
 ```
 
-- [ ] **Step 2: Build and verify**
+- [x] **Step 2: Build and verify**
 
 Run: `npm run build`
 Then: `grep -c "theme-toggle" _site/index.html || true; grep -o 'class="site-name' _site/index.html; grep -o 'class="badge"' _site/index.html | head -2`
 Expected: build succeeds; `0` for theme-toggle; `class="site-name` found; badge classes found.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add layouts/default.html
@@ -844,7 +844,7 @@ git commit -m "New header (tilted avatar + site name) and footer (badges)"
 - Consumes: `.hero`, `.home-widget`, `.btn`, `.now-playing`, `.mastodon-line`, `.home-recent`, `.section-label` from Task 2; `collections.rss` (same source as `includes/recent.html`).
 - Produces: DOM ids `#random-song`, `#random-song-btn`, `#random-song-now`, `#random-song-audio`, `#latest-toot` that `assets/home.js` expects.
 
-- [ ] **Step 1: Replace `index.html` entirely**
+- [x] **Step 1: Replace `index.html` entirely**
 
 ```html
 ---
@@ -896,7 +896,7 @@ updated: 2023-01-01
 <script src="/assets/home.js"></script>
 ```
 
-- [ ] **Step 2: Create `assets/home.js`**
+- [x] **Step 2: Create `assets/home.js`**
 
 ```js
 /* Homepage widgets: random-song player (songs.travisbriggs.com) and latest
@@ -998,18 +998,18 @@ updated: 2023-01-01
 })();
 ```
 
-- [ ] **Step 3: Build and verify**
+- [x] **Step 3: Build and verify**
 
 Run: `npm run build`
 Then: `ls _site/assets/home.js && grep -o 'id="random-song-btn"' _site/index.html && grep -o 'id="latest-toot"' _site/index.html && grep -c 'class="home-widget"' _site/index.html`
 Expected: build succeeds; file exists; both ids found; widget count `3`.
 
-- [ ] **Step 4: Verify the live endpoints the widgets call**
+- [x] **Step 4: Verify the live endpoints the widgets call**
 
 Run: `curl -s https://songs.travisbriggs.com/songs.json | jq 'length'` (expect a number > 100)
 Run: `curl -s "https://sfba.social/api/v1/accounts/111123478093089904/statuses?limit=1&exclude_replies=true&exclude_reblogs=true" | jq 'length'` (expect `1`)
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add index.html assets/home.js
@@ -1031,7 +1031,7 @@ git commit -m "Homepage: hero, random-song player, latest toot, recently tended"
 - Consumes: `.section-label` from Task 2.
 - Produces: removes usage of `.recent-title`, `.backlinks-title`, `.comments-title`, `.title-larger` (already absent from the new CSS).
 
-- [ ] **Step 1: Swap heading markup for section labels**
+- [x] **Step 1: Swap heading markup for section labels**
 
 In `includes/recent.html`, replace:
 
@@ -1071,13 +1071,13 @@ with:
 
 Do not touch anything else in these files — the comments JS and backlink preview logic stay exactly as-is.
 
-- [ ] **Step 2: Build and verify**
+- [x] **Step 2: Build and verify**
 
 Run: `npm run build`
 Then: `grep -rl "section-label" _site/garden/ | head -3; grep -rl "title-larger" _site/ | head -3 || true`
 Expected: build succeeds; at least one garden page contains `section-label`; no built page contains `title-larger`.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add includes/recent.html includes/backlinks.html includes/comments.html
@@ -1090,22 +1090,22 @@ git commit -m "Use section labels for recent/backlinks/comments headings"
 
 **Files:** none (verification only)
 
-- [ ] **Step 1: Full build**
+- [x] **Step 1: Full build**
 
 Run: `npm run build`
 Expected: completes with no errors.
 
-- [ ] **Step 2: Check removals across the whole built site**
+- [x] **Step 2: Check removals across the whole built site**
 
 Run: `grep -rl "theme-toggle\|light-theme\|dark-theme\|bg-gutter" _site/ || echo "CLEAN"`
 Expected: `CLEAN`.
 
-- [ ] **Step 3: Spot-check representative pages exist and carry the new chrome**
+- [x] **Step 3: Spot-check representative pages exist and carry the new chrome**
 
 Run: `grep -l "site-name" _site/index.html _site/garden/about/index.html _site/all/index.html`
 Expected: all three listed. (If `_site/garden/about/index.html` doesn't exist, find an equivalent node page: `ls _site/garden | head` and pick one with an `index.html`.)
 
-- [ ] **Step 4: Manual visual review**
+- [x] **Step 4: Manual visual review**
 
 Run `npm run dev`, then in a browser check at desktop and ~375px widths:
 
@@ -1114,7 +1114,7 @@ Run `npm run dev`, then in a browser check at desktop and ~375px widths:
 - a writings page
   Confirm: dark background everywhere, tilted dashed avatar, footer badges, no gutter frame.
 
-- [ ] **Step 5: Commit any fixes from review**
+- [x] **Step 5: Commit any fixes from review**
 
 ```bash
 git add -A
