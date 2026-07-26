@@ -6,6 +6,7 @@ CONTRIBUTING.md
 _drafts/
 _site/
 venv/
+.superpowers/
 
 includes/
 includes_gemini/
