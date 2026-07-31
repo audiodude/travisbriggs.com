@@ -3,15 +3,18 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { describe, it, before, after } = require('node:test');
 const { runBuild } = require('./helpers/build.js');
+const { injectFixtures, cleanupFixtures } = require('./helpers/fixtures.js');
 
 describe('www build', () => {
   let out;
 
   before(() => {
+    injectFixtures();
     out = runBuild();
   });
 
   after(() => {
+    cleanupFixtures();
     fs.rmSync(out, { recursive: true, force: true });
   });
 
@@ -49,5 +52,26 @@ describe('www build', () => {
   it('copies static assets and redirects', () => {
     assert.ok(fs.existsSync(path.join(out, 'assets', 'style.css')));
     assert.ok(fs.existsSync(path.join(out, '_redirects')));
+  });
+
+  it('renders node images through the responsive image pipeline', () => {
+    const html = fs.readFileSync(
+      path.join(out, 'garden', 'zz-test-fixture', 'index.html'),
+      'utf-8',
+    );
+    assert.match(html, /<picture>/);
+    assert.match(html, /srcset="[^"]*\/img\/[^"]*\.webp[^"]*"/);
+    assert.match(html, /loading="lazy"/);
+    assert.match(html, /alt="A purple rectangle"/);
+  });
+
+  it('writes generated image variants to /img/', () => {
+    const imgDir = path.join(out, 'img');
+    assert.ok(fs.existsSync(imgDir), '_site/img missing');
+    const files = fs.readdirSync(imgDir);
+    assert.ok(
+      files.some((f) => f.endsWith('.webp')),
+      `no webp variants in ${files.join(', ')}`,
+    );
   });
 });

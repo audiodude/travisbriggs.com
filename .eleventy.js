@@ -1,4 +1,5 @@
 const { DateTime } = require('luxon');
+const { eleventyImageTransformPlugin } = require('@11ty/eleventy-img');
 
 const { commonConfig } = require('./.eleventy.common.js');
 
@@ -35,6 +36,18 @@ module.exports = async function (eleventyConfig) {
 
   const pluginRss = (await import('@11ty/eleventy-plugin-rss')).default;
   eleventyConfig.addPlugin(pluginRss);
+
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    extensions: 'html',
+    formats: ['webp', 'auto'],
+    widths: [480, 800, 1600, 'auto'],
+    urlPath: '/img/',
+    defaultAttributes: {
+      loading: 'lazy',
+      decoding: 'async',
+    },
+    sharpOptions: { animated: true },
+  });
 
   eleventyConfig.addGlobalData('isGemini', false);
 

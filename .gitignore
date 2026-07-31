@@ -11,3 +11,6 @@ cms/node_modules
 cms/dist
 link-suggestions.html
 .superpowers/
+.cache/
+garden/zz-test-fixture.md
+assets/img/garden/zz-test-fixture.jpg
