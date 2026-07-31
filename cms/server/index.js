@@ -1,11 +1,13 @@
 import 'dotenv/config';
 import express from 'express';
 import { fileRoutes } from './routes/files.js';
+import { imageRoutes } from './routes/images.js';
 
 export function createApp() {
   const app = express();
   app.use(express.json());
   app.use('/api', fileRoutes());
+  app.use('/api', imageRoutes());
   return app;
 }
 
