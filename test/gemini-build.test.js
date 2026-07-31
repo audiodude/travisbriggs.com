@@ -2,7 +2,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { describe, it, before, after } = require('node:test');
-const { runBuild, ROOT } = require('./helpers/build.js');
+const { runBuild } = require('./helpers/build.js');
 const { injectFixtures, cleanupFixtures } = require('./helpers/fixtures.js');
 
 describe('gemini build', () => {
@@ -14,8 +14,7 @@ describe('gemini build', () => {
   });
 
   after(() => {
-    // Note: We don't clean up fixtures here because it causes issues with
-    // concurrent test suites. Cleanup happens in the www suite's after() hook.
+    cleanupFixtures();
     fs.rmSync(out, { recursive: true, force: true });
   });
 
