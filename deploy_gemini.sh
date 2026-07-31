@@ -19,6 +19,9 @@ GEM_DEST="${GEM_DEST:-/srv/gemini/content/gem.travisbriggs.com}"
 GEM_KEY="${GEM_KEY:-$HOME/.ssh/id_skynet}"
 SSH="ssh -i ${GEM_KEY} -o StrictHostKeyChecking=accept-new"
 
+# Sweep any test fixtures a crashed test run left behind before building.
+node scripts/preflight-fixtures.js
+
 rm -rf _gemini
 npx @11ty/eleventy --config=.eleventy.gemini.js
 

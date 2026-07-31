@@ -41,7 +41,8 @@ async function postNewStatus(data) {
     status: `New garden node! "${data.title}":\n\n${url}\n\nPublic replies to this status will be posted on the site.`,
     visibility: 'public',
   });
-  const resp = await fetch('https://mastodon.online/api/v1/statuses', {
+  const apiBase = process.env.MASTODON_API_BASE || 'https://mastodon.online';
+  const resp = await fetch(`${apiBase}/api/v1/statuses`, {
     method: 'POST',
     headers: {
       Authorization: `Bearer ${process.env.MASTODON_API_KEY}`,
@@ -124,6 +125,9 @@ module.exports = {
       }
 
       if (
+        // Test fixtures must never be announced, even when a crashed test
+        // run leaks one into a real build.
+        data.testFixture ||
         process.env.DISABLE_MASTODON ||
         process.env.ELEVENTY_RUN_MODE != 'build'
       ) {

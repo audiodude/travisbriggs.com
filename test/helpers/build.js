@@ -10,7 +10,10 @@ const ROOT = path.resolve(__dirname, '..', '..');
 // garden/garden.11tydata.js; the emptied MASTODON_API_KEY is
 // belt-and-suspenders (dotenv never overrides pre-set env vars, and an
 // empty bearer token can only produce a failed request, never a post).
-function runBuild({ config } = {}) {
+// `env` entries override those defaults (fixture-leak.test.js clears
+// DISABLE_MASTODON on purpose, pointing MASTODON_API_BASE at a closed
+// port so the posting path can never reach the real network).
+function runBuild({ config, env } = {}) {
   const outDir = fs.mkdtempSync(path.join(os.tmpdir(), 'garden-build-'));
   const args = ['eleventy', `--output=${outDir}`];
   if (config) {
@@ -18,7 +21,12 @@ function runBuild({ config } = {}) {
   }
   const result = spawnSync('npx', args, {
     cwd: ROOT,
-    env: { ...process.env, DISABLE_MASTODON: '1', MASTODON_API_KEY: '' },
+    env: {
+      ...process.env,
+      DISABLE_MASTODON: '1',
+      MASTODON_API_KEY: '',
+      ...env,
+    },
     encoding: 'utf-8',
     timeout: 300000,
   });

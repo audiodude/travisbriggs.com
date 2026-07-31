@@ -4,6 +4,7 @@
   "description": "The digital garden of Travis Briggs.",
   "scripts": {
     "dev": "eleventy --serve --quiet",
+    "prebuild": "node scripts/preflight-fixtures.js",
     "build": "eleventy",
     "deploy-gemini": "./deploy_gemini.sh",
     "test": "node --test --test-concurrency=1 test/"

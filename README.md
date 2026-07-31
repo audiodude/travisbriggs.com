@@ -30,6 +30,13 @@ temp directories. They set `DISABLE_MASTODON=1` so no statuses are posted.
 That's a standing warning worth generalizing: any ad-hoc build should set
 `DISABLE_MASTODON=1` unless you actually intend to post to Mastodon.
 
+The tests inject throwaway fixture files (`zz-test-fixture.*`) into the
+source tree and clean them up afterwards. Two safeguards make a leaked
+fixture (from a crashed test run) harmless: the fixture node carries
+`testFixture: true` frontmatter, which the Mastodon-posting code refuses to
+post for, and `npm run build` / `deploy_gemini.sh` sweep leaked fixture
+files away before building (`scripts/preflight-fixtures.js`).
+
 ### Images
 
 Drop image files in `assets/img/garden/` and reference them from a node's

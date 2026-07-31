@@ -23,6 +23,7 @@ function injectFixtures() {
     `---
 title: Zz Test Fixture
 date: 2026-07-31
+testFixture: true
 ---
 A node used by build tests. Do not commit.
 
