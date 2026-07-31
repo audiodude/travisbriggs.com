@@ -1,5 +1,5 @@
 ---
-eleventyExcludeFromCollections: true,
+eleventyExcludeFromCollections: true
 ---
 <ul>
 {%- for post in collections.all reversed -%}

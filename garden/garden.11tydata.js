@@ -70,7 +70,12 @@ module.exports = {
 
       // Search the other notes for backlinks
       for (const otherNote of notes) {
-        const noteContent = otherNote.template.frontMatter.content;
+        // Eleventy 3 removed the synchronous `.template.frontMatter` getter
+        // (it throws to steer monkey-patchers toward the async `read()`
+        // method). `data.page.rawInput` is the documented replacement: the
+        // raw template source with front matter already stripped, which is
+        // exactly what `.frontMatter.content` used to give us.
+        const noteContent = otherNote.data.page.rawInput;
 
         // Get all links from otherNote
         const outboundLinks = (noteContent.match(wikilinkRegExp) || []).map(

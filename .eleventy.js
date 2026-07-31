@@ -1,9 +1,8 @@
 const { DateTime } = require('luxon');
-const pluginRss = require('@11ty/eleventy-plugin-rss');
 
 const { commonConfig } = require('./.eleventy.common.js');
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
   eleventyConfig = commonConfig(eleventyConfig);
 
   const markdownIt = require('markdown-it');
@@ -34,6 +33,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary('md', md);
 
+  const pluginRss = (await import('@11ty/eleventy-plugin-rss')).default;
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.addGlobalData('isGemini', false);
