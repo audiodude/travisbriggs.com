@@ -50,3 +50,11 @@ export async function listSlugs() {
   if (!res.ok) throw new Error(`Failed to list slugs: ${res.status}`);
   return res.json();
 }
+
+export async function uploadImage(file) {
+  const fd = new FormData();
+  fd.append('image', file, file.name || 'image');
+  const res = await fetch(`${BASE}/images`, { method: 'POST', body: fd });
+  if (!res.ok) throw new Error(`Failed to upload image: ${res.status}`);
+  return res.json();
+}
