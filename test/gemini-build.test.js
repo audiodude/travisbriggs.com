@@ -2,16 +2,20 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const { describe, it, before, after } = require('node:test');
-const { runBuild } = require('./helpers/build.js');
+const { runBuild, ROOT } = require('./helpers/build.js');
+const { injectFixtures, cleanupFixtures } = require('./helpers/fixtures.js');
 
 describe('gemini build', () => {
   let out;
 
   before(() => {
+    injectFixtures();
     out = runBuild({ config: '.eleventy.gemini.js' });
   });
 
   after(() => {
+    // Note: We don't clean up fixtures here because it causes issues with
+    // concurrent test suites. Cleanup happens in the www suite's after() hook.
     fs.rmSync(out, { recursive: true, force: true });
   });
 
@@ -41,5 +45,25 @@ describe('gemini build', () => {
       'utf-8',
     );
     assert.doesNotMatch(gmi, /&gt;|&lt;|&quot;|&amp;/);
+  });
+
+  it('renders node images as gemtext link lines', () => {
+    const gmi = fs.readFileSync(
+      path.join(out, 'garden', 'zz-test-fixture', 'index.gmi'),
+      'utf-8',
+    );
+    assert.match(
+      gmi,
+      /^=> \/assets\/img\/garden\/zz-test-fixture\.jpg .*A purple rectangle$/m,
+    );
+    assert.doesNotMatch(gmi, /IMAGE OMITTED/);
+  });
+
+  it('copies garden images into the gemini output', () => {
+    assert.ok(
+      fs.existsSync(
+        path.join(out, 'assets', 'img', 'garden', 'zz-test-fixture.jpg'),
+      ),
+    );
   });
 });

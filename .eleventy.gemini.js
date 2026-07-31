@@ -51,6 +51,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add('index.html');
   eleventyConfig.addPassthroughCopy('./index.gmi');
 
+  // Ship original garden images to the capsule (the `assets/*` ignore only
+  // excludes templates; passthrough copies are separate).
+  eleventyConfig.addPassthroughCopy('assets/img/garden');
+
   return {
     dir: {
       input: './',

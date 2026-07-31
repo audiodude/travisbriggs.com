@@ -27,7 +27,7 @@
     "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@anthropic-ai/sdk": "^0.100.1",
-    "gemdown": "^0.7.0",
+    "gemdown": "^0.8.0",
     "install": "^0.13.0",
     "markdown-it": "^12.3.2",
     "markdown-it-attrs": "^4.1.4",
