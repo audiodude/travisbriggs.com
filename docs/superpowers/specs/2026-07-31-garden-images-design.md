@@ -1,7 +1,7 @@
 # Garden Images Design
 
 **Date:** 2026-07-31
-**Status:** Approved design, pending spec review
+**Status:** Implemented 2026-07-31
 
 ## Goal
 

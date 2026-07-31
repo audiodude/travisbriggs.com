@@ -19,6 +19,27 @@ npm install
 npm run dev
 ```
 
+### Testing
+
+```bash
+npm test
+```
+
+Runs build-integration tests that build both the www and Gemini site into
+temp directories. They set `DISABLE_MASTODON=1` so no statuses are posted.
+That's a standing warning worth generalizing: any ad-hoc build should set
+`DISABLE_MASTODON=1` unless you actually intend to post to Mastodon.
+
+### Images
+
+Drop image files in `assets/img/garden/` and reference them from a node's
+markdown with `![alt text](/assets/img/garden/name.jpg)`. On www, images are
+run through `@11ty/eleventy-img` to produce responsive variants, and the
+first image in a node's body becomes that node's `og:image` (an absolute
+URL, falling back to the site avatar if the node has no images). On Gemini,
+images render as `=>` link lines and the original files are shipped
+alongside the capsule content.
+
 ## Deploying
 
 ### www
@@ -56,7 +77,7 @@ npm run dev:all
 # Open http://localhost:5173
 ```
 
-Features: sortable/filterable file list, frontmatter form with quality/importance dropdowns, CodeMirror 6 markdown editor with `[[wikilink]]` autocomplete, and new page creation with slug auto-generation. Run `npm run dev` in the repo root alongside it if you want the preview links to work.
+Features: sortable/filterable file list, frontmatter form with quality/importance dropdowns, CodeMirror 6 markdown editor with `[[wikilink]]` autocomplete, image upload (drag-drop, paste, or the 📷 toolbar button), and new page creation with slug auto-generation. Run `npm run dev` in the repo root alongside it if you want the preview links to work.
 
 ## Recreating the comments database
 
