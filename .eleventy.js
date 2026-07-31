@@ -32,6 +32,21 @@ module.exports = async function (eleventyConfig) {
     return md.render(string);
   });
 
+  // Extracts the first site-local image path from raw markdown, for og:image.
+  // External (http...) images are skipped: og:image must live on our domain
+  // so head.html can prepend the baseurl.
+  eleventyConfig.addFilter('firstImage', (rawInput) => {
+    if (!rawInput) return null;
+    const pattern = /!\[[^\]]*\]\(\s*([^)\s]+)(?:\s[^)]*)?\)|<img[^>]*\ssrc=["']([^"']+)["']/gi;
+    for (const match of rawInput.matchAll(pattern)) {
+      const url = match[1] || match[2];
+      if (url && url.startsWith('/')) {
+        return url;
+      }
+    }
+    return null;
+  });
+
   eleventyConfig.setLibrary('md', md);
 
   const pluginRss = (await import('@11ty/eleventy-plugin-rss')).default;

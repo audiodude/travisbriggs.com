@@ -74,4 +74,26 @@ describe('www build', () => {
       `no webp variants in ${files.join(', ')}`,
     );
   });
+
+  it('uses the first body image as og:image for nodes that have one', () => {
+    const html = fs.readFileSync(
+      path.join(out, 'garden', 'zz-test-fixture', 'index.html'),
+      'utf-8',
+    );
+    assert.match(
+      html,
+      /<meta property="og:image" content="https:\/\/garden\.travisbriggs\.com\/assets\/img\/garden\/zz-test-fixture\.jpg">/,
+    );
+  });
+
+  it('falls back to an absolute avatar og:image for nodes without images', () => {
+    const html = fs.readFileSync(
+      path.join(out, 'garden', 'ai', 'index.html'),
+      'utf-8',
+    );
+    assert.match(
+      html,
+      /<meta property="og:image" content="https:\/\/garden\.travisbriggs\.com\/assets\/avatar\.jpg">/,
+    );
+  });
 });

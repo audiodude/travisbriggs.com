@@ -18,6 +18,12 @@
     {% assign metatype = "article" %}
 {% endif %}
 
+{% assign ogimage = "/assets/avatar.jpg" %}
+{% if type == "garden" %}
+    {% assign firstimg = page.rawInput | firstImage %}
+    {% if firstimg %}{% assign ogimage = firstimg %}{% endif %}
+{% endif %}
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -32,7 +38,7 @@
 <meta property="og:title" content="{{-metatitle-}}">
 <meta property="og:type" content="{{-metatype-}}">
 <meta property="og:url" content="{{ page.url | prepend: site.baseurl }}">
-<meta property="og:image" content="/assets/avatar.jpg">
+<meta property="og:image" content="{{ ogimage | prepend: site.baseurl }}">
 <meta property="og:description" content="{{- metadesc -}}">
 
 <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}">
