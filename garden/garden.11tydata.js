@@ -118,7 +118,10 @@ module.exports = {
         return mapping[data.page.fileSlug];
       }
 
-      if (process.env.ELEVENTY_RUN_MODE != 'build') {
+      if (
+        process.env.DISABLE_MASTODON ||
+        process.env.ELEVENTY_RUN_MODE != 'build'
+      ) {
         return;
       }
 
