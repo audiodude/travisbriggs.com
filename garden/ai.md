@@ -21,7 +21,7 @@ Other questions I'd like to answer:
 * Does training an LLM infringe copyright?
 * Is training an LLM on the entire Internet ethical?
 * Are the models going to get "better", or just plateau? Do we have enough "internets" left to train them on, if parameters is the only thing that makes them improve?
-* Is there an AI bubble?
+* Is there an [[AI bubble]]? (spoiler: yes)
 * What trillion dollar problem is AI going to solve?
 * Is AI art real art?
    * Is it any good anyways?
