@@ -12,6 +12,6 @@ I don't believe in free will. I am a determinist. I believe there is plenty of e
 
 I'm also an [[atheism|atheist]], some sort of [[zen|Zen Buddhist]].
 
-It's hard to write a garden node title "philosophy", which exists in the abstract without any particular object that the supposed philosophy is focused on. Relatedly, I've started getting interested in [[Zen]] again. In one of the books I was reading about Zen, the author discussed how it's impossible to picture an object without a subject. I think this page is kind of a testament to that.
+It's hard to write a garden node title "philosophy", which exists in the abstract without any particular object that the supposed philosophy is focused on. Relatedly, I've started getting interested in [[zen|Zen]] again. In one of the books I was reading about Zen, the author discussed how it's impossible to picture an object without a subject. I think this page is kind of a testament to that.
 
 At some points in time I've described myself as an "Atheistic Taoist". Anyways, this is the philosophy node, not the religion node. But I think I need to take more inspiration from Wikipedia, where yes, [Everything In Its Right Place](https://www.youtube.com/watch?v=onRk0sjSgFU), but also it's okay if there's some redundant information here and there, if it helps explain and clarify things. And especially, in the case of this digital garden, if it adds flavor or character or I just, you know, feel like doing it!

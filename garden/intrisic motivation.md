@@ -10,7 +10,7 @@ Intrinsic motivation, then, is more often just called motivation: "I want to do 
 
 While most people will have some degree of both, with the help of my therapist, I've identified that I am largely driven by extrinsic motivation. I am not a _people pleaser_ per se, but I do things so that I can serve others, so they will appreciate and be proud of me. I do them so that others will want to keep me around...
 
-Why is this? Well who knows really. And who cares? My theapist is very strongly [[DBT|DBT based]], and he respects my slightly [[Zen|buddhist views]] that the past doesn't exist. It doesn't matter why it's this way. If I seek to change it, I need only to know how.
+Why is this? Well who knows really. And who cares? My theapist is very strongly [[DBT|DBT based]], and he respects my slightly [[zen|buddhist views]] that the past doesn't exist. It doesn't matter why it's this way. If I seek to change it, I need only to know how.
 
 ---
 
