@@ -10,7 +10,7 @@ Draft was an online, distraction free, writing tool that shut down at the end of
 
 I was very sad about it shutting down, but I totally understand that the project was probably in the direct intersection of side project that 1) is big enough to cause all kinds of costs and responsibilities and 2) not big enough to produce meaningful financial rewards for the former.
 
-When I heard about it shutting down, I sent the following email to [Nate Kontny](https://twitter.com/natekontny), the site's creator:
+When I heard about it shutting down, I sent the following email to Nate Kontny, the site's creator:
 
 > Hi Nate,
 > 

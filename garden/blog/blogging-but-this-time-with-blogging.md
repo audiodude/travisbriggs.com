@@ -7,7 +7,7 @@ quality: GA
 importance: Low
 ---
 
-Every time I get the feeling like I should blog something, I usually realize that it would do just as well to shout into [Mastodon](https://joinmastodon.org/) ([my masto instance](https://layer8.space)). Like that sentence for example. Not so much that last one.
+Every time I get the feeling like I should blog something, I usually realize that it would do just as well to shout into [Mastodon](https://joinmastodon.org/) ([my masto instance](https://sfba.social)). Like that sentence for example. Not so much that last one.
 
 Kind of in the vein of the [[blog/listening-to-music-while-doing-things|previous post]], I feel like I want to maybe do some kind of blogging exercise where every time I stop typing, I take inspiration from whatever the current song lyric is to write the next line. (That last sentence could have been a self contained masto post).
 

@@ -23,4 +23,4 @@ I have to also take this opportunity to point out that the name of this blog is 
 
 ---
 
-So has anyone successfully used The Chain? As always I'm Travis Briggs, of [travisbriggs.com](https://travisbriggs.com) fame. If you'd like to comment on this post you can do so on Mastodon (@audiodude@layer8.space) or Twitter (@audiodude) or send me an email at audiodude@gmail.com.
+So has anyone successfully used The Chain? As always I'm Travis Briggs, of [travisbriggs.com](https://travisbriggs.com) fame. If you'd like to comment on this post you can do so on Mastodon (@audiodude@sfba.social) or send me an email at audiodude@gmail.com.
