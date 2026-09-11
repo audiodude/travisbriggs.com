@@ -29,6 +29,7 @@ Other questions I'd like to answer:
    * Do people compel themselves to answer no to one of those questions in order to enact an anti-"AI art" worldview?
    * What are the philosophical problems around songs you like, but you find out they were made by AI?
    * What are the [[ai-music-trends|general trends in music consumption]] in 2025 and beyond that are affected by this?
+   * How can [[ai-art|Suno and other tools]] be used to make music?
 * Why is there so much 'hate' agains AI/LLMs?
 * Is Sam Altman a piece of shit?
 * Are local models worth it in 2026?
