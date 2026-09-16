@@ -47,9 +47,33 @@ URL, falling back to the site avatar if the node has no images). On Gemini,
 images render as `=>` link lines and the original files are shipped
 alongside the capsule content.
 
+### Link suggestions
+
+`scripts/suggest-links.js` uses Claude Code with your Claude subscription
+to suggest wikilinks and cross-references between garden notes. Install
+the Claude Code CLI and sign in with `claude auth login` using your
+subscription account, not a Console/API account.
+
+```bash
+node scripts/suggest-links.js                 # all notes
+node scripts/suggest-links.js --limit 5       # first 5 notes
+node scripts/suggest-links.js --node now      # one note by slug
+node scripts/suggest-links.js --out /tmp/link-suggestions.html
+```
+
+The default output is `link-suggestions.html`; garden files are never
+modified. Each note is analyzed with Opus and consumes your subscription
+allowance. The script ignores inherited API credentials and does not load
+`.env`; it checks for a subscription login before analyzing notes.
+Claude runs in safe mode with tools and MCP servers disabled, so local
+hooks and plugins do not participate. Use a current Claude Code version
+with `--safe-mode` and `--json-schema` support. Any subscription extra-usage
+billing you have enabled still applies.
+
 ## Deploying
 
 ### www
+
 First, build the site. **Warning:** this will create a Mastodon post for every new garden node, assuming you have a `MASTODON_API_KEY` entry in a top-level `.env` file.
 
 ```bash
@@ -65,6 +89,7 @@ netlify deploy --prod -d _site
 Finally, commit the code and push to Github (left to the reader). It's **important that this step is last**, because the comments.sqlite3 (where the Mastodon ids for node comments live) database is commited as part of the repo, and will be out of date if the repo is pushed before deploying.
 
 ### Gemini
+
 The Gemini capsule is hosted on a [Hetzner](https://www.hetzner.com/) box using the [Agate](https://github.com/mbrubeck/agate) server, with [Let's Encrypt](https://letsencrypt.org/) certificates auto-renewed via Cloudflare DNS-01. Agate serves each vhost from `/srv/gemini/content/<hostname>/`. To deploy the Gemini site, run:
 
 ```bash

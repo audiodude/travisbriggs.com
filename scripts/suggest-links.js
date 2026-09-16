@@ -10,15 +10,64 @@
 //   node scripts/suggest-links.js --node now     # one specific node (by fileSlug)
 //   node scripts/suggest-links.js --out path.html  # custom output path
 //
-// Requires ANTHROPIC_API_KEY in .env.
-
-require("dotenv").config();
+// Requires Claude Code on PATH, signed in with a Claude subscription.
 
 const fs = require("node:fs");
 const path = require("node:path");
+const { execFile } = require("node:child_process");
+const { promisify } = require("node:util");
 const matter = require("gray-matter");
 const { titleCase } = require("title-case");
-const Anthropic = require("@anthropic-ai/sdk").default;
+const execFileAsync = promisify(execFile);
+
+// Never let inherited API credentials override the subscription login.
+const claudeEnv = { ...process.env };
+for (const key of [
+  "ANTHROPIC_API_KEY",
+  "ANTHROPIC_AUTH_TOKEN",
+  "ANTHROPIC_BASE_URL",
+  "ANTHROPIC_PROFILE",
+  "ANTHROPIC_FEDERATION_RULE_ID",
+  "CLAUDE_CODE_USE_BEDROCK",
+  "CLAUDE_CODE_USE_VERTEX",
+  "CLAUDE_CODE_USE_FOUNDRY",
+  "CLAUDE_CODE_SIMPLE",
+]) {
+  delete claudeEnv[key];
+}
+
+async function runClaude(args, input = "") {
+  const pending = execFileAsync("claude", ["--safe-mode", ...args], {
+    env: claudeEnv,
+    maxBuffer: 4 * 1024 * 1024,
+  });
+  pending.child.stdin.on("error", () => {
+    // An early CLI exit is reported by execFile, not as an unhandled EPIPE.
+  });
+  pending.child.stdin.end(input);
+  let stdout;
+  try {
+    ({ stdout } = await pending);
+  } catch (error) {
+    if (error.code === "ENOENT") {
+      throw new Error("Claude Code is not installed or not on PATH.");
+    }
+    if (!error.stdout?.trim()) {
+      throw new Error(
+        `Claude Code failed: ${error.stderr?.trim() || error.code}`,
+      );
+    }
+    // Print mode can return a JSON error result with a nonzero exit status.
+    stdout = error.stdout;
+  }
+  const response = JSON.parse(stdout);
+  if (response.is_error) {
+    throw new Error(
+      response.errors?.join("; ") || response.result || "Claude Code failed.",
+    );
+  }
+  return response;
+}
 
 const GARDEN = path.join(__dirname, "..", "garden");
 const DEFAULT_OUT = path.join(__dirname, "..", "link-suggestions.html");
@@ -126,7 +175,9 @@ function buildSystemPrompt(allNodes) {
     .sort((a, b) => a.fileSlug.localeCompare(b.fileSlug))
     .map(
       (n) =>
-        `- slug=${JSON.stringify(n.fileSlug)} title=${JSON.stringify(n.title)}: ${summarize(n.content)}`,
+        `- slug=${JSON.stringify(n.fileSlug)} title=${JSON.stringify(
+          n.title,
+        )}: ${summarize(n.content)}`,
     )
     .join("\n");
 
@@ -150,42 +201,43 @@ Index of ALL nodes in the garden:
 ${index}`;
 }
 
-async function analyzeNode(client, system, node) {
+async function analyzeNode(system, node) {
   const existing = existingLinks(node.content);
   const userPrompt = `Current node:
   slug: ${node.fileSlug}
   title: ${node.title}
-  already-linked slugs (don't re-suggest): ${[...existing].join(", ") || "(none)"}
+  already-linked slugs (don't re-suggest): ${
+    [...existing].join(", ") || "(none)"
+  }
 
 Body:
 ${node.content.trim()}`;
 
-  const response = await client.messages.create({
-    model: "claude-opus-4-8",
-    max_tokens: 8192,
-    thinking: { type: "adaptive" },
-    system: [
-      { type: "text", text: system, cache_control: { type: "ephemeral" } },
+  const response = await runClaude(
+    [
+      "-p",
+      "--model",
+      "opus",
+      "--effort",
+      "medium",
+      "--system-prompt",
+      system,
+      "--output-format",
+      "json",
+      "--json-schema",
+      JSON.stringify(SCHEMA),
+      "--tools",
+      "",
+      "--strict-mcp-config",
+      "--disable-slash-commands",
+      "--no-session-persistence",
     ],
-    messages: [{ role: "user", content: userPrompt }],
-    output_config: {
-      effort: "medium",
-      format: { type: "json_schema", schema: SCHEMA },
-    },
-  });
-
-  const text = response.content.find((b) => b.type === "text")?.text || "";
-  let parsed;
-  try {
-    parsed = JSON.parse(text);
-  } catch (e) {
-    return {
-      error: `failed to parse JSON: ${e.message}`,
-      raw: text,
-      usage: response.usage,
-    };
+    userPrompt,
+  );
+  if (!response.structured_output) {
+    throw new Error("Claude Code returned no structured output.");
   }
-  return { parsed, usage: response.usage };
+  return { parsed: response.structured_output, usage: response.usage || {} };
 }
 
 function parseArgs(argv) {
@@ -385,7 +437,10 @@ main .node-meta a:hover { text-decoration: underline; }
   </main>
 </div>
 
-<script id="data" type="application/json">${dataJson.replaceAll("</", "<\\/")}</script>
+<script id="data" type="application/json">${dataJson.replaceAll(
+    "</",
+    "<\\/",
+  )}</script>
 <script>
 const DATA = JSON.parse(document.getElementById('data').textContent);
 const ELEVENTY = 'http://localhost:8080';
@@ -558,9 +613,15 @@ selectFromHash();
 }
 
 async function main() {
-  if (!process.env.ANTHROPIC_API_KEY) {
-    console.error("ANTHROPIC_API_KEY not set in environment / .env");
-    process.exit(1);
+  const auth = await runClaude(["auth", "status", "--json"]);
+  if (
+    !auth.loggedIn ||
+    auth.authMethod !== "claude.ai" ||
+    auth.apiProvider !== "firstParty"
+  ) {
+    throw new Error(
+      "Sign in to Claude Code with a Claude subscription using `claude auth login`.",
+    );
   }
 
   const args = parseArgs(process.argv.slice(2));
@@ -583,7 +644,6 @@ async function main() {
     `Analyzing ${targets.length} node${targets.length === 1 ? "" : "s"}...`,
   );
 
-  const client = new Anthropic();
   const system = buildSystemPrompt(nodes);
   const width = String(targets.length).length;
 
@@ -599,7 +659,7 @@ async function main() {
       `[${pad(i + 1, width)}/${targets.length}] ${node.slug}…`,
     );
     try {
-      const r = await analyzeNode(client, system, node);
+      const r = await analyzeNode(system, node);
       // Drop hallucinated slugs and self-references before they reach the report.
       let dropped = 0;
       if (r.parsed) {
@@ -655,22 +715,17 @@ async function main() {
 
   fs.writeFileSync(args.out, html);
 
-  // Opus 4.8: $5/M input, $25/M output, $0.50/M cache read, $6.25/M cache write
-  const cost =
-    (totals.input * 5) / 1_000_000 +
-    (totals.output * 25) / 1_000_000 +
-    (totals.cacheRead * 0.5) / 1_000_000 +
-    (totals.cacheWrite * 6.25) / 1_000_000;
-
   console.error("");
   console.error(`Wrote ${args.out}`);
   console.error(
     `Tokens: input=${totals.input} output=${totals.output} cache_read=${totals.cacheRead} cache_write=${totals.cacheWrite}`,
   );
-  console.error(`Cost: $${cost.toFixed(4)}`);
+  console.error("Usage counts toward your Claude subscription allowance.");
   if (droppedCount)
     console.error(
-      `Filtered out ${droppedCount} hallucinated/self-referential suggestion${droppedCount === 1 ? "" : "s"}.`,
+      `Filtered out ${droppedCount} hallucinated/self-referential suggestion${
+        droppedCount === 1 ? "" : "s"
+      }.`,
     );
   console.error(`Open: file://${args.out}`);
 }
