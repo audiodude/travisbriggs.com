@@ -41,5 +41,8 @@
     "netlify-cli": "^25.6.2",
     "node-fetch": "^3.3.2",
     "sqlite3": "^5.1.6"
+  },
+  "allowScripts": {
+    "sqlite3@5.1.6": true
   }
 }
