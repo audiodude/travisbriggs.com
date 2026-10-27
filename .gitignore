@@ -14,4 +14,4 @@ link-suggestions.html
 .cache/
 garden/zz-test-fixture.md
 assets/img/garden/zz-test-fixture.jpg
-worktrees/
+.worktrees/
