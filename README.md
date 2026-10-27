@@ -74,7 +74,7 @@ billing you have enabled still applies.
 
 ### www
 
-First, build the site. **Warning:** this will create a Mastodon post for every new garden node, assuming you have a `MASTODON_API_KEY` entry in a top-level `.env` file.
+First, build the site. **Warning:** this will create a Mastodon post for every new garden node, assuming you have a `MASTODON_API_KEY` entry in a top-level `.env` file. Nodes with no body text (front matter only, e.g. empty stubs) are skipped and get posted on the first build after they gain text.
 
 ```bash
 npm run build

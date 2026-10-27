@@ -128,6 +128,10 @@ module.exports = {
         // Test fixtures must never be announced, even when a crashed test
         // run leaks one into a real build.
         data.testFixture ||
+        // Nodes with no body text (e.g. freshly planted stubs) aren't worth
+        // announcing yet. Skipping also leaves no db row, so the node gets
+        // posted on the first build after it gains text.
+        !data.page.rawInput?.trim() ||
         process.env.DISABLE_MASTODON ||
         process.env.ELEVENTY_RUN_MODE != 'build'
       ) {
