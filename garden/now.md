@@ -1,34 +1,38 @@
 ---
 title: Now
 date: 2024-05-21T00:00:00.000Z
-updated: 2026-06-23T00:00:00.000Z
+updated: 2026-10-20T00:00:00.000Z
 quality: GA
 importance: Top
 permalink: now/
 ---
-2026 has been getting much better! Mostly from a mental health perspective. I've
-come to truly believe that it's [[not the circumstances]] but how you react to them
-that matters. In that sense, what I'm saying is: "things" aren't going better, they
-weren't that bad to begin with.
+I'm at the point now where, compared to a year ago, I can truly say that I'm
+_doing well_. Unfortunately, my wife is having a really hard time with her
+health. This means that I'm very torn, but it also means that hopefully I
+have the capacity to take care of her as well as I ever have.
 
-I'm mentoring someone in [Google Summer of Code](https://summerofcode.withgoogle.com/)!
-I've done it twice before, both times for [[Kiwix]]. It's going well so far, my
-student is really easy going and fun to work with.
+With all the [[vibe coding]] I've done in the past 6 months, I've almost reached
+a point where I'm out of things to do. I'm now stuck with ideas that might be a
+_little_ too big. Or at least, they resist being completed in a single session.
 
-I really have truly embraced [[vibe coding]], and now not only as a practice that
-I feel is somehow necessary to avoid my total obselescence in society.
+At the same time, building [[intrisic motivation]] has been going well also. I
+find myself working on creative projects just because I want to, with truly
+very little premeditated idea that I'm going to show someone them. I've started
+making a lot of "fruit slop videos".
 
-Speaking of payoffs, I've also been working on building [[intrisic motivation]].
+I'm taking the [Tools for creativity(https://sfpc.study/sessions/fall-26/tools-for-creativity)]
+class at [SFPC](https://sfpc.study). It's a lot of fun and very interesting. I've
+learned a lot and I'm building my own tool!
 
-Work is going well. More stressful than usual, but I actually think that's because
-I'm more motivated and engaged then I've been in a long time.
+A few weeks ago, I had a quarterly review at work and to summarize it my manager
+said I've been "hitting it out of the park", which is great. And actually,
+hearing that made me start to believe it and try to live up to it. So maybe
+a bit of extrinsic motivation there.
 
 Currently, I'm still living in San Francisco, in the same apartment I've lived
 in since we moved there in December 2012. What can I say, it's cozy,
 rent-controlled and in an awesome neighborhood (near Zeitgeist and Pizza Zone).
 I also have the same job at YouTube that I've had all that time.
-
-Now I'm typing a whole bunch of crap! Why? Because I want to test if the autosave interrupts my typing!
 
 ---
 
